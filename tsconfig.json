@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "noUnusedParameters": true,
+    "strictFunctionTypes": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES5",
+    "types": [
+      "node",
+      "webpack-env"
+    ],
+    "paths": {
+      "@layout": ["./src/index.d"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

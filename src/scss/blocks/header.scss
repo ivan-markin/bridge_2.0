@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.8vw;
+
+  @media (min-width: 1921px) {
+    padding: 0 73px;
+  }
+
+  &__logo {
+    width: 8.6vw;
+
+    @media (min-width: 1921px) {
+      width: 165px;
+    }
+  }
+
+  &__menu {
+    margin: 0 20px;
+  }
+
+  &__search {
+    border-radius: 8px;
+    background: #2760A7 url('../../images/search-icon_dark.svg') no-repeat 17px center;    
+    height: 2.7vw;    
+    width: 14.95vw;
+    border: none;
+    outline: none;
+    position: relative;
+    font-size: 1.04vw;
+    font-weight: 600;
+    color: white;
+    transition: all .2s;
+    padding: 0 20px 0 46px; 
+    margin-right: 20px;   
+
+    @media (min-width: 1921px) {
+      width: 287px;
+      font-size: 20px;
+      height: 52px;    
+    }
+
+    &:hover {
+      background-color: #22589B;
+    }
+
+    &::placeholder {
+      color: white;
+      opacity: .5;
+    }
+  }
+
+  &__cta.btn_middle {
+    font-size: 1.04vw;
+    height: 2.7vw;  
+    padding: 0 1.35vw;  
+    
+    @media (min-width: 1921px) {      
+      font-size: 20px;
+      height: 52px;    
+      padding: 0 26px;
+    }
+  }
+}

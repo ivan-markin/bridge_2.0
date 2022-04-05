@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  border: none;
+  background: none;  
+  white-space: nowrap;
+  cursor: pointer;
+  
+  &_middle {
+    height: 52px;    
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 26px;
+  }
+
+  &_outlined {
+    border: white 1px solid;
+    border-radius: 12px;
+  }  
+}

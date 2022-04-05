@@ -1,0 +1,131 @@
+.hero-section {
+  background-color: #0071FF;
+  min-height: 90vh;
+  padding: 30px 0 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18.5vh 40px 40px;
+  }
+
+  &__title {
+    color: white;
+    margin: 0 0 16px;
+  }
+
+  &__subtitle {
+    color: white;
+    opacity: .75;
+    font-size: 1.25vw;
+    margin: 0 0 75px;
+
+    @media (min-width: 1921px) {
+      font-size: 24px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  
+  &__tabs-container {
+    display: flex;
+    height: 2.7vw;
+    border-radius: 18px;
+    background-color: #2660A7;
+    margin-right: 16px;
+
+    @media (min-width: 1921px) {      
+      height: 52px;
+    }
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    height: 2.7vw;
+    border-radius: 18px;
+    font-size: 1.04vw;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s;
+    padding: 0 16px;
+
+    @media (min-width: 1921px) {
+      font-size: 20px;
+      height: 52px;
+    }   
+    
+    &:hover {
+      background-color: #3387F0;
+    }
+
+    &::before {
+      content: '';
+      width: 1.25vw;
+      height: 1.25vw;
+      border-radius: 50%;
+      background: #12335B no-repeat center;
+      background-size: 50%;
+      margin-right: 6px;    
+      
+      @media (min-width: 1921px) {
+        width: 24px;
+        height: 24px;      
+        background-size: auto;  
+      } 
+    }
+
+    &_classic::before {
+      background-image: url('../../images/tab-classic-icon.svg');
+    }
+
+    &_wrapped::before {
+      background-image: url('../../images/tab-wrapped-icon.svg');
+    }
+
+    &_nft::before {
+      background-image: url('../../images/tab-nft-icon.svg');
+    }
+
+    &.active {
+      background-color: #fff;
+      color: var(--font-dark);
+      cursor: default;
+
+      &::before {        
+        background-color: var(--primary-blue);        
+      }
+    }
+  }
+
+  &__tooltip {
+    width: 1.25vw;
+    height: 1.25vw;
+    font-size: .73vw;
+    font-weight: 600;
+    color: white;
+    background: rgba(196, 196, 196, 0.54);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+
+    @media (min-width: 1921px) {
+      width: 24px;
+      height: 24px;    
+      font-size: 14px;        
+    } 
+
+    &:hover {
+      background-color: #3387F0;
+    }
+  }
+}

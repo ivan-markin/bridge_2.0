@@ -1,0 +1,141 @@
+.find-bridge-form {
+	display: flex;
+
+	&__text-input {		
+		position: relative;
+
+		&_from {
+			input[type="text"] {
+				border-radius: 12px 0 0 12px;
+				margin-right: 4px;
+			}			
+		}
+
+		&_to {
+			input[type="text"] {
+				border-radius: 0 12px 12px 0;
+			}		
+		}
+
+		input[type="text"] {			
+			background: #fff no-repeat 25px center;
+			height: 80px;	
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);	
+			padding: 0 24px;
+			border: none;			
+			font-size: 20px;
+			color: var(--font-dark);
+			width: 16.7vw;
+			transition: all .2s;
+
+			@media (min-width: 1921px) {
+				width: 321px;
+			}
+
+			&::placeholder {
+				color: #6A8CAC;
+				opacity: 1;
+			}
+
+			&:focus {
+				outline: none;
+				border: #142438 2px solid;
+				background-image: url('../../images/search-icon_grey.svg');
+				background-position: 18px center;
+				padding: 0 24px 0 49px;
+			}			
+		}	
+		
+		&.errored input[type="text"] {
+			border: var(--color-error) 2px solid;
+		}
+	}
+
+	&__input-label {
+		position: absolute;
+		top: -22px;
+		left: 20px;
+		opacity: 0;
+		visibility: hidden;		
+		font-size: 14px;
+		font-weight: 800;
+		color: #fff;
+		transform: translateY(5px);
+		transition: all .2s;
+	}	
+
+	&__input-error {
+		font-size: 13px;
+		color: var(--color-error);
+		position: absolute;
+		top: 8px;
+		right: 16px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all .2s;
+		z-index: 2;
+	}
+
+	&__text-input input[type="text"]:focus + &__input-label {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0);
+	}	
+
+	&__text-input.errored &__input-error {		
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__choose-token-btn {
+		display: flex;
+		align-items: center;
+		background: none;
+		border: none;
+		outline: none;
+		font-size: 20px;
+		font-weight: 600;
+		color: white;
+		cursor: pointer;
+		opacity: 0;
+		z-index: -1;
+		visibility: hidden;
+		transition: all .2s;
+		margin: 0 28px;
+
+		&::before {
+			content: '';
+			width: 33px;
+			height: 32px;
+			background: url('../../images/coin-icon.svg') no-repeat center;
+			margin-right: 8px;
+		}
+
+		&::after {
+			content: '';
+			width: 11px;
+			height: 8px;
+			background: url('../../images/dropdown-arrow_white.svg') no-repeat center;
+			margin-left: 9px;
+		}
+
+		&.active {
+			opacity: 1;
+			z-index: 1;
+			visibility: visible;
+		}
+	}
+
+	&__choose-token-input {
+		display: flex;
+		visibility: hidden;
+		z-index: -1;
+		opacity: 0;
+
+		&.active {
+			visibility: visible;
+			z-index: 1;
+			opacity: 1;
+		}
+	}
+}

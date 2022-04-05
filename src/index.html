@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bridge</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-section">
+      <header class="header">
+        <a href="">
+          <img class="header__logo" src="./images/debridges-logo_white.svg" alt="">
+        </a>
+        <nav class="header__menu main-menu">
+          <ul>
+            <li class="main-menu__item"><a href="">Finding a bridge</a></li>
+            <li class="main-menu__item"><a href="">Analytics</a></li>
+            <li class="main-menu__item"><a href="">Networks</a></li>
+            <li class="main-menu__item main-menu__item_marked"><a href="">Cashback</a></li>
+            <li class="main-menu__item main-menu__item_disabled main-menu__item_soon"><a>Reports</a></li>
+            <li class="main-menu__item"><a href="">Join us</a></li>
+            <li class="main-menu__item"><a href="">More</a></li>
+          </ul>
+        </nav>
+        <input class="header__search" type="text" placeholder="Search">
+        <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+      </header>
+      <div class="hero-section__content">
+        <h1 class="hero-section__title primary-title">Find the optimal blockchain bridge</h1>
+        <p class="hero-section__subtitle">Search in the largest database of bridges</p>
+        <div class="hero-section__tabs">
+          <div class="hero-section__tabs-container">
+            <a class="hero-section__tab hero-section__tab_classic active">Classic</a>
+            <a class="hero-section__tab hero-section__tab_wrapped">Wrapped</a>
+            <a class="hero-section__tab hero-section__tab_nft">NFT</a>
+          </div>          
+          <button class="hero-section__tooltip">?</button>
+        </div>
+        <form class="find-bridge-form">
+          <div class="find-bridge-form__text-input find-bridge-form__text-input_from">
+            <input type="text" name="from" placeholder="From the network">
+            <label class="find-bridge-form__input-label" for="from">From the network</label>
+            <span class="find-bridge-form__input-error">Specify the desired network</span>            
+          </div>
+          <div class="find-bridge-form__text-input find-bridge-form__text-input_to errored">
+            <input type="text" name="to" placeholder="To the network">
+            <label class="find-bridge-form__input-label" for="to">To the network</label>
+            <span class="find-bridge-form__input-error">Specify the desired network</span>
+          </div>          
+          <button class="find-bridge-form__choose-token-btn active">Choose a token</button>
+          <input class="find-bridge-form__choose-token-input active" type="text">
+          <button>Find a bridge</button>
+        </form>
+      </div>
+      <div class="hero-section__scroll-down">
+        <span>Click to view analytics</span>
+        <a class="hero-section__scroll-down-button"></a>
+      </div>
+    </div>
+  </div>  
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.primary-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 800;
+  line-height: 1.25;    
+
+  @media (min-width: 1921px) {
+    font-size: 48px;
+  }
+}
