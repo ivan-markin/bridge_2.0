@@ -8,16 +8,28 @@
     padding: 0 73px;
   }
 
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  }
+
   &__logo {
     width: 8.6vw;
 
     @media (min-width: 1921px) {
       width: 165px;
     }
+
+    @media (max-width: 768px) {
+      width: 123px;
+    }
   }
 
   &__menu {
     margin: 0 20px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__search {
@@ -41,6 +53,10 @@
       height: 52px;    
     }
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     &:hover {
       background-color: #22589B;
     }
@@ -60,6 +76,23 @@
       font-size: 20px;
       height: 52px;    
       padding: 0 26px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu-button {
+    width: 24px;
+    height: 18px;
+    background: transparent url('../../images/menu-burger-icon.svg') no-repeat center;    
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 769px) {
+      display: none;
     }
   }
 }

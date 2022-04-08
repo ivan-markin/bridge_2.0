@@ -11,6 +11,13 @@
 @import './blocks/btn.scss';
 @import './blocks/primary-title.scss';
 @import './blocks/find-bridge-form.scss';
+@import './blocks/rankings.scss';
+@import './blocks/secondary-title.scss';
+@import './blocks/secondary-subtitle.scss';
+@import './blocks/filter-input.scss';
+@import './blocks/filter-switch.scss';
+@import './blocks/sort.scss';
+@import './blocks/form-network-list-popup.scss';
 
 * {
   box-sizing: border-box;
@@ -39,7 +46,7 @@ body {
 
 .wrap {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1385px;
   padding: 0 40px;
   margin: 0 auto;
 

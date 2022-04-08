@@ -1,0 +1,31 @@
+.filter-switch {
+	
+	&__input {
+		position: absolute;
+		visibility: hidden;
+		z-index: -1;
+		width: 1px;
+		height: 1px;
+		outline: none;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		font-weight: 600;
+		color: var(--font-dark);
+		width: 48px;
+		height: 35px;
+		border-radius: 7px;	
+		cursor: pointer;	
+	}
+
+	&__input:checked + &__button {
+		background-color: var(--primary-blue);
+		color: white;
+		font-weight: 800;
+		cursor: default;
+	}
+}

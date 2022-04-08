@@ -1,0 +1,22 @@
+.sort {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__button {
+		width: 13px;
+		height: 13px;
+		border: none;
+		background: transparent url('../../images/sort-button-icon.svg') no-repeat center;
+		cursor: pointer;
+
+		&.active {
+			background-image: url('../../images/sort-button-icon_active.svg');
+			cursor: default;
+		}
+		
+		&_bottom {
+			transform: rotate(.5turn);
+		}
+	}
+}
