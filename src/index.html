@@ -11,6 +11,40 @@
 </head>
 
 <body>
+  
+  <!-- Mobile menu -->
+  <div class="mobile-menu">    
+    <a class="mobile-menu__logo" href="">
+      <img src="./images/debridges-logo_white.svg" alt="">
+    </a>
+    <input class="mobile-menu__search" type="text" placeholder="Search">
+    <button class="mobile-menu__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+    <nav class="mobile-menu__menu main-menu">
+      <ul>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Finding a bridge</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Analytics</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Networks</a>
+        </li>
+        <li class="main-menu__item main-menu__item_marked">
+          <a class="main-menu__item-link" href="">Cashback</a>
+        </li>
+        <li class="main-menu__item main-menu__item_disabled main-menu__item_soon">
+          <a class="main-menu__item-link">Reports</a>
+        </li>       
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">More</a>
+        </li>
+      </ul>
+    </nav>  
+    <button class="mobile-menu__close-btn"></button>  
+  </div>
+  <!--  -->
+  
   <div class="container">
     <section class="hero-section">
       <header class="header">
@@ -71,7 +105,7 @@
           </div>          
           <div class="hero-section__tooltip">
             <a class="hero-section__tooltip-button">?</a>
-            <div class="hero-section__tooltip-block">
+            <div class="hero-section__tooltip-block tooltip-popup tooltip-popup_large">
               <h3 class="hero-section__tooltip-title hero-section__tooltip-title_classic">Classic</h3>
               <p class="hero-section__tooltip-subtitle">Bridges that supports all cryptocurrencies</p>
               <h3 class="hero-section__tooltip-title hero-section__tooltip-title_wrapped">Wrapped</h3>
@@ -312,30 +346,104 @@
             <div class="rankings__filters-left">
               <input class="rankings__search-input filter-input" type="text" placeholder="Search">
               <div class="rankings__select">
-                <button class="rankings__select-button filter-input">Networks</button>                
-                <div class="rankings__select-dropdown">
+                <!-- <button class="rankings__select-button filter-input">Networks</button>                 -->
+                <button class="rankings__select-button filter-input filled">
+                  Networks:
+                  <span><img src="./images/bridge-item-logo.png" alt=""></span>
+                  <span><img src="./images/bridge-item-logo.png" alt=""></span>
+                  <span>+3</span>                  
+                </button>
+                
+                <!--  Network list popup -->
+                <div class="form-network-list-popup form-network-list-popup_networks active">
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
                 </div>
+                <!--  -->
               </div>
               <div class="rankings__select">
                 <button class="rankings__select-button filter-input">Type of bridge</button>
                 <div class="rankings__select-dropdown">              
                 </div>
               </div>
+              <div class="rankings__select" id="selectMobile">
+                <button class="rankings__select-button filter-input">Sort by&nbsp;<b>Value</b></button>
+                <div class="rankings__select-dropdown">
+                </div>
+              </div>
             </div>
-            <div class="rankings__filters-right filters-right">
-              <label class="rankings__filter-switch">
+            <div class="rankings__filters-right filters-right filter-switch">
+              <label class="filter-switch__item">
                 <input class="filter-switch__input" type="radio" name="filter" checked>
                 <span class="filter-switch__button">24H</span>
               </label>
-              <label class="rankings__filter-switch filters-right">
+              <label class="filter-switch__item filters-right">
                 <input class="filter-switch__input" type="radio" name="filter">
                 <span class="filter-switch__button">7D</span>
               </label>
-              <label class="rankings__filter-switch filters-right">
+              <label class="filter-switch__item filters-right">
                 <input class="filter-switch__input" type="radio" name="filter">
                 <span class="filter-switch__button">30D</span>
               </label>
-              <label class="rankings__filter-switch filters-right">
+              <label class="filter-switch__item filter-switch_all filters-right">
                 <input class="filter-switch__input" type="radio" name="filter">
                 <span class="filter-switch__button">ALL</span>
               </label>
@@ -353,7 +461,11 @@
                 <span class="rankings__table-header-item-content">Name</span>
               </div>
               <div class="rankings__table-header-item rankings__table-header-item_avg">
-                <a class="rankings__table-header-item-info"></a>
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
                 <span class="rankings__table-header-item-content">AVG check</span>
                 <div class="sort">
                   <button class="sort__button sort__button_top active"></button>
@@ -361,7 +473,11 @@
                 </div>
               </div>
               <div class="rankings__table-header-item rankings__table-header-item_volume">
-                <a class="rankings__table-header-item-info"></a>
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
                 <span class="rankings__table-header-item-content">Volume</span>
                 <div class="sort">
                   <button class="sort__button sort__button_top"></button>
@@ -369,7 +485,11 @@
                 </div>
               </div>
               <div class="rankings__table-header-item rankings__table-header-item_transactions">
-                <a class="rankings__table-header-item-info"></a>
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
                 <span class="rankings__table-header-item-content">Transactions</span>
                 <div class="sort">
                   <button class="sort__button sort__button_top"></button>
@@ -377,7 +497,11 @@
                 </div>
               </div>
               <div class="rankings__table-header-item rankings__table-header-item_limits">
-                <a class="rankings__table-header-item-info"></a>
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
                 <span class="rankings__table-header-item-content">Limits</span>
                 <div class="sort">
                   <button class="sort__button sort__button_top"></button>
@@ -385,8 +509,19 @@
                 </div>
               </div>
               <div class="rankings__table-header-item rankings__table-header-item_reviews">
-                <a class="rankings__table-header-item-info"></a>
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
                 <span class="rankings__table-header-item-content">Reviews</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_value">                
+                <span class="rankings__table-header-item-content">Value</span>
                 <div class="sort">
                   <button class="sort__button sort__button_top"></button>
                   <button class="sort__button sort__button_bottom"></button>
@@ -410,6 +545,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -433,13 +591,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>                
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">2</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -451,6 +612,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -474,13 +658,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">3</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -492,6 +679,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -515,13 +725,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">4</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -533,6 +746,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -556,13 +792,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">5</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -574,6 +813,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -597,13 +859,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">6</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -615,6 +880,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -638,13 +926,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">7</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -656,6 +947,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -679,13 +993,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">8</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -697,6 +1014,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -720,13 +1060,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">9</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -738,6 +1081,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -761,13 +1127,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">10</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -779,6 +1148,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -802,13 +1194,16 @@
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
               </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
             </div>
             <!--  -->
 
             <!-- Table row -->
             <div class="rankings__table-row">
               <div class="rankings__table-item rankings__table-item_num">
-                <span class="rankings__table-item-content">1</span>
+                <span class="rankings__table-item-content">11</span>
               </div>
               <div class="rankings__table-item rankings__table-item_name">
                 <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
@@ -820,6 +1215,29 @@
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
                     <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -842,6 +1260,9 @@
               <div class="rankings__table-item rankings__table-item_reviews">
                 <span class="rankings__table-item-rating">4.7</span>
                 <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
               </div>
             </div>
             <!--  -->

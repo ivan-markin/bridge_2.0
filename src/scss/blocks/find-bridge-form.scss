@@ -1,6 +1,6 @@
 .find-bridge-form {
 	display: flex;
-	align-items: center;
+	align-items: center;	
 
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -70,6 +70,16 @@
 				background-image: url('../../images/search-icon_grey.svg');
 				background-position: 18px center;
 				padding: 0 24px 0 49px;
+
+				@media (min-width: 1441px) {
+					background-size: auto;
+				}
+				
+				@media (min-width: 769px) {
+					background-position: .9375vw center;
+					background-size: 7%;
+					padding: 0 1.25vw 0 2.55vw;
+				}
 			}			
 		}	
 		
@@ -90,6 +100,17 @@
 		transform: translateY(5px);
 		transition: all .2s;
 
+		@media (max-width: 1440px) {				
+			font-size: .97vw;
+			left: 1.4vw;
+			top: -16px;			
+		}
+		
+		@media (max-width: 1024px) {				
+			font-size: 12px;
+			font-weight: 600;
+		}
+		
 		@media (max-width: 768px) {				
 			display: none;
 		}
@@ -153,7 +174,9 @@
 			content: '';
 			width: 33px;
 			height: 32px;
-			background: url('../../images/coin-icon.svg') no-repeat center;			
+			background: url('../../images/coin-icon.svg') no-repeat center;		
+			background-size: contain;
+			margin-right: 10px;	
 		}
 
 		&::after {
@@ -161,7 +184,8 @@
 			width: 11px;
 			height: 8px;
 			background: url('../../images/dropdown-arrow_white.svg') no-repeat center;
-			transition: all .2s;			
+			transition: all .2s;	
+			margin-left: 10px;		
 		}
 
 		&:hover::after {

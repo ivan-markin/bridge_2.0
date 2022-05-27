@@ -1,0 +1,144 @@
+.chart-section {
+	
+	&__content {
+		border-radius: .83vw;
+		background-color: white;
+		padding: 1.56vw 1.875vw 1.25vw;
+
+		@media (max-width: 768px) {
+			border-top: 1px solid #E2E7F3;
+			border-radius: 0 0 16px 16px;
+			padding: 20px 20px 24px;
+		}
+	}
+
+	&__title-block {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.25vw;
+
+		@media (max-width: 768px) {
+			margin-bottom: 14px;
+		}
+
+		.tooltip-btn {
+			@media (max-width: 768px) {
+				margin-left: 8px;
+			}
+		}
+	}
+
+	&__title {
+		margin: 0 .41vw 0 0;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}		
+	}
+
+	&__legend {
+		display: flex;
+		gap: .625vw;		
+
+		@media (max-width: 768px) {
+			position: relative;
+			width: calc(100% + 40px);
+			left: -20px;
+			gap: 10px;
+			overflow-x: scroll;		
+			padding-left: 20px;	
+		}		
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&__legend-tag {
+		display: flex;		
+
+		&-input {
+			position: absolute;
+			visibility: hidden;
+			z-index: -1;
+			width: 1px;
+			height: 1px;
+			outline: none;
+		}
+
+		&-button {
+			display: flex;
+			align-items: center;
+			border-radius: 1.2vw;
+			border: #D9EAFF 1px solid;
+			cursor: pointer;
+			font-size: .67vw;
+			font-weight: 600;
+			opacity: .3;
+			transition: all .1s;
+			user-select: none;
+			padding: .625vw;	
+
+			@media (max-width: 768px) {
+				font-size: 12px;
+				width: max-content;
+				border-radius: 18px;
+				padding: 12px;				
+			}
+			
+			&::before {
+				content: '';
+				width: .31vw;
+				height: .31vw;
+				border-radius: 50%;
+				border: .21vw solid rgba($color: #000000, $alpha: .1);
+				margin-right: .26vw;
+
+				@media (max-width: 768px) {
+					width: 6px;
+					height: 6px;
+					border-width: 4px;
+					margin-right: 5px;
+				}
+			}
+
+			#harmonyTag &::before {
+				border-color: var(--primary-blue);
+			}
+
+			#synapseTag &::before {
+				border-color: #F4603E;
+			}
+
+			#nomadTag &::before {
+				border-color: #909090;
+			}
+
+			#nearTag &::before {
+				border-color: #CC61B0;
+			}
+
+			#roninTag &::before {
+				border-color: #F6CF71;
+			}
+			
+			#fantomTag &::before {
+				border-color: #6DBCCA;
+			}
+			
+			#avalancheTag &::before {
+				border-color: #FF8A8A;
+			}
+		}
+
+		&-input:checked + &-button {
+			opacity: 1;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		padding: 4.06vw 0 2.4vw;
+	}
+}

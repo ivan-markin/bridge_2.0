@@ -1,4 +1,8 @@
 .secondary-subtitle {
 	font-size: 18px;
 	color: #9E9E9E;
+
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
 }

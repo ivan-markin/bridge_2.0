@@ -1,9 +1,9 @@
-.secondary-title {
-	font-family: 'Poppins';	
-	font-weight: 700;
+.secondary-title {	
+	font-weight: 800;
 	color: var(--font-dark);
+	font-size: 1.67vw;
 
-	@media (min-width: 1921px) {
-		font-size: 32px;
+	@media (max-width: 768px) {
+		font-size: 24px;
 	}
 }

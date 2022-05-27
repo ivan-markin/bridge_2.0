@@ -1,0 +1,15 @@
+.content-tabs {	
+	display: flex;
+	align-items: center;	
+	border-radius: .83vw;
+	background-color: white;
+	padding: .2vw;
+	margin-bottom: 1.67vw;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		border-radius: 16px 16px 0 0;
+		padding: 5px 5px 20px;
+		margin-bottom: 0;
+	}
+}

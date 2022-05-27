@@ -18,6 +18,29 @@
 @import './blocks/filter-switch.scss';
 @import './blocks/sort.scss';
 @import './blocks/form-network-list-popup.scss';
+@import './blocks/mobile-menu.scss';
+@import './blocks/tooltip-popup.scss';
+@import './blocks/page-title.scss';
+@import './blocks/page-header.scss';
+@import './blocks/page-tabs.scss';
+@import './blocks/page-container';
+@import './blocks/overview.scss';
+@import './blocks/select.scss';
+@import './blocks/tooltip-btn.scss';
+@import './blocks/filter-switch-block.scss';
+@import './blocks/search-input.scss';
+@import './blocks/content-tabs.scss';
+@import './blocks/content-tab.scss';
+@import './blocks/chart-section.scss';
+@import './blocks/area-chart-section.scss';
+@import './blocks/donut-chart-section.scss';
+@import './blocks/grid-block.scss';
+@import './blocks/widget.scss';
+@import './blocks/rankings-tables.scss';
+@import './blocks/rankings-table.scss';
+@import './blocks/pagination.scss';
+@import './blocks/footer.scss';
+@import './blocks/bottom-widgets.scss';
 
 * {
   box-sizing: border-box;
@@ -46,12 +69,12 @@ body {
 
 .wrap {
   width: 100%;
-  max-width: 1385px;
+  max-width: 1920px;
   padding: 0 40px;
   margin: 0 auto;
 
   @media screen and (max-width: 420px) {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 

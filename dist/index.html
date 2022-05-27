@@ -8,1166 +8,1269 @@
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Bridge</title>
-<script defer src="bundle.3128a2dec6069ce2ba30.js"></script><link href="styles.css" rel="stylesheet"></head>
+<script defer src="bundle.0c89e37871bfc328906e.js"></script><link href="styles.css" rel="stylesheet"></head>
 
 <body>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu">
-    <div class="mobile-menu__header">
-      <a href="">
-        <img class="mobile-menu__logo logo" src="/images/bridge-logo-dark.svg" alt="">
-      </a>
-      <button class="mobile-menu__close"></button>
-    </div>
-    <div class="mobile-menu__menu-block">
-      <nav class="mobile-menu__menu main-menu">
-        <ul>
-          <li>
-            <a id="networksLink">
-              <img src="/images/networks-icon.svg" alt="">
-              Networks
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="/images/popup-telegram-icon.svg" alt="">
-              Telegram
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="/images/popup-twitter-icon.svg" alt="">
-              Twitter
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <a class="mobile-menu__contact-us btn btn_light-blue" href="">Contact us</a>
-    </div>
-  </div>  
   
-  <!-- FEEDBACK POPUP -->
-  <div class="feedback-popup outer-area">
-    <div class="feedback-popup__container popup-container">
-      <button class="feedback-popup__close popup-close"></button>
-      <div class="feedback-popup__top">
-        <img class="feedback-popup__title-image" src="/images/hand-icon.svg" alt="">
-        <h2 class="feedback-popup__title thirds-title">Hey, you are early!</h2>
-        <p class="feedback-popup__description">
-          We appreciate your interest in our platform, so we are developing the new version and need your feedback and support.
-          Please stay tuned and wait for our updates and news. We do our best for you!
-        </p>
-        <div class="feedback-popup__socials">
-          <a href="" class="feedback-popup__socials-item text-link">
-            <img src="/images/popup-telegram-icon.svg" alt="">
-            Join our community
-          </a>
-          <a href="" class="feedback-popup__socials-item text-link">
-            <img src="/images/popup-twitter-icon.svg" alt="">
-            Read latest news
-          </a>
-        </div>
-      </div>
-      <div class="feedback-popup__divider"></div>
-      <div class="feedback-popup__bottom">
-        <h2 class="feedback-popup__title thirds-title">Also</h2>
-        <p class="feedback-popup__description">
-          We plan to issue a DBR token to pay cashback to bridge users.
-          If you are interested in token rewards or have any idea how to improve the platform, please contact us!
-        </p>
-        <form class="feedback-popup__form" action="">
-          <div class="text-input">            
-            <input class="text-input__input" type="text" placeholder="Your name">
-            <label class="text-input__label" for="">Your name</label>
-          </div>
-          <div class="text-input">            
-            <input class="text-input__input" type="text" placeholder="Your Telegram/Discord">
-            <label class="text-input__label" for="">Your Telegram/Discord</label>
-          </div>
-          <button class="feedback-popup__form-button btn btn_primary" type="submit">Send</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- <div class="feedback-popup__confirmation">
-      <button class="feedback-popup__close popup-close"></button>
-      <img src="/images/envelop.svg" alt="">
-      <h2 class="feedback-popup__title thirds-title">Congratulations!</h2>
-      <p class="feedback-popup__description">
-        Your application has been sent!
-      </p>
-      <button class="btn btn_primary popup-close">Ok</button>
-    </div> -->
+  <!-- Mobile menu -->
+  <div class="mobile-menu">    
+    <a class="mobile-menu__logo" href="">
+      <img src="./images/debridges-logo_white.svg" alt="">
+    </a>
+    <input class="mobile-menu__search" type="text" placeholder="Search">
+    <button class="mobile-menu__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+    <nav class="mobile-menu__menu main-menu">
+      <ul>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Finding a bridge</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Analytics</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Networks</a>
+        </li>
+        <li class="main-menu__item main-menu__item_marked">
+          <a class="main-menu__item-link" href="">Cashback</a>
+        </li>
+        <li class="main-menu__item main-menu__item_disabled main-menu__item_soon">
+          <a class="main-menu__item-link">Reports</a>
+        </li>       
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">More</a>
+        </li>
+      </ul>
+    </nav>  
+    <button class="mobile-menu__close-btn"></button>  
   </div>
+  <!--  -->
   
-  
-  <!-- SIDE MENU -->
-  <div class="side-menu">
-    <div class="side-menu__container">
-      <button class="side-menu__close"></button>
-      <div class="side-menu__grid">
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-        <div class="side-menu__grid-item">
-          <img src="/images/tags/ontology.svg" alt="">
-          <a href="">Ontology</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT US POP-UP -->
-  <div class="contact-us-popup">
-    <div class="contact-us-popup__container">
-      <button class="contact-us-popup__close"></button>
-
-      <h2 class="contact-us-popup__title">Contact us</h2>
-      <p class="contact-us-popup__subtitle">
-        by accepting this invitation you are<br>creating a new account.
-      </p>
-      <form class="popup-form" id="contactForm">
-        <div class="popup-form__input-block">
-          <input class="error" type="text" placeholder="Your name*">
-          <span class="popup-form__error-text-block">Your name is not specified</span>
-        </div>
-        <div class="popup-form__input-block">
-          <input class="error" type="text" placeholder="Your website*">
-          <span class="popup-form__error-text-block">Website is not specified</span>
-        </div>
-        <div class="popup-form__input-block">
-          <input type="email" placeholder="Your e-mail*">
-          <span class="popup-form__error-text-block">Your e-mail is not specified</span>
-        </div>
-        <div class="popup-form__input-block">
-          <input type="text" placeholder="Your Telegram account*">
-          <span class="popup-form__error-text-block">You Telegram account is not specified</span>
-        </div>
-
-        <label class="checkbox">
-          <input type="checkbox" class="checkbox__input">
-          <span class="checkbox__box"></span>
-          <span>I agree to&nbsp;<a class="text-link" href="">terms & conditions</a></span>
-        </label>
-        <button class="btn btn_popup">Send</button>
-      </form>
-    </div>
-  </div>
-  <!---->
-
-  <!-- CONFIRMATION -->
-  <div class="contact-us-popup">
-    <div class="contact-us-popup__container" id="contactPopupConfirm">
-      <button class="contact-us-popup__close"></button>
-
-      <img src="/images/confirm-icon.svg" alt="">
-      <h2 class="contact-us-popup__title">Thank you!</h2>
-      <p class="contact-us-popup__subtitle">We’ll contact your soon!</p>
-
-      <button class="btn btn_popup">Everything is clear</button>
-    </div>
-  </div>
-  <!---->
-
-  <!-- NETWORKS FILTER -->
-  <div class="networks-filter">
-    <div class="networks-filter__content">
-      <h3 class="networks-filter__title">
-        Select networks
-        <span class="networks-filter__title-counter">5</span>
-      </h3>
-      <div class="networks-filter__container">
-        <div class="networks-filter__tags">
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-          <label class="networks-filter__tag rankings__tag">
-            <input type="checkbox">
-            <div class="rankings__tag-container">
-              <img src="/images/tags/eth.svg" alt="">
-              <span>ETH</span>
-            </div>
-          </label>
-        </div>
-      </div>
-      <div class="networks-filter__buttons">
-        <button class="btn btn_secondary-blue">
-          <img src="/images/reset-icon.svg" alt="">
-          Reset filters
-        </button>
-        <button class="btn btn_primary">
-          <img src="/images/apply-icon.svg" alt="">
-          Apply
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!---->
-
-  <button class="to-top-button"></button>
-
-  <header class="header">
-    <div class="wrap">
-      <div class="header__container">
-        <div class="header__container-left">
-          <a href="./index.html">
-            <img class="header__logo logo" src="/images/bridge-logo-dark.svg" alt="Bridge">
-          </a>
-          
-          <nav class="header__menu main-menu">
-            <ul>
-              <li>
-                <a id="networksLink">
-                  <img src="/images/networks-icon.svg" alt="">
-                  Networks
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="/images/popup-telegram-icon.svg" alt="">
-                  Telegram
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="/images/popup-twitter-icon.svg" alt="">
-                  Twitter
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>        
-
-        <div class="header__cta-block">
-          <a class="header__cta btn btn_light-blue" href="">Contact us</a>
-          <a class="menu-button"></a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
+  <div class="container">
     <section class="hero-section">
-      <div class="wrap">
-        <div class="hero-section__container">
-          <div class="hero-section__title-block" data-aos="fade" data-aos-duration="2000">
-            <h1 class="hero-section__title primary-title">
-              All blockchain
-              <span>bridges aggregator</span>
-            </h1>
-            <p class="hero-section__subtitle">
-              Truthful reviews and ratings from the community
-            </p>
-          </div>
-          <picture>
-            <!-- <source srcset="/images/hero-image.webp, /images/hero-image@2x.webp 2x" type="image/webp"> -->
-            <source srcset="/images/hero-image.png, /images/hero-image@2x.png 2x" type="image/png">
-            <img class="hero-section__main-image" src="/images/hero-image.png" alt="" data-aos="fade-left"
-              data-aos-duration="1000" data-aos-delay="500">
-          </picture>
-          <div class="hero-section__bridge-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
-            <img src="/images/ton-bridge-logo.png" alt="">
-            <h2 class="hero-section__bridge-image-title">Bridge title</h2>
-            <p class="hero-section__bridge-image-subtitle">
-              Short description of the bridge
-            </p>
+      <header class="header">
+        <a href="">
+          <img class="header__logo" src="./images/debridges-logo_white.svg" alt="">
+        </a>
+        <nav class="header__menu main-menu">
+          <ul>
+            <li class="main-menu__item">
+              <a class="main-menu__item-link" href="">Finding a bridge</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item-link" href="">Analytics</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item-link" href="">Networks</a>
+            </li>
+            <li class="main-menu__item main-menu__item_marked">
+              <a class="main-menu__item-link" href="">Cashback</a>
+            </li>
+            <li class="main-menu__item main-menu__item_disabled main-menu__item_soon">
+              <a class="main-menu__item-link">Reports</a>
+            </li>
+            <li class="main-menu__item main-menu__item_select">
+              <a class="main-menu__item-link" href="">Join us</a>
+              <ul class="main-menu__dropdown">
+                <li class="main-menu__dropdown-item">
+                  <a href="">
+                    <img src="./images/telegram-icon.svg" alt="">
+                    Telegram
+                  </a>
+                </li>
+                <li class="main-menu__dropdown-item">
+                  <a href="">
+                    <img src="./images/twitter-icon.svg" alt="">
+                    Twitter
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item-link" href="">More</a>
+            </li>
+          </ul>
+        </nav>
+        <input class="header__search" type="text" placeholder="Search">
+        <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+        <button class="header__menu-button"></button>
+      </header>
+      <div class="hero-section__content">
+        <h1 class="hero-section__title primary-title">Find the optimal blockchain bridge</h1>
+        <p class="hero-section__subtitle">Search in the largest database of bridges</p>
+        <div class="hero-section__tabs">
+          <div class="hero-section__tabs-container">
+            <a class="hero-section__tab hero-section__tab_classic active">Classic</a>
+            <a class="hero-section__tab hero-section__tab_wrapped">Wrapped</a>
+            <a class="hero-section__tab hero-section__tab_nft">NFT</a>
+          </div>          
+          <div class="hero-section__tooltip">
+            <a class="hero-section__tooltip-button">?</a>
+            <div class="hero-section__tooltip-block tooltip-popup tooltip-popup_large">
+              <h3 class="hero-section__tooltip-title hero-section__tooltip-title_classic">Classic</h3>
+              <p class="hero-section__tooltip-subtitle">Bridges that supports all cryptocurrencies</p>
+              <h3 class="hero-section__tooltip-title hero-section__tooltip-title_wrapped">Wrapped</h3>
+              <p class="hero-section__tooltip-subtitle">Only token emitent bridges (for example wBTC, renBTC)</p>
+              <h3 class="hero-section__tooltip-title hero-section__tooltip-title_nft">NFT</h3>
+              <p class="hero-section__tooltip-subtitle">Only bridges that work with non-fungible tokens</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="quotes">
-      <div class="wrap">
-        <div class="quotes__container">
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_btc">
-              <img src="/images/btc-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_eth">
-              <img src="/images/eth-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_xmr">
-              <img src="/images/xmr-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-          <div class="quotes__item">
-            <div class="quotes__item-logo quotes__item-logo_dash">
-              <img src="/images/dash-logo.svg" alt="">
-            </div>
-            <span class="quotes__item-name">BTC/USD</span>
-            <span class="quotes__item-value">33,906</span>
-            <span class="quotes__item-grow">+11.71%</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="transfer-form">
-      <div class="wrap">
-        <div class="transfer-form__container">
-          <h2 class="transfer-form__title">Easy way to transfer</h2>
-          <form class="transfer-form__form">
-            <div class="select">
-              <span class="select__title">Transfer from</span>
-              <button class="select__input">
-                <img class="select__image" src="/images/eth-logo-color.png" alt="">
-                <span class="select__value">Ethereum&nbsp;Mainnet</span>
-                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.2929 0.292894C10.6834 -0.0976306 11.3166 -0.0976306 11.7071 0.292894C12.0976 0.683418 12.0976 1.31658 11.7071 1.70711L6.70711 6.70711C6.31658 7.09763 5.68342 7.09763 5.29289 6.70711L0.292894 1.70711C-0.0976312 1.31658 -0.0976312 0.683417 0.292894 0.292893C0.683418 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292894Z"
-                    fill="#142438" />
-                </svg>
-              </button>
-            </div>
-            <button class="transfer-form__change-button">
-              <img src="/images/change-button-icon.svg" alt="">
-            </button>
-            <div class="select">
-              <span class="select__title">To</span>
-              <button class="select__input">
-                <img class="select__image" src="/images/binance-logo.png" alt="">
-                <span class="select__value">Binance&nbsp;Smart&nbsp;Chain</span>
-                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.2929 0.292894C10.6834 -0.0976306 11.3166 -0.0976306 11.7071 0.292894C12.0976 0.683418 12.0976 1.31658 11.7071 1.70711L6.70711 6.70711C6.31658 7.09763 5.68342 7.09763 5.29289 6.70711L0.292894 1.70711C-0.0976312 1.31658 -0.0976312 0.683417 0.292894 0.292893C0.683418 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292894Z"
-                    fill="#142438" />
-                </svg>
-              </button>
-            </div>
-            <div class="transfer-form__input-block">
-              <span class="transfer-form__input-block-title">Transfer&nbsp;amount</span>
-              <div class="transfer-form__input">
-                <span class="transfer-form__input-currency-sign">$</span>
-                <input type="text" placeholder="0.00">
-                <button>
-                  <span>TON&nbsp;Crystal</span>
-                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.2929 0.292894C10.6834 -0.0976306 11.3166 -0.0976306 11.7071 0.292894C12.0976 0.683418 12.0976 1.31658 11.7071 1.70711L6.70711 6.70711C6.31658 7.09763 5.68342 7.09763 5.29289 6.70711L0.292894 1.70711C-0.0976312 1.31658 -0.0976312 0.683417 0.292894 0.292893C0.683418 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292894Z"
-                      fill="#142438" />
-                  </svg>
-                </button>
+        <form class="find-bridge-form">
+          <div class="find-bridge-form__text-input find-bridge-form__text-input_from input-cnt">
+            <input class="networks-list-input" type="text" name="from" placeholder="From the network">
+            <label class="find-bridge-form__input-label" for="from">From the network</label>
+            <span class="find-bridge-form__input-error">Specify the desired network</span>    
+            
+            <!--  Network list popup -->
+            <div class="form-network-list-popup form-network-list-popup_from">
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
               </div>
             </div>
-            <button class="transfer-form__submit-button btn">Transfer</button>
-          </form>
-          <div class="transfer-form__total-fee">
-            <p>Total fee: <span>3%</span></p>
-          </div>
-        </div>
-      </div>
-    </section> -->
+            <!--  -->
 
-    <section class="widget">
-      <div class="widget__content">
-        <h2 class="widget__title section-title">Hot news</h2>
-        <div class="widget__container">
-          <img src="/images/widget-example.png" alt="">
-        </div>
+          </div>
+          <div class="find-bridge-form__text-input find-bridge-form__text-input_to input-cnt">
+            <input class="networks-list-input" type="text" name="to" placeholder="To the network">
+            <label class="find-bridge-form__input-label" for="to">To the network</label>
+            <span class="find-bridge-form__input-error">Specify the desired network</span>
+            
+            <!--  Network list popup -->
+            <div class="form-network-list-popup form-network-list-popup_to">
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+
+          </div>          
+          <button class="find-bridge-form__choose-token-btn active">Choose a token</button>
+          <div class="find-bridge-form__choose-token-input-cnt input-cnt">
+            <input class="find-bridge-form__choose-token-input networks-list-input" type="text">
+            
+            <!--  Network list popup -->
+            <div class="form-network-list-popup form-network-list-popup_choose-token">
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+              <div class="form-network-list-popup__item">
+                <div class="form-network-list-popup__item-image">
+                  <img src="./images/bridge-item-logo.png" alt="">
+                </div>
+                <div class="form-network-list-popup__item-name">
+                  <h3 class="form-network-list-popup__item-title">Tether</h3>
+                  <span class="form-network-list-popup__item-subtitle">USDT</span>
+                </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+
+          </div>          
+          <button class="find-bridge-form__submit-btn btn btn_primary">Find a bridge</button>
+        </form>
+      </div>
+      <div class="hero-section__scroll-down">
+        <span>Click to view analytics</span>
+        <a class="hero-section__scroll-down-button"></a>
       </div>
     </section>
-
+    
     <section class="rankings">
       <div class="wrap">
         <div class="rankings__container">
-          <h2 class="primary-title">Rankings</h2>
+          <h2 class="rankings__title secondary-title">Rankings</h2>
+          <p class="rankings__subtitle secondary-subtitle">Analyze the market and capital movements!</p>
+          <div class="rankings__filters">
+            <div class="rankings__filters-left">
+              <input class="rankings__search-input filter-input" type="text" placeholder="Search">
+              <div class="rankings__select">
+                <!-- <button class="rankings__select-button filter-input">Networks</button>                 -->
+                <button class="rankings__select-button filter-input filled">
+                  Networks:
+                  <span><img src="./images/bridge-item-logo.png" alt=""></span>
+                  <span><img src="./images/bridge-item-logo.png" alt=""></span>
+                  <span>+3</span>                  
+                </button>
+                
+                <!--  Network list popup -->
+                <div class="form-network-list-popup form-network-list-popup_networks active">
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="form-network-list-popup__item">
+                    <div class="form-network-list-popup__item-image">
+                      <img src="./images/bridge-item-logo.png" alt="">
+                    </div>
+                    <div class="form-network-list-popup__item-name">
+                      <h3 class="form-network-list-popup__item-title">Tether</h3>
+                      <span class="form-network-list-popup__item-subtitle">USDT</span>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <div class="rankings__select">
+                <button class="rankings__select-button filter-input">Type of bridge</button>
+                <div class="rankings__select-dropdown">              
+                </div>
+              </div>
+              <div class="rankings__select" id="selectMobile">
+                <button class="rankings__select-button filter-input">Sort by&nbsp;<b>Value</b></button>
+                <div class="rankings__select-dropdown">
+                </div>
+              </div>
+            </div>
+            <div class="rankings__filters-right filters-right">
+              <label class="filter-switch">
+                <input class="filter-switch__input" type="radio" name="filter" checked>
+                <span class="filter-switch__button">24H</span>
+              </label>
+              <label class="filter-switch filters-right">
+                <input class="filter-switch__input" type="radio" name="filter">
+                <span class="filter-switch__button">7D</span>
+              </label>
+              <label class="filter-switch filters-right">
+                <input class="filter-switch__input" type="radio" name="filter">
+                <span class="filter-switch__button">30D</span>
+              </label>
+              <label class="filter-switch filter-switch_all filters-right">
+                <input class="filter-switch__input" type="radio" name="filter">
+                <span class="filter-switch__button">ALL</span>
+              </label>
+            </div>
+          </div>
 
-          <button class="rankings__networks-button">
-            Select networks
-            <span class="rankings__networks-button-counter">3</span>
-          </button>
+          <div class="rankings__table">
+            
+            <!-- Table header -->
+            <div class="rankings__table-header">
+              <div class="rankings__table-header-item rankings__table-header-item_num">
+                <span class="rankings__table-header-item-content">#</span>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_name">
+                <span class="rankings__table-header-item-content">Name</span>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_avg">
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
+                <span class="rankings__table-header-item-content">AVG check</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top active"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_volume">
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
+                <span class="rankings__table-header-item-content">Volume</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_transactions">
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
+                <span class="rankings__table-header-item-content">Transactions</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_limits">
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
+                <span class="rankings__table-header-item-content">Limits</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_reviews">
+                <a class="rankings__table-header-item-info">
+                  <div class="rankings__table-header-item-info-popup tooltip-popup tooltip-popup_small">
+                    The volume of the bridge is calculated in some way
+                  </div>
+                </a>
+                <span class="rankings__table-header-item-content">Reviews</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+              <div class="rankings__table-header-item rankings__table-header-item_value">                
+                <span class="rankings__table-header-item-content">Value</span>
+                <div class="sort">
+                  <button class="sort__button sort__button_top"></button>
+                  <button class="sort__button sort__button_bottom"></button>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">1</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>                
+              </div>
+            </div>
+            <!--  -->
 
-          <div class="rankings__tags">
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/eth.svg" alt="">
-                <span>ETH</span>
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">2</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/eos.svg" alt="">
-                <span>EOS</span>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/tron.svg" alt="">
-                <span>Tron</span>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/ontology.svg" alt="">
-                <span>Ontology</span>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/thunder-core.svg" alt="">
-                <span>Thunder Core</span>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/waves.svg" alt="">
-                <span>Waves</span>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/wax.svg" alt="">
-                <span>WAX</span>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/steem.svg" alt="">
-                <span>Steem</span>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/hive.svg" alt="">
-                <span>Hive</span>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">3</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/bsc.svg" alt="">
-                <span>BSC</span>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/flow.svg" alt="">
-                <span>Flow</span>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/near.svg" alt="">
-                <span>Near</span>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/avalanche.svg" alt="">
-                <span>Avalanche</span>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/telos.svg" alt="">
-                <span>Telos</span>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/tezos.svg" alt="">
-                <span>Tezos</span>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/rsk.svg" alt="">
-                <span>RSK</span>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/vulcan.svg" alt="">
-                <span>Vulcan Forget</span>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">4</span>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/harmony.svg" alt="">
-                <span>Harmony</span>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </label>
-            <label class="rankings__tag">
-              <input type="checkbox">
-              <div class="rankings__tag-container">
-                <img src="/images/tags/polygon.svg" alt="">
-                <span>Polygon</span>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
               </div>
-            </label>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">5</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">6</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">7</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">8</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">9</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">10</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
+
+            <!-- Table row -->
+            <div class="rankings__table-row">
+              <div class="rankings__table-item rankings__table-item_num">
+                <span class="rankings__table-item-content">11</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_name">
+                <img class="rankings__table-item-logo" src="./images/bridge-item-logo.png" width="48" alt="">
+                <div class="rankings__table-item-content-block">
+                  <span class="rankings__table-item-title">Binance Bridge</span>
+                  <span class="rankings__table-item-subtitle">Cross-chain bridge</span>
+                  <div class="rankings__table-item-logos">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <img class="rankings__table-item-logo_small-gray" src="./images/bridge-item-logo.png" alt="" height="15">
+                    <div class="rankings__table-item-logos-popup tooltip-popup tooltip-popup_small">
+                      <h4 class="tooltip-popup__title">Networks supported by the bridge:</h4>
+                      <ul class="tooltip-popup__networks-list">
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                        <li class="tooltip-popup__networks-list-item">
+                          <a href="">
+                            <img class="rankings__table-item-logo_middle" src="./images/bridge-item-logo.png" alt="">
+                            <span>Avalanche</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rankings__table-item rankings__table-item_avg">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_volume">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_recession">-16.05%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_transactions">
+                <span class="rankings__table-item-value">$30 000</span>
+                <span class="rankings__table-item-increment rankings__table-item-increment_growth">+5.42%</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_limits">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+                <span class="rankings__table-item-description">$10 000 per day</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_reviews">
+                <span class="rankings__table-item-rating">4.7</span>
+                <span class="rankings__table-item-description">337 reviews</span>
+              </div>
+              <div class="rankings__table-item rankings__table-item_value">
+                <span class="rankings__table-item-value">$50—$10 000</span>
+              </div>
+            </div>
+            <!--  -->
           </div>
         </div>
       </div>
     </section>
-
-    <section class="bridges">
-      <div class="wrap">
-        <div class="bridges__content">
-
-          <div class="bridges__top-panel">
-            <h2 class="bridges__title section-title">
-              Bridges
-              <span>42</span>
-            </h2>
-
-            <div class="bridges__filters-block">
-              <div class="select active">
-                <button class="select__input">
-                  All categories
-                  <a class="select__arrow"></a>
-                </button>
-                <ul class="select__dropdown">
-                  <li class="select__item active">All categories</li>
-                  <li class="select__item">Assets's bridge</li>
-                  <li class="select__item">Centralized</li>
-                  <li class="select__item">Aggregator</li>
-                </ul>
-              </div>
-
-              <div class="select-mini active">
-                <p class="select-mini__title">Sort by:</p>
-                <button class="select-mini__input">
-                  By TVL
-                  <a class="select-mini__arrow"></a>
-                </button>
-                <ul class="select-mini__dropdown">
-                  <li class="select__item active">By TVL</li>
-                  <li class="select__item">By the rate</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="bridges__pagination-block">
-              <span class="bridges__pagination-block-caption">Page</span>
-              <input class="input-pages" type="text" value="1">
-              <span class="bridges__pagination-block-caption">of 20</span>
-              <div class="bridges__pagination-buttons">
-                <button class="pagination-button pagination-button_prev" disabled></button>
-                <button class="pagination-button pagination-button_next"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="bridges__cards">
-            <div class="bridge-card gold">
-              <div class="bridge-card__content">
-                <div class="bridge-card__top">
-                  <img class="bridge-card__logo" src="/images/binance-logo.png" alt="">
-                  <div class="bridge-card__reviews-block">
-                    <span class="bridge-card__reviews">25 reviews</span>
-                    <span class="bridge-card__rate green">5</span>
-                  </div>
-                </div>
-                <h3 class="bridge-card__title">Binance Bridge</h3>
-                <p class="bridge-card__description">
-                  We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
-                </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
-                <div class="bridge-card__parameters">
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Category:</span>
-                    <span class="bridge-card__parameters-value">Centralized</span>
-                  </div>
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Audit:</span>
-                    <span class="bridge-card__parameters-value">Company name</span>
-                  </div>
-                </div>
-                <div class="bridge-card__tags-block">
-                  <span class="bridge-card__tags-block-title">Supported networks:</span>
-                  <div class="card-tags">
-                    <a class="card-tag">Ethereum</a>
-                    <a class="card-tag">SOL</a>
-                    <a class="card-tag">TRX</a>
-                    <a class="card-tag">Binance Chain</a>
-                    <a class="card-tag">Binance Smart Chain</a>
-                    <a class="card-tag">ATOM</a>
-                    <a class="card-tag">+2</a>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn_primary" href="">Overview</a>
-            </div>
-
-            <div class="bridge-card silver">
-              <div class="bridge-card__content">
-                <div class="bridge-card__top">
-                  <img class="bridge-card__logo" src="/images/binance-logo.png" alt="">
-                  <div class="bridge-card__reviews-block">
-                    <span class="bridge-card__reviews">25 reviews</span>
-                    <span class="bridge-card__rate gray">0</span>
-                  </div>
-                </div>
-                <h3 class="bridge-card__title">Binance Bridge</h3>
-                <p class="bridge-card__description">
-                  We combine the best of traditional and novel finance.
-                </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
-                <div class="bridge-card__parameters">
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Category:</span>
-                    <span class="bridge-card__parameters-value">Centralized</span>
-                  </div>
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Audit:</span>
-                    <span class="bridge-card__parameters-value">Company name</span>
-                  </div>
-                </div>
-                <div class="bridge-card__tags-block">
-                  <span class="bridge-card__tags-block-title">Supported networks:</span>
-                  <div class="card-tags">
-                    <a class="card-tag">Ethereum</a>
-                    <a class="card-tag">SOL</a>
-                    <a class="card-tag">TRX</a>
-                    <a class="card-tag">Binance Chain</a>
-                    <a class="card-tag">Binance Smart Chain</a>
-                    <a class="card-tag">ATOM</a>
-                    <a class="card-tag">+2</a>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn_primary" href="">Overview</a>
-            </div>
-
-            <div class="bridge-card bronze">
-              <div class="bridge-card__content">
-                <div class="bridge-card__top">
-                  <img class="bridge-card__logo" src="/images/binance-logo.png" alt="">
-                  <div class="bridge-card__reviews-block">
-                    <span class="bridge-card__reviews">25 reviews</span>
-                    <span class="bridge-card__rate salad">4</span>
-                  </div>
-                </div>
-                <h3 class="bridge-card__title">Binance Bridge</h3>
-                <p class="bridge-card__description">
-                  We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
-                </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
-                <div class="bridge-card__parameters">
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Category:</span>
-                    <span class="bridge-card__parameters-value">Centralized</span>
-                  </div>
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Audit:</span>
-                    <span class="bridge-card__parameters-value">Company name</span>
-                  </div>
-                </div>
-                <div class="bridge-card__tags-block">
-                  <span class="bridge-card__tags-block-title">Supported networks:</span>
-                  <div class="card-tags">
-                    <a class="card-tag">Ethereum</a>
-                    <a class="card-tag">SOL</a>
-                    <a class="card-tag">TRX</a>
-                    <a class="card-tag">Binance Chain</a>
-                    <a class="card-tag">Binance Smart Chain</a>
-                    <a class="card-tag">ATOM</a>
-                    <a class="card-tag">+2</a>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn_primary" href="">Overview</a>
-            </div>
-          </div>
-
-          <a class="bridges__banner" href="https://tonalliance.org/" target="_blank" data-aos="fade-up" data-aos-duration="400">
-            <img srcset="/images/banner-free-ton.png, /images/banner-free-ton@2x.png 2x" alt="">
-          </a>
-
-          <div class="bridges__cards">
-            <div class="bridge-card verified">
-              <div class="bridge-card__content">
-                <div class="bridge-card__top">
-                  <img class="bridge-card__logo" src="/images/binance-logo.png" alt="">
-                  <div class="bridge-card__reviews-block">
-                    <span class="bridge-card__reviews">25 reviews</span>
-                    <span class="bridge-card__rate yellow">3</span>
-                  </div>
-                </div>
-                <h3 class="bridge-card__title">
-                  <span class="bridge-card__title-counter">1</span>
-                  Binance Bridge
-                </h3>
-                <p class="bridge-card__description">
-                  We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
-                </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
-                <div class="bridge-card__parameters">
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Category:</span>
-                    <span class="bridge-card__parameters-value">Centralized</span>
-                  </div>
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Audit:</span>
-                    <span class="bridge-card__parameters-value">Company name</span>
-                  </div>
-                </div>
-                <div class="bridge-card__tags-block">
-                  <span class="bridge-card__tags-block-title">Supported networks:</span>
-                  <div class="card-tags">
-                    <a class="card-tag">Ethereum</a>
-                    <a class="card-tag">SOL</a>
-                    <a class="card-tag">TRX</a>
-                    <a class="card-tag">Binance Chain</a>
-                    <a class="card-tag">Binance Smart Chain</a>
-                    <a class="card-tag">ATOM</a>
-                    <a class="card-tag">+2</a>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn_primary" href="">Overview</a>
-            </div>
-
-            <div class="bridge-card">
-              <div class="bridge-card__content">
-                <div class="bridge-card__top">
-                  <img class="bridge-card__logo" src="/images/binance-logo.png" alt="">
-                  <div class="bridge-card__reviews-block">
-                    <span class="bridge-card__reviews">25 reviews</span>
-                    <span class="bridge-card__rate orange">2</span>
-                  </div>
-                </div>
-                <h3 class="bridge-card__title">
-                  <span class="bridge-card__title-counter">2</span>
-                  Binance Bridge
-                </h3>
-                <p class="bridge-card__description">
-                  We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
-                </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
-                <div class="bridge-card__parameters">
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Category:</span>
-                    <span class="bridge-card__parameters-value">Centralized</span>
-                  </div>
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Audit:</span>
-                    <span class="bridge-card__parameters-value">Company name</span>
-                  </div>
-                </div>
-                <div class="bridge-card__tags-block">
-                  <span class="bridge-card__tags-block-title">Supported networks:</span>
-                  <div class="card-tags">
-                    <a class="card-tag">Ethereum</a>
-                    <a class="card-tag">SOL</a>
-                    <a class="card-tag">TRX</a>
-                    <a class="card-tag">Binance Chain</a>
-                    <a class="card-tag">Binance Smart Chain</a>
-                    <a class="card-tag">ATOM</a>
-                    <a class="card-tag">+2</a>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn_primary" href="">Overview</a>
-            </div>
-
-            <div class="bridge-card">
-              <div class="bridge-card__content">
-                <div class="bridge-card__top">
-                  <img class="bridge-card__logo" src="/images/binance-logo.png" alt="">
-                  <div class="bridge-card__reviews-block">
-                    <span class="bridge-card__reviews">25 reviews</span>
-                    <span class="bridge-card__rate red">1</span>
-                  </div>
-                </div>
-                <h3 class="bridge-card__title">
-                  <span class="bridge-card__title-counter">3</span>
-                  Binance Bridge
-                </h3>
-                <p class="bridge-card__description">
-                  We combine the best of traditional and novel finance to offer you both solid security and favourable terms.
-                </p>
-                <span class="bridge-card__tvl">Total Value Locked (USD): $ 20.4 B</span>
-                <div class="bridge-card__parameters">
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Category:</span>
-                    <span class="bridge-card__parameters-value">Centralized</span>
-                  </div>
-                  <div class="bridge-card__parameters-item">
-                    <span class="bridge-card__parameters-name">Audit:</span>
-                    <span class="bridge-card__parameters-value">Company name</span>
-                  </div>
-                </div>
-                <div class="bridge-card__tags-block">
-                  <span class="bridge-card__tags-block-title">Supported networks:</span>
-                  <div class="card-tags">
-                    <a class="card-tag">Ethereum</a>
-                    <a class="card-tag">SOL</a>
-                    <a class="card-tag">TRX</a>
-                    <a class="card-tag">Binance Chain</a>
-                    <a class="card-tag">Binance Smart Chain</a>
-                    <a class="card-tag">ATOM</a>
-                    <a class="card-tag">+2</a>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn_primary" href="">Overview</a>
-            </div>
-          </div>
-
-          <div class="bridges__bottom-block">
-            <p class="bridges__pages-shown">
-              Shown <span>6</span> out of <span>48</span>
-            </p>
-            <div class="bridges__pagination-block">
-              <span class="bridges__pagination-block-caption">Page</span>
-              <input class="input-pages" type="text" value="1">
-              <span class="bridges__pagination-block-caption">of 20</span>
-              <div class="bridges__pagination-buttons">
-                <button class="pagination-button pagination-button_prev" disabled></button>
-                <button class="pagination-button pagination-button_next"></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer__container">
-        <div class="footer__menu-block">
-          <a href="/">
-            <img src="/images/bridge-logo-light.svg" alt="">
-          </a>          
-          <nav class="footer__menu main-menu">
-            <ul>
-              <li><a href="">Transfer</a></li>
-              <li><a href="">Hot&nbsp;news</a></li>
-              <li><a href="">Contact&nbsp;us</a></li>
-              <li><a href="">Legal</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__bottom">
-          <div class="footer__copyrights">
-            <span>© 2022 ABridge. All rights reserved</span>
-            <span><a href="">Privacy policy</a></span>
-            <span>Talk&nbsp;to&nbsp;us&nbsp;<a href="">bridger@mail.io</a></span>
-          </div>
-          <div class="footer__socials">
-            <a href="">
-              <img src="/images/instagram-icon.svg" alt="">
-            </a>
-            <a href="">
-              <img src="/images/dribble-icon.svg" alt="">
-            </a>
-            <a href="">
-              <img src="/images/twitter-icon.svg" alt="">
-            </a>
-            <a href="">
-              <img src="/images/youtube-icon.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>  
+  </div>  
 </body>
 
 </html>

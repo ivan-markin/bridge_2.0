@@ -8,12 +8,20 @@
 	position: absolute;
 	right: 28px;
 	bottom: -18px;
+	max-width: 420px;
 	transform: translateY(100%);
 	transition: all .3s;
 	opacity: 0;
 	z-index: -1;
 	visibility: hidden;
 	padding: 16px;
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+		width: 90vw;
+		gap: 8px 16px;	
+		padding: 8px;	
+	}
 
 	&.active {		
 		opacity: 1;
@@ -25,22 +33,60 @@
 		right: auto;
 		left: 0;
 
+		@media (max-width: 768px) {
+			left: 50%;
+			transform: translateY(100%) translateX(-50%);			
+		}
+
 		&.active {
 			bottom: -8px;
+
+			@media (max-width: 768px) {				
+				bottom: 0;
+			}
 		}
 	}
 
 	&_to {		
-		right: 0;		
+		right: 0;	
+		
+		@media (max-width: 768px) {
+			right: auto;
+			left: 50%;
+			transform: translateY(100%) translateX(-50%);			
+		}
 
 		&.active {
 			bottom: -8px;
+
+			@media (max-width: 768px) {
+				bottom: -8px;
+			}
 		}
 	}
 	
 	&_choose-token {						
+		@media (max-width: 768px) {			
+			left: 50%;
+			transform: translateY(100%) translateX(-50%);			
+		}
+		
 		&.active {
-			bottom: -28px;;
+			bottom: -28px;
+
+			@media (max-width: 768px) {			
+				bottom: 0;			
+			}
+		}
+	}
+
+	&_networks {
+		background-color: white;
+		
+		&.active {
+			bottom: -8px;
+			left: 0;
+			width: fit-content;
 		}
 	}
 
@@ -81,12 +127,20 @@
 			font-size: 20px;
 			font-weight: 700;
 			margin: 0 0 4px;
+
+			@media (max-width: 768px) {
+				font-size: 16px;
+			}
 		}
 
 		&-subtitle {
 			font-size: 18px;
 			color: #4C76AA;
 			text-transform: uppercase;
+
+			@media (max-width: 768px) {
+				font-size: 14px;
+			}
 		}
 	}
 }

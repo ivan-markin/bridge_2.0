@@ -1,0 +1,12 @@
+.page-title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.08vw;
+	font-weight: 600;
+	color: var(--font-dark);
+	margin: 0 0 1.56vw 0;
+
+	@media (max-width: 768px) {
+		font-size: 24px;
+		margin: 0 0 25px 0;
+	}
+}

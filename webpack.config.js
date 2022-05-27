@@ -113,13 +113,7 @@ module.exports = {
   },
   plugins: [
     htmlWebpackPreconfigured("index"),
-    htmlWebpackPreconfigured("confirm"),
-    htmlWebpackPreconfigured("congratulations"),
-    htmlWebpackPreconfigured("page-instructions"),
-    htmlWebpackPreconfigured("page-reviews"),
-    htmlWebpackPreconfigured("page"),
-    htmlWebpackPreconfigured("bridge-page"),
-    htmlWebpackPreconfigured("not-found"),
+    htmlWebpackPreconfigured("rankings"),
     new MiniCssExtractPlugin({
       filename: "styles.css",
     }),

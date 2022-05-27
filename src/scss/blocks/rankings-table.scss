@@ -1,0 +1,56 @@
+.rankings-table {
+	width: 100%;
+
+	td {
+		font-size: .94vw;
+		height: 2.4vw;
+		border-bottom: 1px solid rgba(187, 197, 211, 0.32);
+
+		@media (max-width: 768px) {
+			height: 46px;
+			font-size: 10px;
+			font-weight: 700;
+		}
+	}
+
+	th {
+		font-size: .94vw;
+		font-weight: 700;
+		text-align: left;
+		color: #9599AD;
+		padding-bottom: .73vw;
+
+		@media (max-width: 768px) {			
+			font-size: 12px;
+			padding-bottom: 14px;			
+		}
+	}
+
+	tr {
+		td:first-of-type,
+		th:first-of-type {
+			width: 9.27vw;
+
+			@media (max-width: 768px) {
+				width: 20vw;
+			}
+		}
+
+		td:last-of-type,
+		th:last-of-type {
+			text-align: right;			
+		}
+
+		th:last-of-type {
+			padding-right: 2.9vw;
+
+			@media (max-width: 768px) {
+				padding-right: 0;
+			}
+		}
+	}
+
+	tr:last-of-type td {
+		border: none;
+	}
+}

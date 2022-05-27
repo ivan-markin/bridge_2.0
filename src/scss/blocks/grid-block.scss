@@ -1,0 +1,9 @@
+.grid-block {
+	display: grid;
+	margin-bottom: 3.75vw;
+
+	&_2-cols {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.67vw;
+	}
+}
