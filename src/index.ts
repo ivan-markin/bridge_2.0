@@ -21,28 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeMenuButton = document.querySelector('.mobile-menu__close-btn');
     const supportedLogosCnt = document.querySelectorAll('.rankings__table-item-logos');
 
-    var options = {
-          series: [44, 55, 41, 17, 15],
-          chart: {
-          type: 'donut',
-          width: 700
-        },
-        responsive: [{
-          breakpoint: 1920,
-          options: {
-            chart: {
-              width: 350
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        },            
-        ]
-    };
+    // var options = {
+    //       series: [44, 55, 41, 17, 15],
+    //       chart: {
+    //       type: 'donut',
+    //       width: 700
+    //     },
+    //     responsive: [{
+    //       breakpoint: 1920,
+    //       options: {
+    //         chart: {
+    //           width: 350
+    //         },
+    //         legend: {
+    //           position: 'bottom'
+    //         }
+    //       }
+    //     },            
+    //     ]
+    // };
 
-    var chart = new ApexCharts(document.querySelector("#donutChart"), options);
-    chart.render();
+    // var chart = new ApexCharts(document.querySelector("#donutChart"), options);
+    // chart.render();
     
     function chooseTokenBtnHandler(event) {        
         event.preventDefault();
