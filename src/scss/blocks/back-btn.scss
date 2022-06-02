@@ -1,0 +1,23 @@
+.back-btn {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--primary-blue);
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		width: 5px;
+		height: 8px;
+		background: url('../../images/back-icon.svg') no-repeat center;
+		background-size: contain;
+		margin-right: 8px;
+	}
+
+	&_short {
+		padding: 10px 20px 10px 0;
+	}
+}

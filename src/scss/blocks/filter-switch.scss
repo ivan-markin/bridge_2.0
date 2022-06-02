@@ -11,10 +11,9 @@
 		border-radius: 18px;
 	}
 
-	&_all {
-		@media (max-width: 1024px) {
-			display: none;
-		}
+	&_blue {
+		box-shadow: none;
+		background-color: #F4F6FB;
 	}
 
 	&__item {

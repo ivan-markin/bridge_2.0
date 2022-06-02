@@ -44,6 +44,128 @@
     <button class="mobile-menu__close-btn"></button>  
   </div>
   <!--  -->
+
+  <!-- Filters panel -->
+  <div class="filters-mobile-panel">
+    <div class="filters-mobile-panel__header">
+      <button class="filters-mobile-panel__back-btn back-btn">Back</button>
+      <h1 class="filters-mobile-panel__title page-title">Filters</h1>
+      <button class="filters-mobile-panel__reset-btn">Reset</button>
+    </div>
+    <div class="filters-mobile-panel__content">
+      <div class="select select_outlined active">
+        <div class="select__button">
+          Select a network
+        </div>
+        <div class="select__dropdown">
+          <a class="select__item select__item_active" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/eth.svg" alt="">
+            </span>
+            <span class="select__item-name">Etherium</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/bnb.svg" alt="">
+            </span>
+            <span class="select__item-name">Binance Smart Chain</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/polygon.svg" alt="">
+            </span>
+            <span class="select__item-name">Polygon</span>
+          </a>
+        </div>
+      </div>
+      <div class="filters-mobile-panel__input-block">
+        <span class="input-label">Type of the bridge</span>
+        <div class="filter-switch filter-switch_blue">
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile" checked>
+            <span class="filter-switch__button">All</span>
+          </label>
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile">
+            <span class="filter-switch__button">DEX Bridges</span>
+          </label>
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile">
+            <span class="filter-switch__button">Wrapped</span>
+          </label>
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile">
+            <span class="filter-switch__button">NFT</span>
+          </label>
+        </div>
+      </div>
+      <div class="filters-mobile-panel__input-block">
+        <span class="input-label">Bridges</span>
+        <div class="select select_outlined">
+          <div class="select__button">
+            All
+          </div>
+          <div class="select__dropdown">
+            <a class="select__item select__item_active" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/eth.svg" alt="">
+              </span>
+              <span class="select__item-name">Etherium</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/bnb.svg" alt="">
+              </span>
+              <span class="select__item-name">Binance Smart Chain</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/polygon.svg" alt="">
+              </span>
+              <span class="select__item-name">Polygon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="filters-mobile-panel__input-block">
+        <span class="input-label">Time</span>
+        <div class="select select_outlined">
+          <div class="select__button select-date">
+            Last 7 days
+          </div>          
+        </div>
+      </div>
+    </div>    
+  </div>
+  <!--  -->
+
+  <!-- Date picker popup -->
+  <div class="date-picker-popup popup-bottom">
+    <div class="popup-bottom__cnt">
+      <div class="date-picker-popup__header">
+        <button class="date-picker-popup__back-btn popup-bottom__back-btn back-btn back-btn_short"></button>
+        <h1 class="date-picker-popup__title page-title">Select a range</h1>
+        <button class="date-picker-popup__reset-btn">Reset</button>
+      </div>
+      <div class="date-picker-popup__content">
+        <p class="date-picker-popup__subtitle">Choose a range within 3 months</p>
+        <div class="date-picker-popup__inputs">
+          <div class="date-picker-popup__input-cnt">
+            <span class="input-label">Start date</span>
+            <input class="date-input" type="date" value="2022-06-01">
+          </div>
+          <span class="date-picker-popup__middle-text">to the</span>
+          <div class="date-picker-popup__input-cnt">
+            <span class="input-label">End date</span>
+            <input class="date-input" type="date" value="2022-06-01">
+          </div>
+        </div>
+        <button class="btn btn_blue">Continue</button>
+      </div>
+    </div> 
+    <div class="popup-bottom__bg"></div>   
+  </div>
+  <!--  -->
   
   <div class="container">
     <header class="header header_inner">
@@ -124,6 +246,7 @@
             <div class="overview__title-container">
               <h2 class="overview__title secondary-title">Overview</h2>
               <span class="overview__total">90 Bridges total</span>
+              <button class="overview__filter-button filter-button"></button>
             </div> 
             <div class="overview__last-update">
               <span class="overview__last-update-title">Last update:</span>
@@ -131,11 +254,30 @@
             </div>           
           </div>
           <div class="overview__filters-panel">
-            <div class="overview__filters-panel-item overview__filters-panel-item_no-stretch select">
+            <div class="overview__filters-panel-item overview__filters-panel-item_no-stretch select active">
               <div class="select__button">
                 Select a network
               </div>
-              <div class="select__dropdown"></div>
+              <div class="select__dropdown">
+                <a class="select__item select__item_active" href="">
+                  <span class="select__item-logo">
+                    <img src="./images/currencies-logos/eth.svg" alt="">
+                  </span>
+                  <span class="select__item-name">Etherium</span>
+                </a>
+                <a class="select__item" href="">
+                  <span class="select__item-logo">
+                    <img src="./images/currencies-logos/bnb.svg" alt="">
+                  </span>
+                  <span class="select__item-name">Binance Smart Chain</span>
+                </a>
+                <a class="select__item" href="">
+                  <span class="select__item-logo">
+                    <img src="./images/currencies-logos/polygon.svg" alt="">
+                  </span>
+                  <span class="select__item-name">Polygon</span>
+                </a>
+              </div>
             </div>
             <div class="overview__filters-panel-item overview__filters-panel-item_no-stretch filter-switch-block">
               <div class="filter-switch">
@@ -189,7 +331,16 @@
               <div class="widget-s__content">                
                 <h3 class="widget-s__title">
                   Change in TVL
-                  <button class="tooltip-btn tooltip-btn_m">?</button>
+                  <div class="tooltip">
+                    <button class="tooltip-btn tooltip-btn_m">?</button>
+                    <div class="tooltip__message-block">
+                      <span class="tooltip__title">Header</span>
+                      <span class="tooltip__message">
+                        A pure text tooltip of size L and blabla blabla blabla blabla blablablab blabla blabla blabla blabla blabla blabla
+                        blabla blabla blabla blabla blabla blabla blabla blabla blabla
+                      </span>
+                    </div>
+                  </div>                  
                 </h3>                                  
                 <div class="widget__value-block">
                   <span class="widget-s__value widget__value">-23,4%</span>

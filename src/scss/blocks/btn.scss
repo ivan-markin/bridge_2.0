@@ -9,6 +9,15 @@
   white-space: nowrap;
   cursor: pointer;
   
+  &_blue {
+    height: 56px;
+    border-radius: 12px;
+    background-color: var(--primary-blue);
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+  }
+
   &_primary {
     height: 4.16vw;
     border-radius: 8px;

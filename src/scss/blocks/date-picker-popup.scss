@@ -1,0 +1,51 @@
+.date-picker-popup {	
+	
+	&__title {
+		margin: 0;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		font-weight: 700;
+		color: #959CA5;
+		margin: 0 0 27px;
+	}
+	
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	&__reset-btn {
+		font-style: 14px;
+		font-weight: 700;
+		color: #142438;
+		opacity: .45;
+		border: none;
+		background: none;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	&__middle-text {
+		font-size: 14px;
+		font-weight: 700;
+		white-space: nowrap;
+		margin: 0 6px 14px 6px;
+	}
+
+	&__input-cnt {
+		.input-label {
+			margin-bottom: 8px;
+		}
+	}
+
+	&__inputs {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 103px;
+	}
+}

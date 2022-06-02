@@ -19,30 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const networksListInputs = document.querySelectorAll('.networks-list-input') as NodeListOf<HTMLInputElement>;
     const menuButton = document.querySelector('.header__menu-button');    
     const closeMenuButton = document.querySelector('.mobile-menu__close-btn');
-    const supportedLogosCnt = document.querySelectorAll('.rankings__table-item-logos');
-
-    // var options = {
-    //       series: [44, 55, 41, 17, 15],
-    //       chart: {
-    //       type: 'donut',
-    //       width: 700
-    //     },
-    //     responsive: [{
-    //       breakpoint: 1920,
-    //       options: {
-    //         chart: {
-    //           width: 350
-    //         },
-    //         legend: {
-    //           position: 'bottom'
-    //         }
-    //       }
-    //     },            
-    //     ]
-    // };
-
-    // var chart = new ApexCharts(document.querySelector("#donutChart"), options);
-    // chart.render();
+    const supportedLogosCnt = document.querySelectorAll('.rankings__table-item-logos');    
+    const filtersBtn = document.querySelector('.overview__filter-button');
+    const filtersCloseBtn = document.querySelector('.filters-mobile-panel__back-btn');
+    const selectDateInput = document.querySelector('.select-date');
+    const popupBackBtn = document.querySelector('.popup-bottom__back-btn');
+    const popupBottomBg = document.querySelector('.popup-bottom__bg');
+    
+    function closeBottomPopup(evt) {
+        evt.target.closest('.popup-bottom').classList.remove('active');
+        document.body.classList.remove('fixed');
+    }
+    
+    function filtersMobileHandler() {
+        const filtersPanel = document.querySelector('.filters-mobile-panel');
+        filtersPanel?.classList.toggle('active');
+        document.body.classList.toggle('fixed');
+    }
     
     function chooseTokenBtnHandler(event) {        
         event.preventDefault();
@@ -86,4 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
     //     input.addEventListener('input', showNetworksPopup);
     //     input.addEventListener('blur', collapseNetworksPopup);
     // })
+
+    filtersBtn?.addEventListener('click', filtersMobileHandler);
+    filtersCloseBtn?.addEventListener('click', filtersMobileHandler);
+
+    selectDateInput?.addEventListener('click', () => {
+        const dateInputPopup = document.querySelector('.date-picker-popup');
+        dateInputPopup?.classList.add('active');
+        document.body.classList.add('fixed');
+    })
+
+    popupBackBtn?.addEventListener('click', closeBottomPopup);
+    popupBottomBg?.addEventListener('click', closeBottomPopup);
 })
