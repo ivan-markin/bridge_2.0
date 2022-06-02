@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupBottomBg = document.querySelector('.popup-bottom__bg');
     
     function closeBottomPopup(evt) {
-        evt.target.closest('.popup-bottom').classList.remove('active');
-        document.body.classList.remove('fixed');
+        evt.target.closest('.popup-bottom').classList.remove('active');        
     }
     
     function filtersMobileHandler() {

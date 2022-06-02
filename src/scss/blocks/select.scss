@@ -86,8 +86,8 @@
 		box-shadow: none;
 	}
 
-	&.active &__button {
-		border-radius: .83vw .83vw 0 0;
+	&.active &__button {		
+		border-radius: .83vw .83vw 0 0;		
 
 		@media (max-width: 768px) {
 			border-radius: 18px 18px 0 0;
@@ -133,7 +133,7 @@
 	&.active &__dropdown {
 		visibility: visible;
 		z-index: 4;
-		opacity: 1;
+		opacity: 1;		
 	}
 
 	&__item {
