@@ -1,0 +1,41 @@
+.switch {
+	
+	&__input {
+		visibility: hidden;
+		z-index: -1;
+		width: 1px;
+		height: 1px;
+		position: absolute;
+	}
+
+	&__block {
+		display: flex;
+		width: 2.29vw;
+		height: 1.25vw;
+		border-radius: .625vw;
+		background-color: var(--primary-blue);				
+		position: relative;
+		cursor: pointer;
+		padding: 2px;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 2px;
+			top: 2px;
+			width: calc(1.25vw - 4px);
+			height: calc(1.25vw - 4px);
+			border-radius: 50%;
+			background-color: #fff;
+			transition: all .2s;
+		}
+	}
+
+	&__input:checked + &__block {
+		&::after {
+			right: 2px;			
+			left: auto;
+		}
+	}
+}

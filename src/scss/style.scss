@@ -49,6 +49,18 @@
 @import './blocks/popup-bottom.scss';
 @import './blocks/date-picker-popup.scss';
 @import './blocks/date-input.scss';
+@import './blocks/transfers.scss';
+@import './blocks/reset-button.scss';
+@import './blocks/replace-button.scss';
+@import './blocks/transfers-form.scss';
+@import './blocks/choose-token-button.scss';
+@import './blocks/max-button.scss';
+@import './blocks/filter-radio.scss';
+@import './blocks/info-button.scss';
+@import './blocks/switch.scss';
+@import './blocks/popup.scss';
+@import './blocks/choose-token-popup.scss';
+@import './blocks/tokens-list-item.scss';
 
 * {
   box-sizing: border-box;
@@ -65,6 +77,11 @@ body {
   @media (max-width: 420px) {
     overflow-x: hidden;
   }
+}
+
+fieldset {
+  border: none;
+  padding: 0;
 }
 
 .fixed {

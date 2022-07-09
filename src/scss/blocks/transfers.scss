@@ -1,0 +1,47 @@
+.transfers {
+	width: 65vw;
+	margin: 0 auto 10.8vw auto;
+
+	&__title {
+		margin-bottom: .625vw;
+	}
+
+	&__subtitle {
+		font-size: .9375vw;
+		font-weight: 800;
+		line-height: 2.33;
+		margin-bottom: .9375vw;
+	}
+
+	&__form-head {
+		display: flex;
+		align-items: center;
+		padding: 0 2.4vw .73vw 2.4vw;
+
+		&-title {
+			font-weight: 700;
+			color: white;
+			font-size: 1.25vw;
+		}
+
+		&-from {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 20.83vw;			
+			margin-right: .26vw;
+		}
+
+		&-to {
+			display: flex;
+			align-items: center;
+			padding-left: .625vw;
+		}
+	}
+
+	&__content {		
+		border-radius: 2.08vw;
+		background-color: var(--primary-blue);
+		padding: 1.04vw;
+	}
+}

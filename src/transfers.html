@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bridge</title>
+</head>
+
+<body>
+  
+  <!-- Mobile menu -->
+  <div class="mobile-menu">    
+    <a class="mobile-menu__logo" href="">
+      <img src="./images/debridges-logo_white.svg" alt="">
+    </a>
+    <input class="mobile-menu__search" type="text" placeholder="Search">
+    <button class="mobile-menu__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+    <nav class="mobile-menu__menu main-menu">
+      <ul>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Finding a bridge</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Analytics</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">Networks</a>
+        </li>
+        <li class="main-menu__item main-menu__item_marked">
+          <a class="main-menu__item-link" href="">Cashback</a>
+        </li>
+        <li class="main-menu__item main-menu__item_disabled main-menu__item_soon">
+          <a class="main-menu__item-link">Reports</a>
+        </li>       
+        <li class="main-menu__item">
+          <a class="main-menu__item-link" href="">More</a>
+        </li>
+      </ul>
+    </nav>  
+    <button class="mobile-menu__close-btn"></button>  
+  </div>
+  <!--  -->
+
+  <!-- Filters panel -->
+  <div class="filters-mobile-panel">
+    <div class="filters-mobile-panel__header">
+      <button class="filters-mobile-panel__back-btn back-btn">Back</button>
+      <h1 class="filters-mobile-panel__title page-title">Filters</h1>
+      <button class="filters-mobile-panel__reset-btn">Reset</button>
+    </div>
+    <div class="filters-mobile-panel__content">
+      <div class="select select_outlined active">
+        <div class="select__button">
+          Select a network
+        </div>
+        <div class="select__dropdown">
+          <a class="select__item select__item_active" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/eth.svg" alt="">
+            </span>
+            <span class="select__item-name">Etherium</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/bnb.svg" alt="">
+            </span>
+            <span class="select__item-name">Binance Smart Chain</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/polygon.svg" alt="">
+            </span>
+            <span class="select__item-name">Polygon</span>
+          </a>
+        </div>
+      </div>
+      <div class="filters-mobile-panel__input-block">
+        <span class="input-label">Type of the bridge</span>
+        <div class="filter-switch filter-switch_blue">
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile" checked>
+            <span class="filter-switch__button">All</span>
+          </label>
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile">
+            <span class="filter-switch__button">DEX Bridges</span>
+          </label>
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile">
+            <span class="filter-switch__button">Wrapped</span>
+          </label>
+          <label class="filter-switch__item">
+            <input class="filter-switch__input" type="radio" name="filterMobile">
+            <span class="filter-switch__button">NFT</span>
+          </label>
+        </div>
+      </div>
+      <div class="filters-mobile-panel__input-block">
+        <span class="input-label">Bridges</span>
+        <div class="select select_outlined">
+          <div class="select__button">
+            All
+          </div>
+          <div class="select__dropdown">
+            <a class="select__item select__item_active" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/eth.svg" alt="">
+              </span>
+              <span class="select__item-name">Etherium</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/bnb.svg" alt="">
+              </span>
+              <span class="select__item-name">Binance Smart Chain</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/polygon.svg" alt="">
+              </span>
+              <span class="select__item-name">Polygon</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="filters-mobile-panel__input-block">
+        <span class="input-label">Time</span>
+        <div class="select select_outlined">
+          <div class="select__button select-date">
+            Last 7 days
+          </div>          
+        </div>
+      </div>
+    </div>    
+  </div>
+  <!--  -->
+
+  <!-- Date picker popup -->
+  <div class="date-picker-popup popup-bottom">
+    <div class="popup-bottom__cnt">
+      <div class="date-picker-popup__header">
+        <button class="date-picker-popup__back-btn popup-bottom__back-btn back-btn back-btn_short"></button>
+        <h1 class="date-picker-popup__title page-title">Select a range</h1>
+        <button class="date-picker-popup__reset-btn">Reset</button>
+      </div>
+      <div class="date-picker-popup__content">
+        <p class="date-picker-popup__subtitle">Choose a range within 3 months</p>
+        <div class="date-picker-popup__inputs">
+          <div class="date-picker-popup__input-cnt">
+            <span class="input-label">Start date</span>
+            <input class="date-input" type="date" value="2022-06-01">
+          </div>
+          <span class="date-picker-popup__middle-text">to the</span>
+          <div class="date-picker-popup__input-cnt">
+            <span class="input-label">End date</span>
+            <input class="date-input" type="date" value="2022-06-01">
+          </div>
+        </div>
+        <button class="btn btn_blue">Continue</button>
+      </div>
+    </div> 
+    <div class="popup-bottom__bg"></div>   
+  </div>
+  <!--  -->
+
+  <!-- Choose token popup -->
+  <div class="choose-token-popup popup" id="chooseTokenPopup">
+    <div class="popup__container">
+      <a class="popup__close" href="#"></a>
+      <h1 class="popup__title">Select a Token</h1>
+      <input class="choose-token-popup__search search-input search-input_outlined" type="text">
+      <span class="popup__input-label">Select a network</span>
+      <div class="choose-token-popup__select select select_outlined select_small">
+        <div class="choose-token-popup__button select__button">
+          Select a network
+        </div>
+        <div class="select__dropdown">
+          <a class="select__item select__item_active" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/eth.svg" alt="">
+            </span>
+            <span class="select__item-name">Etherium</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/bnb.svg" alt="">
+            </span>
+            <span class="select__item-name">Binance Smart Chain</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/polygon.svg" alt="">
+            </span>
+            <span class="select__item-name">Polygon</span>
+          </a>
+        </div>
+      </div>
+      <span class="popup__input-label">Choose a token</span>
+      <div class="choose-token-popup__tokens-list">
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>
+        <div class="tokens-list-item">
+          <div class="tokens-list-item__left">
+            <div class="tokens-list-item__logo">
+              <img src="./images/tokens-list-logos/omg.png" alt="">
+            </div>
+            <p class="tokens-list-item__title">
+              <span class="tokens-list-item__name">OMG</span>
+              <span class="tokens-list-item__network">
+                <img src="./images/tokens-list-logos/network.png" alt="">
+                Ethereum Network
+              </span>
+            </p>
+          </div>
+          <div class="tokens-list-item__right">
+            <span class="tokens-list-item__value">4.8729</span>
+            <span class="tokens-list-item__token">Ether</span>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  
+  <div class="container">
+    <header class="header header_inner">
+      <a href="">
+        <img class="header__logo" src="./images/debridges-logo_white.svg" alt="">
+      </a>
+      <nav class="header__menu main-menu">
+        <ul>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="">Finding a bridge</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="">Analytics</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="">Networks</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="">Cashback</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link">Reports</a>
+          </li>
+          <li class="main-menu__item main-menu__item_select">
+            <a class="main-menu__item-link" href="">Join us</a>
+            <ul class="main-menu__dropdown">
+              <li class="main-menu__dropdown-item">
+                <a href="">
+                  <img src="./images/telegram-icon.svg" alt="">
+                  Telegram
+                </a>
+              </li>
+              <li class="main-menu__dropdown-item">
+                <a href="">
+                  <img src="./images/twitter-icon.svg" alt="">
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="">More</a>
+          </li>
+        </ul>
+      </nav>
+      <input class="header__search" type="text" placeholder="Search">
+      <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+      <button class="header__menu-button"></button>
+    </header>    
+
+    <main class="main">
+    
+      <section class="page-header">                
+        <h1 class="page-title">Transfers</h1>                     
+      </section>
+
+      <section class="page-container">
+        <div class="transfers">
+          <div class="transfers__header">
+            <h2 class="transfers__title secondary-title">Set Up Your Transfer</h2>
+            <p class="transfers__subtitle">9 Bridges, 15 Chains and all the DEXs</p>
+          </div>
+          <div class="transfers__content">
+            <div class="transfers__form-head">
+              <div class="transfers__form-head-from">
+                <span class="transfers__form-head-title">From</span>
+                <button class="replace-button"></button>
+              </div>
+              <div class="transfers__form-head-to">
+                <span class="transfers__form-head-title">To</span>
+              </div>
+              <button class="reset-button">Reset</button>
+            </div>
+            <form class="transfers-form">
+              <fieldset class="transfers-form__main">
+                <div class="transfers-form__main-inputs">
+                  <div class="transfers-form__main-input transfers-form__main-input_from">
+                    <input type="text" placeholder="Enter amount">                    
+                    <div class="transfers-form__main-input-btn">
+                      <button class="max-button">Max</button>
+                      <a class="choose-token-button" href="#chooseTokenPopup">
+                        <div class="choose-token-button__icons">
+                          <img class="choose-token-button__icon choose-token-button__icon_token" src="./images/tokens-logos/token.png" alt="">
+                          <img class="choose-token-button__icon choose-token-button__icon_network" src="./images/tokens-logos/network.png" alt="">
+                        </div>
+                        <span class="choose-token-button__value">USDT</span>
+                      </a>
+                    </div>
+                    <span class="transfers-form__equivalent">$0</span>
+                  </div>
+                  <div class="transfers-form__main-input transfers-form__main-input_to">
+                    <input type="text" placeholder="Enter amount">                    
+                    <div class="transfers-form__main-input-btn">                      
+                      <a class="choose-token-button" href="#chooseTokenPopup">
+                        <div class="choose-token-button__icons">
+                          <img class="choose-token-button__icon choose-token-button__icon_token" src="./images/tokens-logos/token.png" alt="">
+                          <img class="choose-token-button__icon choose-token-button__icon_network" src="./images/tokens-logos/network.png" alt="">
+                        </div>
+                        <span class="choose-token-button__value">USDT</span>
+                      </a>
+                    </div>
+                    <span class="transfers-form__equivalent">$0</span>
+                  </div>
+                </div>
+                <button class="transfers-form__submit btn btn_primary" type="submit">Connect a wallet</button>
+              </fieldset>     
+              <fieldset class="transfers-form__filters">
+                <div class="transfers-form__filters-item">
+                  <div class="transfers-form__filters-title-block">
+                    <span class="transfers-form__filters-title">Slippage tolerance</span>
+                    <button class="info-button">?</button>
+                  </div>
+                  <div class="transfers-form__filters-container">
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="slippageFilter" checked>
+                      <span class="filter-radio__button">0.1%</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="slippageFilter">
+                      <span class="filter-radio__button">0.5%</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="slippageFilter">
+                      <span class="filter-radio__button">1%</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="slippageFilter">
+                      <span class="filter-radio__button">3%</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="transfers-form__filters-item">
+                  <div class="transfers-form__filters-title-block">
+                    <span class="transfers-form__filters-title">Route priority</span>
+                    <button class="info-button">?</button>
+                  </div>
+                  <div class="transfers-form__filters-container">
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="routeFilter" checked>
+                      <span class="filter-radio__button">Smart</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="routeFilter">
+                      <span class="filter-radio__button">Fastest</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="routeFilter">
+                      <span class="filter-radio__button">Safest</span>
+                    </label>                    
+                  </div>
+                </div>
+                <div class="transfers-form__filters-item">
+                  <div class="transfers-form__filters-title-block">
+                    <span class="transfers-form__filters-title">Activate Infinite Approval</span>
+                    <button class="info-button">?</button>
+                  </div>
+                  <div class="transfers-form__filters-container">
+                    <span class="transfers-form__switch-title">Infinite Approval</span>
+                    <label class="switch">
+                      <input class="switch__input" type="checkbox">
+                      <span class="switch__block"></span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>         
+            </form>
+          </div>
+        </div>                
+      </section>    
+    </main>
+    <footer class="footer">
+      <div class="footer__left">
+        <span class="footer__copyrights">© 2021 DeBridges. All rights reserved</span>
+        <span class="footer__socials">
+          <a class="footer__socials-item" href="">
+            <img src="./images/telegram_footer-icon.svg" alt="">
+            Telegram
+          </a>
+          <a class="footer__socials-item" href="">
+            <img src="./images/twitter_footer-icon.svg" alt="">
+            Twitter
+          </a>
+        </span>
+      </div>
+      <div class="footer__right">
+        <a class="footer__privacy-policy" href="">Privacy policy</a>
+        <span class="footer__email">Talk to us <a href="">bridger@mail.io</a></span>
+      </div>
+    </footer>
+  </div>  
+</body>
+
+</html>

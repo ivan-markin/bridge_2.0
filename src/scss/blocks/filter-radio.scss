@@ -1,0 +1,30 @@
+.filter-radio {
+
+	&__input {
+		visibility: hidden;
+		z-index: -1;
+		width: 1px;
+		height: 1px;
+		position: absolute;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 2.7vw;
+		border-radius: .9375vw;
+		background-color: #F4F6FB;
+		color: var(--font-dark);
+		font-size: .78vw;
+		font-weight: 600;
+		transition: all .2s;
+		cursor: pointer;
+		padding: 0 1.04vw;
+	}
+
+	&__input:checked + span {
+		background-color: var(--primary-blue);
+		color: white;
+	}
+}

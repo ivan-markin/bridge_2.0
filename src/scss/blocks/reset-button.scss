@@ -1,0 +1,18 @@
+.reset-button {	
+	font-size: .73vw;
+	font-weight: 700;
+	color: white;
+	height: 1.25vw;	
+	border: none;
+	background: transparent url('../../images/reset-button-icon.svg') no-repeat left center;
+	background-size: contain;
+	opacity: .45;
+	cursor: pointer;
+	transition: all .2s;
+	padding-left: 1.5625vw;
+	margin-left: auto;
+
+	&:hover {
+		opacity: 1;
+	}
+}

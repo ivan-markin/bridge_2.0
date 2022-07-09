@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectDateInput = document.querySelector('.select-date');
     const popupBackBtn = document.querySelector('.popup-bottom__back-btn');
     const popupBottomBg = document.querySelector('.popup-bottom__bg');
+    const selectNetworkBtn = document.querySelector('.choose-token-popup__button');
     
     function closeBottomPopup(evt) {
         evt.target.closest('.popup-bottom').classList.remove('active');        
@@ -78,6 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
     //     input.addEventListener('input', showNetworksPopup);
     //     input.addEventListener('blur', collapseNetworksPopup);
     // })
+
+    if (selectNetworkBtn) {
+        selectNetworkBtn.addEventListener('click', () => {
+            selectNetworkBtn.parentElement?.classList.toggle('active');
+        })
+    }
 
     filtersBtn?.addEventListener('click', filtersMobileHandler);
     filtersCloseBtn?.addEventListener('click', filtersMobileHandler);

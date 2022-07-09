@@ -11,6 +11,15 @@
 	outline: none;
 	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.02);
 	padding: 0 1.25vw 0 2.45vw;	
+
+	&_outlined {
+		background-size: .98vw;
+		border-radius: .78vw;
+		border: var(--primary-blue) 1px solid;
+		height: 2.6vw;		
+		font-size: .83vw;
+		box-shadow: none;
+	}
 	
 	@media (max-width: 768px) {
 		height: 52px;

@@ -114,6 +114,7 @@ module.exports = {
   plugins: [
     htmlWebpackPreconfigured("index"),
     htmlWebpackPreconfigured("rankings"),
+    htmlWebpackPreconfigured("transfers"),
     new MiniCssExtractPlugin({
       filename: "styles.css",
     }),

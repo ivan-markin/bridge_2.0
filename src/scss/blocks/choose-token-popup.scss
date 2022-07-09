@@ -1,0 +1,21 @@
+.choose-token-popup {	
+
+	&__search {
+		width: 100%;
+		margin-bottom: 1.67vw;
+	}
+
+	&__tokens-list {
+		height: 350px;
+		max-height: 18.2vh;
+		overflow-y: scroll;
+	}
+
+	&__select {
+		margin-bottom: 1.67vw;
+	}
+	
+	.popup__container {
+		width: 34.64vw;
+	}	
+}
