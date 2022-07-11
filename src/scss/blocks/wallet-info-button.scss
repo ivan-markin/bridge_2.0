@@ -1,0 +1,45 @@
+.wallet-info-button {
+	display: flex;	
+	border: 1px white solid;
+	background: none;
+	border-radius: .625vw;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	padding: .3125vw;
+
+	&__metamask {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.08vw;
+		height: 2.08vw;
+		border-radius: .42vw;
+		background-color: #fff;
+		margin-right: .3125vw;
+
+		img {
+			width: 1.35vw;
+		}
+	}
+
+	&__wallet-num {
+		display: flex;
+		align-items: center;
+		background: rgba(214, 230, 251, 0.25);
+		height: 2.08vw;
+		font-size: .83vw;
+		font-weight: 500;
+		color: white;
+		border-radius: .42vw;
+		padding: 0 .52vw;
+
+		span {
+			margin-right: .625vw;
+		}
+
+		img {
+			width: 1.25vw;
+		}
+	}
+}

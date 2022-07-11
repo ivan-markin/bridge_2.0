@@ -385,6 +385,30 @@
     </div>
   </div>
   <!--  -->
+
+  <!-- Choose token popup -->
+  <div class="choose-wallet-popup popup" id="chooseWalletPopup">
+    <div class="popup__container">
+      <a class="popup__close" href="#"></a>
+      <h1 class="choose-wallet-popup__title popup__title">Connect to a Wallet</h1>
+      <p class="choose-wallet-popup__description">
+        By connecting a wallet, you agree to <a class="text-link" href="">Terms&nbsp;of&nbsp;Service</a> and acknowledge that you have read and understand the <a class="text-link" href="">disclaimer</a>.
+      </p>     
+      <button class="choose-wallet-popup__wallet-item">
+        <span>Metamask</span>
+        <img src="./images/metamask-logo.png" alt="">
+      </button>
+      <button class="choose-wallet-popup__wallet-item">
+        <span>BlockWallet</span>
+        <img src="./images/block-wallet-logo.png" alt="">
+      </button>
+      <button class="choose-wallet-popup__wallet-item">
+        <span>imToken</span>
+        <img src="./images/im-token-logo.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!--  -->
   
   <div class="container">
     <header class="header header_inner">
@@ -431,7 +455,16 @@
         </ul>
       </nav>
       <input class="header__search" type="text" placeholder="Search">
-      <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button>
+      <!-- <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button> -->
+      <a class="wallet-info-button" href="#chooseWalletPopup">
+        <div class="wallet-info-button__metamask">
+          <img src="./images/metamask-logo.png" alt="">
+        </div>
+        <div class="wallet-info-button__wallet-num">
+          <span>0x07A0...B57F</span>
+          <img src="./images/wallet-icon.svg" alt="">
+        </div>
+      </a>
       <button class="header__menu-button"></button>
     </header>    
 
@@ -549,7 +582,84 @@
                     </label>
                   </div>
                 </div>
-              </fieldset>         
+              </fieldset> 
+              <fieldset class="transfers-form__advanced-settings">
+                <div class="transfers-form__filters-title-block">
+                  <span class="transfers-form__filters-title">Bridges</span>                  
+                </div>
+                <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Polygon</span>
+                  </label>  
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Cbridge</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Avalanche</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Arbitrum</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Connext</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Hop</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Hyphen</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Miltichain</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
+                    <span class="filter-radio__button">Optimism</span>
+                  </label>
+                </div>
+                <div class="transfers-form__filters-title-block">
+                  <span class="transfers-form__filters-title">Exchanges</span>
+                </div>
+                <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Pancakeswap</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Spookyswap</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Spiritswap</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Viperswap</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Solarbeam</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Jswap</span>
+                  </label>
+                  <label class="filter-radio">
+                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
+                    <span class="filter-radio__button">Cronswap</span>
+                  </label>
+                </div>
+              </fieldset>
+              <button class="collapse-button" id="advancedSettingsBtn">Advanced settings</button>
             </form>
           </div>
         </div>                

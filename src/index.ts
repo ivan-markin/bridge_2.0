@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectDateInput = document.querySelector('.select-date');
     const popupBackBtn = document.querySelector('.popup-bottom__back-btn');
     const popupBottomBg = document.querySelector('.popup-bottom__bg');
-    const selectNetworkBtn = document.querySelector('.choose-token-popup__button');
+    const selectNetworkBtn = document.querySelector('.choose-token-popup__button');    
+    const advancedSettingsButton = document.getElementById('advancedSettingsBtn');
     
     function closeBottomPopup(evt) {
         evt.target.closest('.popup-bottom').classList.remove('active');        
@@ -65,6 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
         event.target.value = '';
     }
 
+    function collapseButtonHandler(evt) {
+        const advancedSettings = evt.target.parentElement.querySelector('.transfers-form__advanced-settings');
+        evt.preventDefault();
+        evt.target.classList.toggle('active');
+        advancedSettings.classList.toggle('active');
+    }
+
     // function openSupportedLogosPopup(event) {
     //     event.target.querySelector('.tooltip-popup').classList.add('active');
     // }
@@ -97,4 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     popupBackBtn?.addEventListener('click', closeBottomPopup);
     popupBottomBg?.addEventListener('click', closeBottomPopup);
+
+    advancedSettingsButton?.addEventListener('click', collapseButtonHandler);
 })

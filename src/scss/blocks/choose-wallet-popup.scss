@@ -1,0 +1,39 @@
+.choose-wallet-popup {		
+
+	&__title {
+		font-size: 1.25vw;
+	}
+	
+	&__wallet-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid #E7EAEF;
+		border-radius: .78vw;
+		height: 2.9vw;
+		width: 100%;
+		font-size: .73vw;
+		background: none;
+		cursor: pointer;
+		padding: 0 .83vw;
+
+		&:not(:last-of-type) {
+			margin-bottom: 1.25vw;
+		}
+
+		img {
+			height: 1.25vw;
+		}
+	}
+
+	&__description {
+		font-size: .73vw;
+		color: #87898E;
+		text-align: center;
+		margin: 0 0 1.67vw;
+	}
+
+	.popup__container {
+		width: 23.33vw;
+	}
+}
