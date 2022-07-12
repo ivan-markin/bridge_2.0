@@ -1,0 +1,39 @@
+.wallet-actions-popup {
+	
+	.popup__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 23.3vw;
+		padding-top: 3.85vw;
+		padding-bottom: 2.4vw;
+	}	
+
+	&__logo {
+		width: 6.25vw;
+		margin-bottom: 1.67vw;
+	}
+
+	&__title {
+		margin-bottom: .2vw;
+	}
+
+	&__copy-field {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.25vw;
+		
+		span {
+			font-size: .83vw;
+			font-weight: 500;
+			color: var(--primary-blue);
+			margin-right: .625vw;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: .83vw;		
+	}
+}

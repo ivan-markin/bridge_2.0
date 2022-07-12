@@ -386,7 +386,7 @@
   </div>
   <!--  -->
 
-  <!-- Choose token popup -->
+  <!-- Choose wallet popup -->
   <div class="choose-wallet-popup popup" id="chooseWalletPopup">
     <div class="popup__container">
       <a class="popup__close" href="#"></a>
@@ -406,6 +406,24 @@
         <span>imToken</span>
         <img src="./images/im-token-logo.png" alt="">
       </button>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- Wallet actions popup -->
+  <div class="wallet-actions-popup popup" id="walletActionsPopup">
+    <div class="popup__container">
+      <a class="popup__close" href="#"></a>
+      <img class="wallet-actions-popup__logo" src="./images/metamask-logo-large.png" alt="">
+      <h1 class="wallet-actions-popup__title popup__title">Metamask</h1>
+      <div class="wallet-actions-popup__copy-field">
+        <span>0x07A0...B57F</span>
+        <button class="copy-button"></button>
+      </div>
+      <div class="wallet-actions-popup__actions">
+        <button class="btn btn_middle btn_outlined-red">Change</button>
+        <button class="btn btn_middle btn_outlined-red">Disconnect</button>
+      </div>
     </div>
   </div>
   <!--  -->
@@ -456,7 +474,7 @@
       </nav>
       <input class="header__search" type="text" placeholder="Search">
       <!-- <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button> -->
-      <a class="wallet-info-button" href="#chooseWalletPopup">
+      <a class="wallet-info-button" href="#walletActionsPopup">
         <div class="wallet-info-button__metamask">
           <img src="./images/metamask-logo.png" alt="">
         </div>
