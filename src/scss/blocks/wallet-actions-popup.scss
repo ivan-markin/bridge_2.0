@@ -29,6 +29,26 @@
 			color: var(--primary-blue);
 			margin-right: .625vw;
 		}
+
+		img {
+			width: 1.25vw;
+			height: 1.25vw;
+		}
+	}
+
+	&__copied {
+		display: flex;
+		align-items: center;
+		font-size: .83vw;
+		font-weight: 500;
+		color: var(--primary-blue);
+		margin-bottom: 1.25vw;
+
+		img {
+			width: 1.04vw;
+			height: 1.04vw;
+			margin-left: .625vw;
+		}
 	}
 
 	&__actions {
