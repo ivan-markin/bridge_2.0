@@ -1,0 +1,23 @@
+.error-block {
+	display: flex;
+	align-items: center;
+	gap: .3125vw;
+	background: rgba(255, 0, 50, 0.45);
+	border: 1px solid #FF3A61;
+	border-radius: .625vw;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.12);
+	font-weight: 500;
+	font-size: .74vw;
+	color: var(--font-dark);
+	height: 2.08vw;
+	width: fit-content;
+	position: absolute;
+	right: 0;
+	top: 2.08vw;
+	padding: 0 .83vw;
+
+	img {
+		width: 1.04vw;
+		height: 1.04vw;
+	}
+}
