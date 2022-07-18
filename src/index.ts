@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupBackBtn = document.querySelector('.popup-bottom__back-btn');
     const popupBottomBg = document.querySelector('.popup-bottom__bg');
     const selectNetworkBtn = document.querySelector('.choose-token-popup__button');    
-    const advancedSettingsButton = document.getElementById('advancedSettingsBtn');
+    const advancedSettingsButton = document.getElementById('advancedSettingsBtn');    
     
     function closeBottomPopup(evt) {
         evt.target.closest('.popup-bottom').classList.remove('active');        
@@ -94,6 +94,21 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    
+    function routeLogosContainerHandler() {
+        const root = document.documentElement;
+        const routeLogos = document.querySelectorAll('.transfers-form__route-logo') as NodeListOf<HTMLImageElement>;
+        
+        if (!routeLogos) return;
+
+        routeLogos.forEach((logo, index) => {
+            logo.style.transform = `translateX(${index * 100}%)`; 
+            logo.style.left = `${index * -.625}vw`; 
+        })
+        
+        root.style.setProperty('--route-logos-width', routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw');
+    }        
+
     filtersBtn?.addEventListener('click', filtersMobileHandler);
     filtersCloseBtn?.addEventListener('click', filtersMobileHandler);
 
@@ -107,4 +122,5 @@ document.addEventListener('DOMContentLoaded', () => {
     popupBottomBg?.addEventListener('click', closeBottomPopup);
 
     advancedSettingsButton?.addEventListener('click', collapseButtonHandler);
+    routeLogosContainerHandler();
 })
