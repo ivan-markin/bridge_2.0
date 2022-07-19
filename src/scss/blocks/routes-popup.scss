@@ -1,0 +1,31 @@
+.routes-popup {
+	
+	&__head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2.08vw;
+	}
+
+	&__title {
+		font-size: 1.25vw;
+		margin: 0 .16vw 0 0;
+	}
+
+	&__counter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		width: 1.15vw;
+		height: 1.15vw;
+		border-radius: 50%;
+		background-color: var(--primary-blue);
+		font-size: .73vw;
+		margin-right: .83vw;
+	}
+
+	.popup__container {
+		width: 31.46vw;
+		min-width: 320px;
+	}
+}

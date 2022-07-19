@@ -445,23 +445,68 @@
   <div class="routes-popup popup side-popup active" id="routesPopup">
     <div class="popup__container">
       <a class="popup__close" href="#"></a>
-      <h1 class="choose-wallet-popup__title popup__title">Connect to a Wallet</h1>
-      <p class="choose-wallet-popup__description">
-        By connecting a wallet, you agree to <a class="text-link" href="">Terms&nbsp;of&nbsp;Service</a> and acknowledge
-        that you have read and understand the <a class="text-link" href="">disclaimer</a>.
-      </p>
-      <button class="choose-wallet-popup__wallet-item">
-        <span>Metamask</span>
-        <img src="./images/metamask-logo.png" alt="">
-      </button>
-      <button class="choose-wallet-popup__wallet-item">
-        <span>BlockWallet</span>
-        <img src="./images/block-wallet-logo.png" alt="">
-      </button>
-      <button class="choose-wallet-popup__wallet-item">
-        <span>imToken</span>
-        <img src="./images/im-token-logo.png" alt="">
-      </button>
+      <div class="routes-popup__head">
+        <h1 class="routes-popup__title popup__title">Routes</h1>
+        <span class="routes-popup__counter">5</span>
+        <div class="select select_outlined select_smallest">
+          <div class="select__button">
+            All routes
+          </div>
+          <div class="select__dropdown">
+            <a class="select__item select__item_active" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/eth.svg" alt="">
+              </span>
+              <span class="select__item-name">Etherium</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/bnb.svg" alt="">
+              </span>
+              <span class="select__item-name">Binance Smart Chain</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/polygon.svg" alt="">
+              </span>
+              <span class="select__item-name">Polygon</span>
+            </a>
+          </div>
+        </div>        
+      </div>  
+      <div class="routes-popup__wrap">
+        <div class="routes-popup__content">
+          <div class="estimated-token">
+            <span class="estimated-token__badge cheapest">Cheapest</span>
+            <label class="round-checkbox">
+              <input class="round-checkbox__input" type="checkbox">
+              <span class="round-checkbox__button"></span>
+            </label>
+            <div class="estimated-token__route-logos">
+              <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+              <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
+              <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+            </div>
+            <div class="estimated-token__parameters">
+              <span class="estimated-token__parameter">
+                <img src="./images/est-icon-time.svg" alt="">
+                01:53
+              </span>
+              <span class="estimated-token__parameter">
+                <img src="./images/est-icon-fuel.svg" alt="">
+                $20.93
+              </span>
+              <span class="estimated-token__parameter">
+                <img src="./images/est-icon-change.svg" alt="">
+                2
+              </span>
+            </div>
+            <span class="estimated-token__title">
+              5 USDT
+            </span>
+          </div>
+        </div>
+      </div>    
     </div>
   </div>
   <!--  -->
@@ -588,27 +633,27 @@
                 </div>
                 <button class="transfers-form__submit btn btn_primary" type="submit">Connect a wallet</button>
               </fieldset>     
-              <button class="transfers-form__estimated-token">
-                <div class="transfers-form__route-logos">
-                  <img class="transfers-form__route-logo" src="./images/route-item-logo.png" alt="">
-                  <img class="transfers-form__route-logo" src="./images/route-item-logo2.png" alt="">
-                  <img class="transfers-form__route-logo" src="./images/route-item-logo.png" alt="">
+              <button class="estimated-token">
+                <div class="estimated-token__route-logos">
+                  <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+                  <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
+                  <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
                 </div>
-                <div class="transfers-form__estimated-parameters">
-                  <span class="transfers-form__estimated-parameter">
+                <div class="estimated-token__parameters">
+                  <span class="estimated-token__parameter">
                     <img src="./images/est-icon-time.svg" alt="">
                     01:53
                   </span>
-                  <span class="transfers-form__estimated-parameter">
+                  <span class="estimated-token__parameter">
                     <img src="./images/est-icon-fuel.svg" alt="">
                     $20.93
                   </span>
-                  <span class="transfers-form__estimated-parameter">
+                  <span class="estimated-token__parameter">
                     <img src="./images/est-icon-change.svg" alt="">
                     2
                   </span>
                 </div>
-                <span class="transfers-form__estimated-token-title">
+                <span class="estimated-token__title">
                   Estimated token: 2.55 AVAX
                 </span>
               </button>

@@ -96,6 +96,18 @@
 		}
 	}
 
+	&_smallest &__button {
+		height: 1.67vw;
+		border-radius: .42vw;
+		font-size: .78vw;
+		padding-left: .625vw;
+
+		&::after {
+			top: .625vw;
+			right: .625vw;
+		}
+	}
+
 	&.active &__button {		
 		border-radius: .83vw .83vw 0 0;		
 

@@ -126,6 +126,7 @@
 		height: 2.92vw;
 		width: 100%;
 		cursor: pointer;
+		position: relative;
 		padding: 0 1.04vw;
 		margin-bottom: 1.67vw;
 	}
@@ -172,6 +173,28 @@
 			background: url('../../images/right-arrow.svg') no-repeat center;
 			background-size: contain;
 			margin-left: .78vw;
+		}
+	}
+
+	&__estimated-token-badge {
+		display: flex;
+		align-items: center;
+		height: .83vw;
+		border-radius: .26vw;
+		font-size: .52vw;
+		font-weight: 700;
+		text-transform: uppercase;
+		position: absolute;
+		left: 2.24vw;
+		top: -.41vw;
+		padding: 0 .3125vw;
+
+		&.cheapest {
+			background-color: #CCFF00;
+		}
+
+		&.fastest {
+			background-color: #FF6F32;
 		}
 	}
 }

@@ -1,0 +1,41 @@
+.round-checkbox {
+	
+	&__input {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		z-index: -1;
+		width: 1px;
+		height: 1px;
+	}
+	
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.04vw;
+		height: 1.04vw;
+		border-radius: 50%;	
+		border: var(--primary-blue) 1px solid;	
+		box-sizing: border-box;
+		transition: all .1s;
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			width: .52vw;
+			height: .42vw;
+			background: url('../../images/checked-icon.svg') no-repeat center;			
+			opacity: 0;
+			transition: all .1s;
+		}
+	}
+
+	&__input:checked + &__button {		
+		background-color: var(--primary-blue);
+
+		&::after {
+			opacity: 1;
+		}
+	}
+}
