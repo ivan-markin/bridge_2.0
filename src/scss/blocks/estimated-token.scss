@@ -1,21 +1,48 @@
 .estimated-token {
-	display: flex;
-	align-items: center;
-	background: rgba(0, 113, 255, 0.15);
-	border: 1px solid #0071FF;
-	border-radius: .78vw;
-	height: 2.92vw;
-	width: 100%;
-	cursor: pointer;
-	position: relative;
-	padding: 0 1.04vw;
 	margin-bottom: 1.67vw;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		background: rgba(0, 113, 255, 0.15);
+		border: 1px solid #0071FF;
+		border-radius: .78vw;
+		height: 2.92vw;
+		width: 100%;
+		cursor: pointer;
+		position: relative;
+		padding: 0 1.04vw 0 .625vw;		
+	}
+	
+	&.active &__container {
+		background: none;
+		border: 1px solid #E0E5EB;
+		border-radius: .78vw .78vw 0 0;
+	}
+
+	&__content {
+		display: none;
+		border-color: #E0E5EB;
+		border-style: solid;
+		border-width: 0 1px 1px 1px;
+		border-radius: 0 0 .78vw .78vw;
+		padding: 1vw .625vw;
+	}
+
+	&.active &__content {
+		display: block;
+	}
+
+	&__checkbox {
+		margin-right: .625vw;
+	}
 
 	&__route-logos {
 		display: flex;
 		position: relative;
 		height: 1.67vw;
-		width: var(--route-logos-width);
+		width: fit-content;
+		min-width: 4.805vw;
 		margin-right: .83vw;
 
 		img {
@@ -41,7 +68,7 @@
 
 	&__title {
 		display: flex;
-		align-items: center;
+		align-items: center;		
 		font-size: .94vw;
 		font-weight: 800;
 		margin-left: auto;
@@ -54,6 +81,18 @@
 			background-size: contain;
 			margin-left: .78vw;
 		}
+	}
+
+	&__title-block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&__subtitle {
+		color: #949BAF;
+		font-size: .83vw;
+		font-weight: 400;
 	}
 
 	&__badge {
@@ -76,5 +115,36 @@
 		&.fastest {
 			background-color: #FF6F32;
 		}
+	}
+
+	&__point {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__point-head {
+		display: flex;
+		align-items: center;
+	}
+
+	&__point-description {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__point-title {
+		font-size: .83;
+		margin: 0 0 .1vw;
+	}
+
+	&__point-logo {
+		flex: none;
+		width: 2.1875vw;
+		margin-right: .47vw;
+	}
+
+	&__parameters {
+		display: flex;
+		align-items: center;
 	}
 }

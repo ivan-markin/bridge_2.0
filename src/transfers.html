@@ -477,33 +477,85 @@
       <div class="routes-popup__wrap">
         <div class="routes-popup__content">
           <div class="estimated-token">
-            <span class="estimated-token__badge cheapest">Cheapest</span>
-            <label class="round-checkbox">
-              <input class="round-checkbox__input" type="checkbox">
-              <span class="round-checkbox__button"></span>
-            </label>
-            <div class="estimated-token__route-logos">
-              <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-              <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
-              <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+            <div class="estimated-token__container">
+              <span class="estimated-token__badge cheapest">Cheapest</span>
+              <label class="estimated-token__checkbox round-checkbox">
+                <input class="round-checkbox__input" type="checkbox">
+                <span class="round-checkbox__button"></span>
+              </label>
+              <div class="estimated-token__route-logos">
+                <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+                <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
+                <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+              </div>
+              <div class="estimated-token__parameters">
+                <span class="estimated-token__parameter">
+                  <img src="./images/est-icon-time.svg" alt="">
+                  01:53
+                </span>
+                <span class="estimated-token__parameter">
+                  <img src="./images/est-icon-fuel.svg" alt="">
+                  $20.93
+                </span>
+                <span class="estimated-token__parameter">
+                  <img src="./images/est-icon-change.svg" alt="">
+                  2
+                </span>
+              </div>
+              <span class="estimated-token__title">
+                <span class="estimated-token__title-block">
+                  5 USDT
+                  <span class="estimated-token__subtitle">$4.9</span>
+                </span>                
+              </span>
+            </div>            
+          </div>
+          <div class="estimated-token active">
+            <div class="estimated-token__container">
+              <span class="estimated-token__badge fastest">Fastest</span>
+              <label class="estimated-token__checkbox round-checkbox">
+                <input class="round-checkbox__input" type="checkbox">
+                <span class="round-checkbox__button"></span>
+              </label>
+              <div class="estimated-token__route-logos">
+                <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+                <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">                
+              </div>
+              <div class="estimated-token__parameters">
+                <span class="estimated-token__parameter">
+                  <img src="./images/est-icon-time.svg" alt="">
+                  01:53
+                </span>
+                <span class="estimated-token__parameter">
+                  <img src="./images/est-icon-fuel.svg" alt="">
+                  $20.93
+                </span>
+                <span class="estimated-token__parameter">
+                  <img src="./images/est-icon-change.svg" alt="">
+                  2
+                </span>
+              </div>
+              <span class="estimated-token__title">
+                <span class="estimated-token__title-block">
+                  5 USDT
+                  <span class="estimated-token__subtitle">$4.9</span>
+                </span>
+              </span>
             </div>
-            <div class="estimated-token__parameters">
-              <span class="estimated-token__parameter">
-                <img src="./images/est-icon-time.svg" alt="">
-                01:53
-              </span>
-              <span class="estimated-token__parameter">
-                <img src="./images/est-icon-fuel.svg" alt="">
-                $20.93
-              </span>
-              <span class="estimated-token__parameter">
-                <img src="./images/est-icon-change.svg" alt="">
-                2
-              </span>
+            <div class="estimated-token__content">
+              <div class="estimated-token__point">
+                <div class="estimated-token__point-head">
+                  <img class="estimated-token__point-logo" src="./images/currencies-logos/example-logo.png" alt="">
+                  <div class="estimated-token__point-description">
+                    <h3 class="estimated-token__point-title">1Inch</h3>
+                    <div class="estimated-token__parameters">
+                      <span class="estimated-token__parameter estimated-token__parameter_time">10 min</span>
+                      <span class="estimated-token__parameter estimated-token__parameter_gas">0.00735 MATIC</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <span class="estimated-token__title">
-              5 USDT
-            </span>
           </div>
         </div>
       </div>    
@@ -634,28 +686,30 @@
                 <button class="transfers-form__submit btn btn_primary" type="submit">Connect a wallet</button>
               </fieldset>     
               <button class="estimated-token">
-                <div class="estimated-token__route-logos">
-                  <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-                  <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
-                  <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-                </div>
-                <div class="estimated-token__parameters">
-                  <span class="estimated-token__parameter">
-                    <img src="./images/est-icon-time.svg" alt="">
-                    01:53
+                <div class="estimated-token__container">
+                  <div class="estimated-token__route-logos">
+                    <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+                    <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
+                    <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+                  </div>
+                  <div class="estimated-token__parameters">
+                    <span class="estimated-token__parameter">
+                      <img src="./images/est-icon-time.svg" alt="">
+                      01:53
+                    </span>
+                    <span class="estimated-token__parameter">
+                      <img src="./images/est-icon-fuel.svg" alt="">
+                      $20.93
+                    </span>
+                    <span class="estimated-token__parameter">
+                      <img src="./images/est-icon-change.svg" alt="">
+                      2
+                    </span>
+                  </div>
+                  <span class="estimated-token__title">
+                    Estimated token: 2.55 AVAX
                   </span>
-                  <span class="estimated-token__parameter">
-                    <img src="./images/est-icon-fuel.svg" alt="">
-                    $20.93
-                  </span>
-                  <span class="estimated-token__parameter">
-                    <img src="./images/est-icon-change.svg" alt="">
-                    2
-                  </span>
-                </div>
-                <span class="estimated-token__title">
-                  Estimated token: 2.55 AVAX
-                </span>
+                </div>                
               </button>
               <fieldset class="transfers-form__filters">
                 <div class="transfers-form__filters-item">

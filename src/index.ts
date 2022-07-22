@@ -95,22 +95,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-    function routeLogosContainerHandler() {
-        const root = document.documentElement;
-        let routeLogos = document.querySelectorAll('.estimated-token__route-logo') as NodeListOf<HTMLImageElement>;
-        const routeLogosContainers = document.querySelectorAll('.estimated-token__route-logos') as NodeListOf<HTMLDivElement>;
+    function routeLogosContainerHandler() {        
+        const tokenElements = document.querySelectorAll('.estimated-token') as NodeListOf<HTMLDivElement>;
         
-        if (!routeLogos || !routeLogosContainers) return;
+        if (!tokenElements) return;
 
-        routeLogos.forEach((logo, index) => {
-            logo.style.transform = `translateX(${index * 100}%)`; 
-            logo.style.left = `${index * -.625}vw`; 
-        })
-        
-        routeLogosContainers.forEach(el => {
-            routeLogos = el.querySelectorAll('.estimated-token__route-logo') as NodeListOf<HTMLImageElement>;
-            el.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw';
-        })        
+        tokenElements.forEach(el => {
+            const routeLogos = el.querySelectorAll('.estimated-token__route-logo') as NodeListOf<HTMLImageElement>;
+            const routeLogosContainer = el.querySelector('.estimated-token__route-logos') as HTMLDivElement;
+            
+            routeLogos.forEach((el, i) => {
+                el.style.transform = `translateX(${i * 100}%)`; 
+                el.style.left = `${i * -.625}vw`; 
+            })
+
+            routeLogosContainer.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw'; 
+        })                              
     }        
 
     filtersBtn?.addEventListener('click', filtersMobileHandler);
