@@ -120,11 +120,13 @@
 	&__point {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: .94vw;
 	}
 
 	&__point-head {
 		display: flex;
 		align-items: center;
+		margin-bottom: .94vw;
 	}
 
 	&__point-description {
@@ -146,5 +148,134 @@
 	&__parameters {
 		display: flex;
 		align-items: center;
+		gap: .47vw;
+	}
+
+	&__parameter {
+		display: flex;
+		align-items: center;
+		gap: .2vw;
+		color: #949BAF;
+		font-size: .73vw;
+
+		&::before {
+			content: '';
+			flex: none;			
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+
+		&_time {
+			&::before {
+				width: .52vw;
+				height: .625vw;
+				background-image: url('../../images/timer-icon.svg');
+			}			
+		}
+
+		&_gas {
+			&::before {
+				width: .47vw;
+				height: .52vw;
+				background-image: url('../../images/gas-icon.svg');
+			}			
+		}
+	}
+
+	&__point-content {
+		display: flex;
+		flex-direction: column;
+		border-left: rgba(148, 155, 175, 0.45) 1px solid;		
+		position: relative;
+		padding-left: 1.15vw;
+		margin-left: 1vw;
+
+		&::before {
+			content: '';
+			width: .68vw;
+			height: 1.5vw;
+			background: url('../../images/border-point_top.svg') no-repeat center;
+			background-size: contain;
+			position: absolute;
+			top: 0;
+			left: -.37vw;
+		}
+
+		&::after {
+			content: '';
+			width: .68vw;
+			height: 1.5625vw;
+			background: url('../../images/border-point_bottom.svg') no-repeat center;
+			background-size: contain;
+			position: absolute;
+			bottom: 0;
+			left: -.37vw;
+		}
+	}
+
+	&__point-content-start,
+	&__point-content-end {
+		display: flex;
+		align-items: center;
+		gap: .52vw;
+	}
+
+	&__point-content-start {
+		margin-bottom: .89vw;
+	}
+
+	&__point-content-end {
+		margin-top: .89vw;
+	}
+
+	&__point-content-logo {
+		position: relative;
+		width: 1.67vw;
+		height: 1.67vw;
+	}
+
+	&__point-content-token {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1.67vw;
+		height: 1.67vw;
+	}
+
+	&__point-content-network {
+		position: absolute;
+		top: -3px;
+		right: -4px;
+		width: .73vw;
+		height: .73vw;
+		border-radius: 50%;
+		border: white 1px solid;
+	}
+
+	&__point-content-title {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__point-content-value {		
+		font-size: .83vw;
+		margin: 0 0 .1vw;
+	}
+	
+	&__point-content-token-name {
+		color: #949BAF;
+		font-size: .73vw;
+	}
+
+	&__point-content-middle {
+		display: flex;
+		align-items: center;
+		background-color: #EFF1F4;
+		height: 2.1875vw;
+		width: fit-content;
+		font-size: .73vw;
+		border-radius: .42vw;
+		padding: 0 .625vw;
 	}
 }

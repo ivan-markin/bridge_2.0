@@ -24,6 +24,25 @@
 		margin-right: .83vw;
 	}
 
+	&__wrap {
+		overflow-y: scroll;
+		padding-right: 1.25vw;
+		margin-bottom: 2.08vw;
+
+		&::-webkit-scrollbar {			
+			width: 4px;
+		}
+		
+		&::-webkit-scrollbar-track {
+			background-color: rgba(0, 113, 255, 0.15);
+			width: 4px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--primary-blue);			
+		}
+	}
+
 	.popup__container {
 		width: 31.46vw;
 		min-width: 320px;
