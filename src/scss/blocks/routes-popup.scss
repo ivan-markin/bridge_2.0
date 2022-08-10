@@ -1,5 +1,5 @@
-.routes-popup {
-	
+.routes-popup {	
+
 	&__head {
 		display: flex;
 		align-items: center;
@@ -26,7 +26,8 @@
 
 	&__wrap {
 		overflow-y: scroll;
-		padding-right: 1.25vw;
+		height: calc(100vh - 5.41vw);
+		padding: 10px 1.25vw 0 0;
 		margin-bottom: 2.08vw;
 
 		&::-webkit-scrollbar {			
@@ -40,13 +41,14 @@
 
 		&::-webkit-scrollbar-thumb {
 			background-color: var(--primary-blue);			
+			border-radius: 2px;
 		}
 	}
 
 	.popup__container {
 		width: 31.46vw;
-		min-width: 320px;
-		padding: 2.4vw 1.04vw 2.4vw 1.82vw;
+		min-width: 320px;		
+		padding: 2.4vw 1.04vw 2.4vw 1.82vw;		
 	}
 
 	.estimated-token {
