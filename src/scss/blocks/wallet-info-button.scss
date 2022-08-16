@@ -8,7 +8,7 @@
 	cursor: pointer;
 	padding: .3125vw;
 
-	&__metamask {
+	&__logo {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -16,30 +16,52 @@
 		height: 2.08vw;
 		border-radius: .42vw;
 		background-color: #fff;
-		margin-right: .3125vw;
+		position: relative;
+		margin-right: .3125vw;		
+	}
 
-		img {
-			width: 1.35vw;
-		}
+	&__main-logo {
+		width: 1.35vw;
+	}
+	
+	&__network-logo {		
+		width: .625vw;
+		min-width: 12px;
+		border-radius: 50%;
+		border: 1px solid white;
+		position: absolute;
+		bottom: -.1vw;
+		right: -.16vw;
 	}
 
 	&__wallet-num {
 		display: flex;
 		align-items: center;
 		background: rgba(214, 230, 251, 0.25);
-		height: 2.08vw;
-		font-size: .83vw;
-		font-weight: 500;
-		color: white;
+		height: 2.08vw;		
 		border-radius: .42vw;
 		padding: 0 .52vw;
 
-		span {
+		div {
+			display: flex;
+			flex-direction: column;
 			margin-right: .625vw;
 		}
 
 		img {
 			width: 1.25vw;
 		}
+	}
+
+	&__num {
+		font-size: .83vw;
+		font-weight: 500;
+		color: white;
+		margin-bottom: .1vw;
+	}
+
+	&__network {
+		font-size: .625vw;
+		color: #99C6FF;
 	}
 }

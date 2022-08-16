@@ -118,6 +118,12 @@ fieldset {
   }
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 65vw;
+  margin: 0 auto;
+}
+
 .swiper-navigation-block {
   display: flex;
   align-items: center;

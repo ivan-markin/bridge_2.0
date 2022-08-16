@@ -8,7 +8,7 @@
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Bridge</title>
-<script defer src="bundle.f6fe2ee287e88422e282.js"></script><link href="styles.css" rel="stylesheet"></head>
+<script defer src="bundle.02da6accc91a990b1a72.js"></script><link href="styles.css" rel="stylesheet"></head>
 
 <body>
   
@@ -698,70 +698,58 @@
   
   <div class="container">
     <header class="header header_inner">
-      <a href="">
-        <img class="header__logo" src="./images/debridges-logo_white.svg" alt="">
-      </a>
-      <nav class="header__menu main-menu">
-        <ul>
-          <li class="main-menu__item">
-            <a class="main-menu__item-link active" href="">Transfers</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__item-link" href="">Bridges</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__item-link" href="">Analytics</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__item-link" href="">Networks</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__item-link">Reports</a>
-          </li>
-          <!-- <li class="main-menu__item main-menu__item_select">
-            <a class="main-menu__item-link" href="">Join us</a>
-            <ul class="main-menu__dropdown">
-              <li class="main-menu__dropdown-item">
-                <a href="">
-                  <img src="./images/telegram-icon.svg" alt="">
-                  Telegram
-                </a>
-              </li>
-              <li class="main-menu__dropdown-item">
-                <a href="">
-                  <img src="./images/twitter-icon.svg" alt="">
-                  Twitter
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__item-link" href="">More</a>
-          </li> -->
-        </ul>
-      </nav>
-      <input class="header__search" type="text" placeholder="Search">
-      <!-- <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button> -->
-      <a class="wallet-info-button">
-        <div class="wallet-info-button__metamask">
-          <img src="./images/metamask-logo.png" alt="">
-        </div>
-        <div class="wallet-info-button__wallet-num">
-          <span>0x07A0...B57F</span>
-          <img src="./images/wallet-icon.svg" alt="">
-        </div>
-      </a>
+      <div class="header__content">
+        <a href="">
+          <img class="header__logo" src="./images/debridges-logo_white.svg" alt="">
+        </a>
+        <nav class="header__menu main-menu">
+          <ul>
+            <li class="main-menu__item active">
+              <a class="main-menu__item-link" href="">Transfers</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item-link" href="">Bridges</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item-link" href="">Analytics</a>
+            </li>
+            <li class="main-menu__item main-menu__item_soon">
+              <a class="main-menu__item-link" href="">Networks</a>
+            </li>
+            <li class="main-menu__item main-menu__item_new">
+              <a class="main-menu__item-link" href="">Reports</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <input class="header__search" type="text" placeholder="Search"> -->
+        <!-- <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button> -->
+        <a class="wallet-info-button">
+          <div class="wallet-info-button__logo">
+            <img class="wallet-info-button__main-logo" src="./images/metamask-logo.png" alt="">
+            <img class="wallet-info-button__network-logo" src="./images/tokens-logos/network.png" alt="">
+          </div>
+          <div class="wallet-info-button__wallet-num">
+            <div>
+              <span class="wallet-info-button__num">0x07A0...B57F</span>
+              <span class="wallet-info-button__network">Etherium Network</span>
+            </div>
+            <img src="./images/wallet-icon.svg" alt="">
+          </div>
+        </a>
+      </div>      
       <button class="header__menu-button"></button>
     </header>    
 
     <main class="main">
     
       <section class="page-header">                        
-        <div class="page-tabs">
-          <a class="page-tabs__item active">Set up the transfer</a>
-          <a class="page-tabs__item" href="">My transfers</a>
-          <a class="page-tabs__item" href="">FAQ & Guides</a>
-        </div>              
+        <div class="wrapper">
+          <div class="page-tabs">
+            <a class="page-tabs__item active">Set up the transfer</a>
+            <a class="page-tabs__item" href="">My transfers</a>
+            <a class="page-tabs__item" href="">FAQ & Guides</a>
+          </div>
+        </div>                     
       </section>
 
       <section class="page-container">
