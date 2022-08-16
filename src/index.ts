@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function collapseButtonHandler(evt) {
-        const advancedSettings = evt.target.parentElement.querySelector('.transfers-form__advanced-settings');
+        const advancedSettings = document.querySelector('.transfers-form__advanced-settings');
         evt.preventDefault();
         evt.target.classList.toggle('active');
-        advancedSettings.classList.toggle('active');
+        advancedSettings?.classList.toggle('active');
     }
 
     // function openSupportedLogosPopup(event) {
@@ -93,24 +93,24 @@ document.addEventListener('DOMContentLoaded', () => {
             selectNetworkBtn.parentElement?.classList.toggle('active');
         })
     }
-
     
     function routeLogosContainerHandler() {        
-        const tokenElements = document.querySelectorAll('.estimated-token') as NodeListOf<HTMLDivElement>;
-        
-        if (!tokenElements) return;
+        const containers = document.querySelectorAll('.route-logos') as NodeListOf<HTMLDivElement>;
 
-        tokenElements.forEach(el => {
-            const routeLogos = el.querySelectorAll('.estimated-token__route-logo') as NodeListOf<HTMLImageElement>;
-            const routeLogosContainer = el.querySelector('.estimated-token__route-logos') as HTMLDivElement;
+        if (!containers) {
+            return;
+        }
+
+        containers.forEach(el => {
+            const routeLogos = el.querySelectorAll('.route-logo') as NodeListOf<HTMLImageElement>;            
             
-            routeLogos.forEach((el, i) => {
+            routeLogos.forEach((el, i) => {                
                 el.style.transform = `translateX(${i * 100}%)`; 
                 el.style.left = `${i * -.625}vw`; 
             })
 
-            routeLogosContainer.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw'; 
-        })                              
+            el.style.width = routeLogos.length * 1.67 - (routeLogos.length - 1) * .625 + 'vw'; 
+        })                                                            
     }        
 
     filtersBtn?.addEventListener('click', filtersMobileHandler);

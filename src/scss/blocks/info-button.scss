@@ -1,15 +1,9 @@
-.info-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.info-button {	
 	flex: none;
-	width: .78125vw;
-	height: .78125vw;
-	border-radius: 50%;
-	font-size: .52vw;
-	font-weight: 800;
-	color: white;
+	width: .73vw;
+	height: .73vw;			
 	border: none;
-	background-color: var(--primary-blue);
+	background: url('../../images/info-icon.svg') no-repeat center;
+	background-size: contain;
 	cursor: pointer;
 }

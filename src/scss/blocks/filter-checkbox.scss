@@ -1,0 +1,37 @@
+.filter-checkbox {
+	&__input {
+		visibility: hidden;
+		z-index: -1;
+		width: 1px;
+		height: 1px;
+		position: absolute;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		height: 1.67vw;
+		color: rgba(0, 57, 92, 0.8);
+		border: 1px solid #E2E6EE;
+		border-radius: .2vw;
+		font-size: .83vw;		
+		transition: all .2s;
+		cursor: pointer;
+		user-select: none;
+		padding: 0 .625vw;
+	}
+
+	&__input:checked+span {
+		background: #F4F6FB;
+		border-color: #F4F6FB;		
+
+		&::before {
+			content: '';
+			width: .83vw;
+			height: .83vw;
+			background: url('../../images/filter-check-icon.svg') no-repeat center;
+			background-size: contain;
+			margin-right: .3125vw;
+		}
+	}
+}

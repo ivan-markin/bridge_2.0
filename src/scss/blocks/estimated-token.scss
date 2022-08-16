@@ -1,17 +1,17 @@
 .estimated-token {
-	margin-bottom: 1.67vw;
+	background: none;
+	border: 1px solid #0071FF;
+	border-radius: .83vw;
+	margin-bottom: .78vw;
 
 	&__container {
 		display: flex;
-		align-items: center;
-		background: rgba(0, 113, 255, 0.15);
-		border: 1px solid #0071FF;
-		border-radius: .78vw;
-		height: 2.92vw;
+		align-items: center;						
+		background: none;		
 		width: 100%;
 		cursor: pointer;
 		position: relative;
-		padding: 0 1.04vw 0 .625vw;		
+		padding: .42vw 1.04vw;		
 	}
 	
 	&.active &__container {
@@ -39,17 +39,15 @@
 
 	&__route-logos {
 		display: flex;
-		position: relative;
-		height: 1.67vw;
-		width: fit-content;
-		min-width: 4.805vw;
-		margin-right: .83vw;
+		position: relative;		
+		width: fit-content;		
+		margin-right: .625vw;
 
 		img {
 			position: absolute;
 			top: 0;
 			left: 0;
-			height: 1.67vw;
+			height: 1.67vw;			
 		}
 	}
 
@@ -57,26 +55,49 @@
 		display: flex;
 		align-items: center;
 		gap: .73vw;
+		background: rgba(0, 113, 255, 0.15);
+		border-radius: .42vw;
+		padding: .42vw .83vw;
 	}
 
 	&__parameter {
 		display: flex;
 		align-items: center;
 		gap: .2vw;
+		color: #000;
 		font-size: .73vw;
+
+		img {
+			width: 1.25vw;
+			margin-right: .2vw;			
+		}
 	}
 
-	&__title {
+	&__via {
+		font-size: .73vw;
+		color: #000;
+	}
+
+	&__title {				
+		font-size: .94vw;
+		font-weight: 800;	
+		margin-right: .52vw;	
+	}
+
+	&__details {
 		display: flex;
-		align-items: center;		
+		align-items: center;
 		font-size: .94vw;
 		font-weight: 800;
+		color: var(--primary-blue);
 		margin-left: auto;
-
+	
 		&::after {
 			content: '';
-			width: 6px;
-			height: 10px;
+			position: relative;
+			bottom: -.08vw;
+			width: .3125vw;
+			height: .52vw;
 			background: url('../../images/right-arrow.svg') no-repeat center;
 			background-size: contain;
 			margin-left: .78vw;
@@ -143,45 +164,7 @@
 		flex: none;
 		width: 2.1875vw;
 		margin-right: .47vw;
-	}
-
-	&__parameters {
-		display: flex;
-		align-items: center;
-		gap: .47vw;
-	}
-
-	&__parameter {
-		display: flex;
-		align-items: center;
-		gap: .2vw;
-		color: #949BAF;
-		font-size: .73vw;
-
-		&::before {
-			content: '';
-			flex: none;			
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
-		}
-
-		&_time {
-			&::before {
-				width: .52vw;
-				height: .625vw;
-				background-image: url('../../images/timer-icon.svg');
-			}			
-		}
-
-		&_gas {
-			&::before {
-				width: .47vw;
-				height: .52vw;
-				background-image: url('../../images/gas-icon.svg');
-			}			
-		}
-	}
+	}		
 
 	&__point-content {
 		display: flex;

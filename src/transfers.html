@@ -10,7 +10,7 @@
   <title>Bridge</title>
 </head>
 
-<body style="position: fixed;">
+<body>
   
   <!-- Mobile menu -->
   <div class="mobile-menu">    
@@ -442,7 +442,7 @@
   <!--  -->
 
   <!-- Routes popup -->
-  <div class="routes-popup popup side-popup active" id="routesPopup">
+  <div class="routes-popup popup side-popup" id="routesPopup">
     <div class="popup__container">
       <a class="popup__close" href="#"></a>
       <div class="routes-popup__head">
@@ -483,10 +483,10 @@
                 <input class="round-checkbox__input" type="checkbox">
                 <span class="round-checkbox__button"></span>
               </label>
-              <div class="estimated-token__route-logos">
-                <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-                <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
-                <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
+              <div class="estimated-token__route-logos route-logos">
+                <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo.png" alt="">
+                <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo2.png" alt="">
+                <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo.png" alt="">
               </div>
               <div class="estimated-token__parameters">
                 <span class="estimated-token__parameter">
@@ -517,9 +517,9 @@
                 <input class="round-checkbox__input" type="checkbox">
                 <span class="round-checkbox__button"></span>
               </label>
-              <div class="estimated-token__route-logos">
-                <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-                <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">                
+              <div class="estimated-token__route-logos route-logos">
+                <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo.png" alt="">
+                <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo2.png" alt="">                
               </div>
               <div class="estimated-token__parameters">
                 <span class="estimated-token__parameter">
@@ -704,7 +704,10 @@
       <nav class="header__menu main-menu">
         <ul>
           <li class="main-menu__item">
-            <a class="main-menu__item-link" href="">Finding a bridge</a>
+            <a class="main-menu__item-link active" href="">Transfers</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="">Bridges</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__item-link" href="">Analytics</a>
@@ -713,12 +716,9 @@
             <a class="main-menu__item-link" href="">Networks</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__item-link" href="">Cashback</a>
-          </li>
-          <li class="main-menu__item">
             <a class="main-menu__item-link">Reports</a>
           </li>
-          <li class="main-menu__item main-menu__item_select">
+          <!-- <li class="main-menu__item main-menu__item_select">
             <a class="main-menu__item-link" href="">Join us</a>
             <ul class="main-menu__dropdown">
               <li class="main-menu__dropdown-item">
@@ -737,7 +737,7 @@
           </li>
           <li class="main-menu__item">
             <a class="main-menu__item-link" href="">More</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <input class="header__search" type="text" placeholder="Search">
@@ -756,76 +756,128 @@
 
     <main class="main">
     
-      <section class="page-header">                
-        <h1 class="page-title">Transfers</h1>                     
+      <section class="page-header">                        
+        <div class="page-tabs">
+          <a class="page-tabs__item active">Set up the transfer</a>
+          <a class="page-tabs__item" href="">My transfers</a>
+          <a class="page-tabs__item" href="">FAQ & Guides</a>
+        </div>              
       </section>
 
       <section class="page-container">
-        <div class="transfers">
-          <div class="transfers__header">
-            <h2 class="transfers__title secondary-title">Set Up Your Transfer</h2>
-            <p class="transfers__subtitle">9 Bridges, 15 Chains and all the DEXs</p>
-          </div>
-          <div class="transfers__content">
-            
-            <!-- Error block -->
-            <div class="transfers__error error-block">
-              <img src="./images/error-icon.svg" alt="">
-              <span>Error: Change the network in your wallet to Arbitrum</span>
-            </div>
-            <!--  -->
-            
-            <div class="transfers__form-head">
-              <div class="transfers__form-head-from">
-                <span class="transfers__form-head-title">From</span>
-                <button class="replace-button"></button>
+        <div class="transfers">          
+          <div class="transfers__content">                                               
+            <div class="transfers__supported">
+              <span class="transfers__supported-title">Supported:</span>
+              <div class="transfers__supported-list">
+                <div class="transfers__supported-item">
+                  <span class="transfers__supported-item-title">Bridges</span>
+                  <div class="transfers__supported-logos route-logos">
+                    <img class="route-logo" src="./images/route-item-logo.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo2.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo2.png" alt="">
+                  </div>    
+                  <a class="transfers__supported-logos-more" href="">+6</a>
+                </div>
+                <div class="transfers__supported-item">
+                  <span class="transfers__supported-item-title">Chains</span>
+                  <div class="transfers__supported-logos route-logos">
+                    <img class="route-logo" src="./images/route-item-logo.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo2.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo2.png" alt="">
+                  </div>
+                  <a class="transfers__supported-logos-more" href="">+6</a>
+                </div>
+                <div class="transfers__supported-item">
+                  <span class="transfers__supported-item-title">Routers</span>
+                  <div class="transfers__supported-logos route-logos">
+                    <img class="route-logo" src="./images/route-item-logo.png" alt="">
+                    <img class="route-logo" src="./images/route-item-logo2.png" alt="">                    
+                  </div>                  
+                </div>                
               </div>
-              <div class="transfers__form-head-to">
-                <span class="transfers__form-head-title">To</span>
-              </div>
-              <button class="reset-button">Reset</button>
             </div>
             <form class="transfers-form">
               <fieldset class="transfers-form__main">
                 <div class="transfers-form__main-inputs">
+                  <button class="transfers-form__change-fields-button">
+                    <img src="./images/change-fields-icon.svg" alt="">
+                  </button>
                   <div class="transfers-form__main-input transfers-form__main-input_from">
-                    <input type="text" placeholder="Enter amount">                    
-                    <div class="transfers-form__main-input-btn">
-                      <button class="max-button">Max</button>
-                      <a class="choose-token-button" href="#chooseTokenPopup">
+                    <div class="transfers-form__main-input-head">
+                      <span class="transfers-form__main-input-name">From</span>
+                      <div class="transfers-form__main-input-balance">
+                        <button class="max-button" disabled>MAX</button>
+                        <span class="transfers-form__balance-title">Balance:</span>
+                        <span class="transfers-form__balance-value">0</span>
+                      </div>
+                    </div>
+                    <div class="transfers-form__main-input-content">
+                      <label class="transfers-form__main-input-block">                        
+                        <input                          
+                          type="text"
+                          onInput="this.parentNode.dataset.value = this.value"
+                          placeholder="0.0"
+                          size="1"
+                        >                        
+                        <span class="transfers-form__equivalent">$0</span>
+                      </label>
+                      <button class="choose-token-button">
                         <div class="choose-token-button__icons">
                           <img class="choose-token-button__icon choose-token-button__icon_token" src="./images/tokens-logos/token.png" alt="">
-                          <img class="choose-token-button__icon choose-token-button__icon_network" src="./images/tokens-logos/network.png" alt="">
+                          <img class="choose-token-button__icon choose-token-button__icon_network" src="./images/tokens-logos/network.png"
+                            alt="">
                         </div>
-                        <span class="choose-token-button__value">USDT</span>
-                      </a>
-                    </div>
-                    <span class="transfers-form__equivalent">$0</span>
+                        <div class="choose-token-button__value">
+                          <span class="choose-token-button__token">USDT</span>
+                          <span class="choose-token-button__network">Polygon</span>
+                        </div>                        
+                      </button>
+                    </div>                                                          
                   </div>
                   <div class="transfers-form__main-input transfers-form__main-input_to">
-                    <input type="text" placeholder="Enter amount">                    
-                    <div class="transfers-form__main-input-btn">                      
-                      <a class="choose-token-button" href="#chooseTokenPopup">
-                        <div class="choose-token-button__icons">
-                          <img class="choose-token-button__icon choose-token-button__icon_token" src="./images/tokens-logos/token.png" alt="">
-                          <img class="choose-token-button__icon choose-token-button__icon_network" src="./images/tokens-logos/network.png" alt="">
-                        </div>
-                        <span class="choose-token-button__value">USDT</span>
-                      </a>
+                    <div class="transfers-form__main-input-head">
+                      <span class="transfers-form__main-input-name">To (Estimated)</span>
+                      <div class="transfers-form__main-input-balance">                        
+                        <span class="transfers-form__balance-title">Balance:</span>
+                        <span class="transfers-form__balance-value">0</span>
+                      </div>
                     </div>
-                    <span class="transfers-form__equivalent">$0</span>
+                    <div class="transfers-form__main-input-content">
+                      <label class="transfers-form__main-input-block">
+                        <input type="text" onInput="this.parentNode.dataset.value = this.value" placeholder="0.0" size="1">
+                        <span class="transfers-form__equivalent">$0</span>
+                      </label>
+                      <button class="choose-token-button">
+                        <div class="choose-token-button__icons">
+                          <img class="choose-token-button__icon choose-token-button__icon_token" src="./images/tokens-logos/token.png"
+                            alt="">
+                          <img class="choose-token-button__icon choose-token-button__icon_network" src="./images/tokens-logos/network.png"
+                            alt="">
+                        </div>
+                        <div class="choose-token-button__value">
+                          <span class="choose-token-button__token">USDT</span>
+                          <span class="choose-token-button__network">Polygon</span>
+                        </div>
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <button class="transfers-form__submit btn btn_primary" type="submit">Connect a wallet</button>
               </fieldset>     
               <button class="estimated-token">
                 <div class="estimated-token__container">
-                  <div class="estimated-token__route-logos">
-                    <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-                    <img class="estimated-token__route-logo" src="./images/route-item-logo2.png" alt="">
-                    <img class="estimated-token__route-logo" src="./images/route-item-logo.png" alt="">
-                  </div>
+                  <span class="estimated-token__title">
+                    Estimated token: 5.2 USDC
+                  </span>                  
                   <div class="estimated-token__parameters">
+                    <span class="estimated-token__via">via</span>
+                    <div class="estimated-token__route-logos route-logos">
+                      <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo.png" alt="">
+                      <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo2.png" alt="">                      
+                    </div>
                     <span class="estimated-token__parameter">
                       <img src="./images/est-icon-time.svg" alt="">
                       01:53
@@ -838,14 +890,14 @@
                       <img src="./images/est-icon-change.svg" alt="">
                       2
                     </span>
-                  </div>
-                  <span class="estimated-token__title">
-                    Estimated token: 2.55 AVAX
+                  </div>    
+                  <span class="estimated-token__details">
+                    Check details and other routes
                   </span>
                 </div>                
               </button>
               <fieldset class="transfers-form__filters">
-                <div class="transfers-form__filters-item">
+                <!-- <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
                     <span class="transfers-form__filters-title">Slippage tolerance</span>
                     <button class="info-button">?</button>
@@ -868,11 +920,11 @@
                       <span class="filter-radio__button">3%</span>
                     </label>
                   </div>
-                </div>
+                </div> -->
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <span class="transfers-form__filters-title">Route priority</span>
-                    <button class="info-button">?</button>
+                    <button class="info-button"></button>
+                    <span class="transfers-form__filters-title">Route priority:</span>                    
                   </div>
                   <div class="transfers-form__filters-container">
                     <label class="filter-radio">
@@ -891,95 +943,124 @@
                 </div>
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <span class="transfers-form__filters-title">Activate Infinite Approval</span>
-                    <button class="info-button">?</button>
+                    <button class="info-button"></button>
+                    <span class="transfers-form__filters-title">Infinite Approval</span>                    
                   </div>
-                  <div class="transfers-form__filters-container">
-                    <span class="transfers-form__switch-title">Infinite Approval</span>
+                  <div class="transfers-form__filters-container">                    
                     <label class="switch">
                       <input class="switch__input" type="checkbox">
                       <span class="switch__block"></span>
                     </label>
                   </div>
                 </div>
+                <button class="transfers-form__collapse-button collapse-button" id="advancedSettingsBtn">Advanced settings</button>
               </fieldset> 
               <fieldset class="transfers-form__advanced-settings">
-                <div class="transfers-form__filters-title-block">
-                  <span class="transfers-form__filters-title">Bridges</span>                  
+                <div class="transfers-form__filters-item">
+                  <div class="transfers-form__filters-title-block">
+                    <button class="info-button"></button>
+                    <span class="transfers-form__filters-title">Slippage tolerance:</span>
+                  </div>
+                  <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="bridgesFilter" checked>
+                      <span class="filter-radio__button">0.1%</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="bridgesFilter">
+                      <span class="filter-radio__button">0.5%</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="bridgesFilter">
+                      <span class="filter-radio__button">1%</span>
+                    </label>
+                    <label class="filter-radio">
+                      <input class="filter-radio__input" type="radio" name="bridgesFilter">
+                      <input class="filter-radio__text-input" type="text" placeholder="3%">
+                    </label>
+                  </div>
                 </div>
-                <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Polygon</span>
-                  </label>  
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Cbridge</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Avalanche</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Arbitrum</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Connext</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Hop</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Hyphen</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Miltichain</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="bridgesFilter" checked>
-                    <span class="filter-radio__button">Optimism</span>
-                  </label>
-                </div>
-                <div class="transfers-form__filters-title-block">
-                  <span class="transfers-form__filters-title">Exchanges</span>
-                </div>
-                <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Pancakeswap</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Spookyswap</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Spiritswap</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Viperswap</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Solarbeam</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Jswap</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input class="filter-radio__input" type="checkbox" name="exchangesFilter" checked>
-                    <span class="filter-radio__button">Cronswap</span>
-                  </label>
-                </div>
-              </fieldset>
-              <button class="collapse-button" id="advancedSettingsBtn">Advanced settings</button>
+                <div class="transfers-form__filters-item">
+                  <div class="transfers-form__filters-title-block">
+                    <button class="info-button"></button>
+                    <span class="transfers-form__filters-title">Bridges:</span>
+                  </div>
+                  <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Polygon</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Cbridge</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Avalanche</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Arbitrum</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Connext</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Hop</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Hyphen</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Miltichain</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="bridgesFilter" checked>
+                      <span class="filter-checkbox__button">Optimism</span>
+                    </label>
+                  </div>
+                </div>                
+                <div class="transfers-form__filters-item">
+                  <div class="transfers-form__filters-title-block">
+                    <button class="info-button"></button>
+                    <span class="transfers-form__filters-title">Exchanges:</span>
+                  </div>
+                  <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Pancakeswap</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Spookyswap</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Spiritswap</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Viperswap</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Solarbeam</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Jswap</span>
+                    </label>
+                    <label class="filter-checkbox">
+                      <input class="filter-checkbox__input" type="checkbox" name="exchangesFilter" checked>
+                      <span class="filter-checkbox__button">Cronswap</span>
+                    </label>
+                  </div>
+                </div>                                
+              </fieldset>              
             </form>
           </div>
         </div>                

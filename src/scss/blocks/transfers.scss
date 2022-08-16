@@ -1,6 +1,9 @@
 .transfers {
 	position: relative;
 	width: 65vw;
+	border-radius: 2.08vw;
+	background-color: #fff;
+	padding: 1.67vw;
 	margin: 0 auto 10.8vw auto;
 
 	&__title {
@@ -41,8 +44,47 @@
 	}
 
 	&__content {		
-		border-radius: 2.08vw;
-		background-color: var(--primary-blue);
-		padding: 1.04vw;
+		// border-radius: 2.08vw;		
+	}
+
+	&__supported {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.35vw;
+	}
+
+	&__supported-title {
+		font-size: .73vw;
+		font-weight: 500;
+		margin-right: .26vw;
+	}
+	
+	&__supported-item-title {
+		font-size: .73vw;
+		font-weight: 500;
+		opacity: .45;
+		margin-right: .26vw;
+	}
+
+	&__supported-list {
+		display: flex;
+		align-items: center;
+		gap: .83vw;
+	}
+
+	&__supported-item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__supported-logos {
+		margin-right: .16vw;
+	}
+
+	&__supported-logos-more {
+		font-size: .625vw;
+		font-weight: 700;
+		color: var(--primary-blue);
+		text-decoration: none;
 	}
 }

@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	font-size: .73vw;
-	font-weight: 700;
+	font-weight: 800;
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -10,11 +10,11 @@
 
 	&::after {
 		content: '';
-		width: 20px;
-		height: 20px;
+		width: 1.04vw;
+		height: 1.04vw;
 		background: url('../../images/arrow-square-down.svg') no-repeat center;
 		background-size: contain;
-		margin-left: .36vw;
+		margin-left: .3125vw;
 	}
 
 	&.active {
