@@ -8,7 +8,7 @@
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Bridge</title>
-<script defer src="bundle.02da6accc91a990b1a72.js"></script><link href="styles.css" rel="stylesheet"></head>
+<script defer src="bundle.db2a72d7d542f5afb6c2.js"></script><link href="styles.css" rel="stylesheet"></head>
 
 <body>
   
@@ -419,6 +419,53 @@
   </div>
   <!--  -->
 
+  <!-- Search popup -->
+  <div class="search-popup popup" id="searchPopup">
+    <div class="popup__container">
+      <a class="popup__close"></a>
+      <div class="search-popup__input-block">
+        <input class="search-popup__input" type="text" placeholder="Search for bridges">
+        <button class="search-popup__button">Search</button>
+      </div>
+      
+      <!-- No results -->
+      
+      <!-- <div class="search-popup__no-results">
+        <h2>No results for 'wasd'</h2>
+        <span>We couldn't find anything matching your search.<br>Try again with a different term.</span>
+      </div> -->
+
+      <!--  -->
+
+      <div class="search-popup__results">
+        <h2 class="search-popup__results-title">Bridges</h2>
+        <ul class="search-popup__results-list">
+          <li class="search-popup__results-item">
+            <img src="./images/tokens-logos/token.png" alt="">
+            <span>Transitswap</span>
+          </li>
+          <li class="search-popup__results-item">
+            <img src="./images/tokens-logos/token.png" alt="">
+            <span>Transitswap</span>
+          </li>
+          <li class="search-popup__results-item">
+            <img src="./images/tokens-logos/token.png" alt="">
+            <span>Transitswap</span>
+          </li>
+          <li class="search-popup__results-item">
+            <img src="./images/tokens-logos/token.png" alt="">
+            <span>Transitswap</span>
+          </li>
+          <li class="search-popup__results-item">
+            <img src="./images/tokens-logos/token.png" alt="">
+            <span>Transitswap</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
   <!-- Wallet actions popup -->
   <div class="wallet-actions-popup popup" id="walletActionsPopup">
     <div class="popup__container">
@@ -476,13 +523,14 @@
       </div>  
       <div class="routes-popup__wrap">
         <div class="routes-popup__content">
-          <div class="estimated-token">
+          <div class="estimated-token estimated-token_popup">
             <div class="estimated-token__container">
               <span class="estimated-token__badge cheapest">Cheapest</span>
               <label class="estimated-token__checkbox round-checkbox">
                 <input class="round-checkbox__input" type="checkbox">
                 <span class="round-checkbox__button"></span>
               </label>
+              <span class="estimated-token__via">via</span>
               <div class="estimated-token__route-logos route-logos">
                 <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo.png" alt="">
                 <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo2.png" alt="">
@@ -510,13 +558,14 @@
               </span>
             </div>            
           </div>
-          <div class="estimated-token active">
+          <div class="estimated-token estimated-token_popup active">
             <div class="estimated-token__container">
               <span class="estimated-token__badge fastest">Fastest</span>
               <label class="estimated-token__checkbox round-checkbox">
                 <input class="round-checkbox__input" type="checkbox">
                 <span class="round-checkbox__button"></span>
               </label>
+              <span class="estimated-token__via">via</span>
               <div class="estimated-token__route-logos route-logos">
                 <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo.png" alt="">
                 <img class="estimated-token__route-logo route-logo" src="./images/route-item-logo2.png" alt="">                
@@ -548,9 +597,15 @@
                   <img class="estimated-token__point-logo" src="./images/currencies-logos/example-logo.png" alt="">
                   <div class="estimated-token__point-description">
                     <h3 class="estimated-token__point-title">1Inch</h3>
-                    <div class="estimated-token__parameters">
-                      <span class="estimated-token__parameter estimated-token__parameter_time">10 min</span>
-                      <span class="estimated-token__parameter estimated-token__parameter_gas">0.00735 MATIC</span>
+                    <div class="estimated-token__point-parameters">
+                      <span class="estimated-token__point-parameter">
+                        <img src="./images/time-icon_gray.svg" alt="">
+                        10 min
+                      </span>
+                      <span class="estimated-token__point-parameter">
+                        <img src="./images/fuel-icon_gray.svg" alt="">
+                        0.00735 MATIC
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -566,6 +621,7 @@
                     </div>
                   </div>
                   <span class="estimated-token__point-content-middle">
+                    <img src="./images/swap-icon.svg" alt="">
                     Swap to 0.004599 Ethereum
                   </span>
                   <div class="estimated-token__point-content-end">
@@ -585,8 +641,11 @@
                   <img class="estimated-token__point-logo" src="./images/currencies-logos/example-logo.png" alt="">
                   <div class="estimated-token__point-description">
                     <h3 class="estimated-token__point-title">1Inch</h3>
-                    <div class="estimated-token__parameters">
-                      <span class="estimated-token__parameter estimated-token__parameter_time">4 min</span>                      
+                    <div class="estimated-token__point-parameters">
+                      <span class="estimated-token__point-parameter">
+                        <img src="./images/time-icon_gray.svg" alt="">
+                        10 min
+                      </span>                      
                     </div>
                   </div>
                 </div>
@@ -602,6 +661,7 @@
                     </div>
                   </div>
                   <span class="estimated-token__point-content-middle">
+                    <img src="./images/transfer-icon.svg" alt="">
                     Transfer to 0.004599 Wrapped Ethereum
                   </span>
                   <div class="estimated-token__point-content-end">
@@ -621,8 +681,11 @@
                   <img class="estimated-token__point-logo" src="./images/currencies-logos/example-logo.png" alt="">
                   <div class="estimated-token__point-description">
                     <h3 class="estimated-token__point-title">1Inch</h3>
-                    <div class="estimated-token__parameters">
-                      <span class="estimated-token__parameter estimated-token__parameter_time">4 min</span>
+                    <div class="estimated-token__point-parameters">
+                      <span class="estimated-token__point-parameter">
+                        <img src="./images/time-icon_gray.svg" alt="">
+                        10 min
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -638,6 +701,7 @@
                     </div>
                   </div>
                   <span class="estimated-token__point-content-middle">
+                    <img src="./images/transfer-icon.svg" alt="">
                     Transfer to 0.004599 Wrapped Ethereum
                   </span>
                   <div class="estimated-token__point-content-end">
@@ -657,8 +721,11 @@
                   <img class="estimated-token__point-logo" src="./images/currencies-logos/example-logo.png" alt="">
                   <div class="estimated-token__point-description">
                     <h3 class="estimated-token__point-title">1Inch</h3>
-                    <div class="estimated-token__parameters">
-                      <span class="estimated-token__parameter estimated-token__parameter_time">4 min</span>
+                    <div class="estimated-token__point-parameters">
+                      <span class="estimated-token__point-parameter">
+                        <img src="./images/time-icon_gray.svg" alt="">
+                        10 min
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -674,6 +741,7 @@
                     </div>
                   </div>
                   <span class="estimated-token__point-content-middle">
+                    <img src="./images/transfer-icon.svg" alt="">
                     Transfer to 0.004599 Wrapped Ethereum
                   </span>
                   <div class="estimated-token__point-content-end">
@@ -690,7 +758,11 @@
               </div>
             </div>
           </div>
-        </div>
+          <div class="estimated-token__under-dev">
+            <img src="./images/code-icon.svg" alt="">
+            <span>Other routes under development</span>
+          </div>
+        </div>        
       </div>    
     </div>
   </div>
@@ -721,6 +793,7 @@
             </li>
           </ul>
         </nav>
+        <button class="search-button"></button>
         <!-- <input class="header__search" type="text" placeholder="Search"> -->
         <!-- <button class="header__cta btn btn_middle btn_outlined">Connect to a wallet</button> -->
         <a class="wallet-info-button">
@@ -855,7 +928,7 @@
                 </div>
                 <button class="transfers-form__submit btn btn_primary" type="submit">Connect a wallet</button>
               </fieldset>     
-              <button class="estimated-token">
+              <button class="estimated-token estimated-token-button">
                 <div class="estimated-token__container">
                   <span class="estimated-token__title">
                     Estimated token: 5.2 USDC

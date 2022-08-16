@@ -14,7 +14,7 @@ export function mobileCheck(device = (navigator.userAgent || navigator.vendor ||
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const chooseTokenBtn = document.querySelector('.find-bridge-form__choose-token-btn');
+    const chooseTokenButtons = document.querySelectorAll('.choose-token-button');
     const chooseTokenInput = document.querySelector('.find-bridge-form__choose-token-input') as HTMLInputElement;    
     const networksListInputs = document.querySelectorAll('.networks-list-input') as NodeListOf<HTMLInputElement>;
     const menuButton = document.querySelector('.header__menu-button');    
@@ -27,9 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupBottomBg = document.querySelector('.popup-bottom__bg');
     const selectNetworkBtn = document.querySelector('.choose-token-popup__button');    
     const advancedSettingsButton = document.getElementById('advancedSettingsBtn');    
+    const searchButton = document.querySelector('.search-button');
+    const popupCloseButtons = document.querySelectorAll('.popup__close');
+    const popups = document.querySelectorAll('.popup');
+    const estimatedTokenBtn = document.querySelector('.estimated-token-button');
+    const walletButton = document.querySelector('.wallet-info-button');
     
     function closeBottomPopup(evt) {
         evt.target.closest('.popup-bottom').classList.remove('active');        
+    }
+
+    function popupCloseHandler(evt) {
+        if (evt.target.classList.contains('popup')) {
+            evt.target.classList.remove('active');    
+        }
+
+        if (evt.target.classList.contains('popup__close')) {
+            evt.target.closest('.popup').classList.remove('active');
+        }
+        
+        document.body.classList.remove('fixed');
     }
     
     function filtersMobileHandler() {
@@ -39,17 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function chooseTokenBtnHandler(event) {        
+        const popup = document.querySelector('#chooseTokenPopup');
         event.preventDefault();
-        event.target.classList.remove('active');
-        chooseTokenInput.classList.add('active');
-        chooseTokenInput.focus();
+        popup?.classList.add('active');
+        document.body.classList.add('fixed');
     }
 
     function collapseChooseTokenInput(event) {                
         const popup = event.target.closest('.input-cnt').querySelector('.form-network-list-popup');
         event.target.classList.remove('active');
         event.target.value = '';
-        chooseTokenBtn?.classList.add('active');
+        // chooseTokenBtn?.classList.add('active');
         popup.classList.remove('active');
     }
 
@@ -73,20 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
         advancedSettings?.classList.toggle('active');
     }
 
+    function headerSearchHandler() {
+        const searchPopup = document.querySelector('#searchPopup');
+        searchPopup?.classList.add('active');
+        document.body.classList.add('fixed');
+    }
+
     // function openSupportedLogosPopup(event) {
     //     event.target.querySelector('.tooltip-popup').classList.add('active');
-    // }
-
-    menuButton?.addEventListener('click', mobileMenuHandler().open);
-    closeMenuButton?.addEventListener('click', mobileMenuHandler().close);
-    
-    // chooseTokenBtn?.addEventListener('click', chooseTokenBtnHandler);
-    // chooseTokenInput.addEventListener('blur', collapseChooseTokenInput);
-    // chooseTokenInput.addEventListener('input', showNetworksPopup);
-    // networksListInputs.forEach(input => {
-    //     input.addEventListener('input', showNetworksPopup);
-    //     input.addEventListener('blur', collapseNetworksPopup);
-    // })
+    // }    
 
     if (selectNetworkBtn) {
         selectNetworkBtn.addEventListener('click', () => {
@@ -116,15 +128,56 @@ document.addEventListener('DOMContentLoaded', () => {
     filtersBtn?.addEventListener('click', filtersMobileHandler);
     filtersCloseBtn?.addEventListener('click', filtersMobileHandler);
 
+    searchButton?.addEventListener('click', headerSearchHandler);
+
+    popupCloseButtons.forEach(el => {
+        el.addEventListener('click', popupCloseHandler);
+        document.body.classList.remove('fixed');
+    })
+
+    popups.forEach(el => {
+        el.addEventListener('click', popupCloseHandler);    
+        document.body.classList.remove('fixed');    
+    })
+
+    menuButton?.addEventListener('click', mobileMenuHandler().open);
+    closeMenuButton?.addEventListener('click', mobileMenuHandler().close);
+    
+    chooseTokenButtons?.forEach(el => {
+        el.addEventListener('click', chooseTokenBtnHandler);
+    })
+
     selectDateInput?.addEventListener('click', () => {
         const dateInputPopup = document.querySelector('.date-picker-popup');
         dateInputPopup?.classList.add('active');
         document.body.classList.add('fixed');
     })
 
+    document.addEventListener('keydown', (evt: KeyboardEvent) => {
+        popups.forEach(el => {
+            if (evt.key === 'Escape') el.classList.remove('active');
+            document.body.classList.remove('fixed');
+        })        
+    })
+
     popupBackBtn?.addEventListener('click', closeBottomPopup);
     popupBottomBg?.addEventListener('click', closeBottomPopup);
 
+    estimatedTokenBtn?.addEventListener('click', () => {
+        const popup = document.querySelector('#routesPopup');        
+        popup?.classList.add('active');
+        document.body.classList.add('fixed');        
+    })
+
     advancedSettingsButton?.addEventListener('click', collapseButtonHandler);
     routeLogosContainerHandler();
+
+    document.addEventListener('click', (evt) => {
+        console.log(evt.target);
+    })  
+    
+    walletButton?.addEventListener('click', () => {
+        const popup = document.querySelector('#walletActionsPopup');
+        popup?.classList.add('active');
+    })
 })

@@ -5,8 +5,13 @@
 		right: 0;
 		top: 0;
 		left: auto;
-		transform: none;
+		transform: translateX(100%);
 		border-radius: 1.25vw 0 0 1.25vw;
+		transition: all .4s;
 		height: 100%;
+	}
+
+	&.active .popup__container {
+		transform: translateX(0);
 	}
 }
