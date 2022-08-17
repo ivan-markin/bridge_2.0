@@ -163,8 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
     popupBackBtn?.addEventListener('click', closeBottomPopup);
     popupBottomBg?.addEventListener('click', closeBottomPopup);
 
-    estimatedTokenBtn?.addEventListener('click', () => {
+    estimatedTokenBtn?.addEventListener('click', (evt) => {
         const popup = document.querySelector('#routesPopup');        
+        evt.preventDefault();
         popup?.classList.add('active');
         document.body.classList.add('fixed');        
     })

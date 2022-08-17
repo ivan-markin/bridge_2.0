@@ -1,12 +1,17 @@
-.footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.footer {	
+	flex: none;
 	height: 3.85vw;
 	background-color: #142438;
 	color: #D9DBE1;
 	font-size: .73vw;
 	padding: 0 3.8vw;
+	
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 3.85vw;
+	}
 
 	&__left,
 	&__right {

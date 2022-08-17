@@ -76,6 +76,7 @@
 @import './blocks/filter-checkbox.scss';
 @import './blocks/search-button.scss';
 @import './blocks/search-popup.scss';
+@import './blocks/main.scss';
 
 *,
 *::before,
@@ -106,7 +107,10 @@ fieldset {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
+  min-height: 100vh;
 }
 
 .wrap {

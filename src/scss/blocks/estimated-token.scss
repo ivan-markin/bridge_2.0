@@ -6,16 +6,26 @@
 	cursor: pointer;
 	margin-bottom: .78vw;	
 
-	// &::after {
-	// 	content: '';
-	// 	display: block;
-	// 	position: absolute;
-	// 	left: 0;
-	// 	top: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	z-index: 10;
-	// }
+	&_popup {
+		
+		&::after {
+			content: '';
+			width: .52vw;
+			height: .3125vw;
+			background: url('../../images/dropdown-arrow_blue.svg') no-repeat center;
+			background-size: contain;
+			transform: rotate(-90deg);
+			position: absolute;
+			right: .7vw;
+			top: 1.4vw;
+		}
+
+		&.active {
+			&::after {				
+				transform: rotate(-180deg);				
+			}
+		}
+	}
 
 	&__container {
 		display: flex;
@@ -24,7 +34,7 @@
 		width: 100%;
 		cursor: pointer;
 		position: relative;
-		padding: .42vw 1.04vw;		
+		padding: .42vw 1.77vw .42vw 1.04vw;		
 	}
 
 	&_popup &__container {
