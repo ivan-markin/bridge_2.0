@@ -7,6 +7,7 @@
   border: none;
   background: none;  
   white-space: nowrap;
+  transition: all .2s;
   cursor: pointer;
   
   &_blue {
@@ -24,8 +25,7 @@
     background-color: #142438;
     font-size: 1.04vw;
     font-weight: 800;
-    color: white;
-    transition: all .2s;
+    color: white;    
     padding: 0 2.34vw;
 
     @media (min-width: 1921px) {
@@ -45,22 +45,35 @@
   }
   
   &_middle {
-    height: 2.7vw;    
-    font-size: 20px;
-    font-weight: 600;
-    padding: 0 26px;
+    height: 2.08vw;    
+    font-size: .9375vw;
+    font-weight: 700;
+    background-color: #142438;
+    border-radius: .42vw;
+    padding: 0 1.46vw;
+
+    &:hover {
+      background-color: #0A3468;
+    }
   }  
 
   &_outlined {
     border: white 1px solid;
+    background: none;
     border-radius: 12px;
   }
   
   &_outlined-red {
+    height: 2.7vw;
     border: #FF0032 1px solid;
     border-radius: .9375vw;
+    background: none;
     color: #FF0032;
     font-size: .78vw;
     font-weight: 600;
+
+    &:hover {
+      background: none;
+    }
   }
 }

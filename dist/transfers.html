@@ -8,7 +8,7 @@
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Bridge</title>
-<script defer src="bundle.cb0afd8211c29679a7af.js"></script><link href="styles.css" rel="stylesheet"></head>
+<script defer src="bundle.ce7b3d10801868ae2e4e.js"></script><link href="styles.css" rel="stylesheet"></head>
 
 <body>
   
@@ -172,11 +172,10 @@
     <div class="popup__container">
       <a class="popup__close" href="#"></a>
       <h1 class="popup__title">Select a Token</h1>
-      <input class="choose-token-popup__search search-input search-input_outlined" type="text">
       <span class="popup__input-label">Select a network</span>
       <div class="choose-token-popup__select select select_outlined select_small">
         <div class="choose-token-popup__button select__button">
-          Select a network
+          All networks
         </div>
         <div class="select__dropdown">
           <a class="select__item select__item_active" href="">
@@ -189,7 +188,7 @@
             <span class="select__item-logo">
               <img src="./images/currencies-logos/bnb.svg" alt="">
             </span>
-            <span class="select__item-name">Binance Smart Chain</span>
+            <span class="select__item-name">BSC</span>
           </a>
           <a class="select__item" href="">
             <span class="select__item-logo">
@@ -197,189 +196,286 @@
             </span>
             <span class="select__item-name">Polygon</span>
           </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/avalanche.svg" alt="">
+            </span>
+            <span class="select__item-name">Avalanche</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/fantom.svg" alt="">
+            </span>
+            <span class="select__item-name">Fantom</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/harmony.png" alt="">
+            </span>
+            <span class="select__item-name">Harmony</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/arbitrum.png" alt="">
+            </span>
+            <span class="select__item-name">Arbitrum</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/optimism.png" alt="">
+            </span>
+            <span class="select__item-name">Optimism</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/fuse.png" alt="">
+            </span>
+            <span class="select__item-name">Fuse</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/moon-river.png" alt="">
+            </span>
+            <span class="select__item-name">MoonRiver</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/cronos.png" alt="">
+            </span>
+            <span class="select__item-name">Cronos</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/gnosis.png" alt="">
+            </span>
+            <span class="select__item-name">Gnosis</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/moon-beam.png" alt="">
+            </span>
+            <span class="select__item-name">MoonBeam</span>
+          </a>
+          <a class="select__item" href="">
+            <span class="select__item-logo">
+              <img src="./images/currencies-logos/boba.png" alt="">
+            </span>
+            <span class="select__item-name">Boba</span>
+          </a>
         </div>
       </div>
       <span class="popup__input-label">Choose a token</span>
+      <input class="choose-token-popup__search search-input search-input_outlined" type="text" placeholder="Search for token">           
       <div class="choose-token-popup__tokens-list">
         
         <!-- Empty list -->
+        
         <!-- <div class="choose-token-popup__tokens-list-empty">
           <img src="./images/empty-list-icon.svg" alt="">
           <span>Token not found</span>
           <span>Try again with a different wording, or change the network</span>
         </div>   -->
-        <!--  -->        
         
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
+        <!--  -->        
+
+        <div class="choose-token-popup__owned-tokens">
+          <h3 class="choose-token-popup__list-title">Owned tokens</h3>
+          
+          <!-- <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
             </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div> -->
+
+          <button class="btn btn_middle">Connect to a wallet</button>
+        </div>
+
+        <div class="choose-token-popup__all-tokens">
+          <h3 class="choose-token-popup__list-title">All tokens</h3>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
           </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
+          </div>
+          <div class="tokens-list-item">
+            <div class="tokens-list-item__left">
+              <div class="tokens-list-item__logo">
+                <img src="./images/tokens-list-logos/omg.png" alt="">
+              </div>
+              <p class="tokens-list-item__title">
+                <span class="tokens-list-item__name">OMG</span>
+                <span class="tokens-list-item__network">
+                  <img src="./images/tokens-list-logos/network.png" alt="">
+                  Ethereum Network
+                </span>
+              </p>
+            </div>
+            <div class="tokens-list-item__right">
+              <span class="tokens-list-item__value">4.8729</span>
+            </div>
           </div>
         </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>
-        <div class="tokens-list-item">
-          <div class="tokens-list-item__left">
-            <div class="tokens-list-item__logo">
-              <img src="./images/tokens-list-logos/omg.png" alt="">
-            </div>
-            <p class="tokens-list-item__title">
-              <span class="tokens-list-item__name">OMG</span>
-              <span class="tokens-list-item__network">
-                <img src="./images/tokens-list-logos/network.png" alt="">
-                Ethereum Network
-              </span>
-            </p>
-          </div>
-          <div class="tokens-list-item__right">
-            <span class="tokens-list-item__value">4.8729</span>            
-          </div>
-        </div>        
+                       
       </div>
     </div>
   </div>
@@ -466,12 +562,106 @@
         <span>0x07A0...B57F</span>
         <button class="copy-button"></button>
       </div>
+      <div class="wallet-actions-popup__balance">
+        <span>8.531 МАTIC</span>
+        <img src="./images/wallet-icon_blue.svg" alt="">
+      </div>
       <!-- <span class="wallet-actions-popup__copied">
         Copied
         <img src="./images/copied.svg" alt="">
       </span> -->
       <div class="wallet-actions-popup__actions">
-        <button class="btn btn_middle btn_outlined-red">Change</button>
+        <div class="wallet-actions-popup__select select select_outlined select_small">
+          <div class="choose-token-popup__button select__button">
+            All networks
+          </div>
+          <div class="select__dropdown">
+            <a class="select__item select__item_active" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/eth.svg" alt="">
+              </span>
+              <span class="select__item-name">Etherium</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/bnb.svg" alt="">
+              </span>
+              <span class="select__item-name">BSC</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/polygon.svg" alt="">
+              </span>
+              <span class="select__item-name">Polygon</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/avalanche.svg" alt="">
+              </span>
+              <span class="select__item-name">Avalanche</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/fantom.svg" alt="">
+              </span>
+              <span class="select__item-name">Fantom</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/harmony.png" alt="">
+              </span>
+              <span class="select__item-name">Harmony</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/arbitrum.png" alt="">
+              </span>
+              <span class="select__item-name">Arbitrum</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/optimism.png" alt="">
+              </span>
+              <span class="select__item-name">Optimism</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/fuse.png" alt="">
+              </span>
+              <span class="select__item-name">Fuse</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/moon-river.png" alt="">
+              </span>
+              <span class="select__item-name">MoonRiver</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/cronos.png" alt="">
+              </span>
+              <span class="select__item-name">Cronos</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/gnosis.png" alt="">
+              </span>
+              <span class="select__item-name">Gnosis</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/moon-beam.png" alt="">
+              </span>
+              <span class="select__item-name">MoonBeam</span>
+            </a>
+            <a class="select__item" href="">
+              <span class="select__item-logo">
+                <img src="./images/currencies-logos/boba.png" alt="">
+              </span>
+              <span class="select__item-name">Boba</span>
+            </a>
+          </div>
+        </div>
         <button class="btn btn_middle btn_outlined-red">Disconnect</button>
       </div>
     </div>
@@ -974,7 +1164,18 @@
                 </div> -->
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <button class="info-button"></button>
+                    <div class="tooltip">
+                      <button class="info-button"></button>
+                      <div class="tooltip-popup tooltip-popup_m">
+                        <span>
+                          <h3 class="tooltip-popup__title">Заголовок</h3>
+                          Чисто текстовый тултип размера M и блабла бла блабла блабла бла и блабла бла блабла блабла бла блабла блаблаблаб блабла
+                          бла. блаблаблаб
+                          Принять
+                          Закрыть
+                        </span>
+                      </div>
+                    </div>                    
                     <span class="transfers-form__filters-title">Route priority:</span>                    
                   </div>
                   <div class="transfers-form__filters-container">
@@ -994,7 +1195,19 @@
                 </div>
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <button class="info-button"></button>
+                    <div class="tooltip">
+                      <button class="info-button"></button>
+                      <div class="tooltip-popup tooltip-popup_m">
+                        <span>
+                          <h3 class="tooltip-popup__title">Заголовок</h3>
+                          Чисто текстовый тултип размера M и блабла бла блабла блабла бла и блабла бла блабла блабла бла блабла блаблаблаб
+                          блабла
+                          бла. блаблаблаб
+                          Принять
+                          Закрыть
+                        </span>
+                      </div>
+                    </div>
                     <span class="transfers-form__filters-title">Infinite Approval</span>                    
                   </div>
                   <div class="transfers-form__filters-container">                    
@@ -1009,7 +1222,19 @@
               <fieldset class="transfers-form__advanced-settings">
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <button class="info-button"></button>
+                    <div class="tooltip">
+                      <button class="info-button"></button>
+                      <div class="tooltip-popup tooltip-popup_m">
+                        <span>
+                          <h3 class="tooltip-popup__title">Заголовок</h3>
+                          Чисто текстовый тултип размера M и блабла бла блабла блабла бла и блабла бла блабла блабла бла блабла блаблаблаб
+                          блабла
+                          бла. блаблаблаб
+                          Принять
+                          Закрыть
+                        </span>
+                      </div>
+                    </div>
                     <span class="transfers-form__filters-title">Slippage tolerance:</span>
                   </div>
                   <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
@@ -1033,7 +1258,19 @@
                 </div>
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <button class="info-button"></button>
+                    <div class="tooltip">
+                      <button class="info-button"></button>
+                      <div class="tooltip-popup tooltip-popup_m">
+                        <span>
+                          <h3 class="tooltip-popup__title">Заголовок</h3>
+                          Чисто текстовый тултип размера M и блабла бла блабла блабла бла и блабла бла блабла блабла бла блабла блаблаблаб
+                          блабла
+                          бла. блаблаблаб
+                          Принять
+                          Закрыть
+                        </span>
+                      </div>
+                    </div>
                     <span class="transfers-form__filters-title">Bridges:</span>
                   </div>
                   <div class="transfers-form__filters-container transfers-form__filters-container_wrap">
@@ -1077,7 +1314,19 @@
                 </div>                
                 <div class="transfers-form__filters-item">
                   <div class="transfers-form__filters-title-block">
-                    <button class="info-button"></button>
+                    <div class="tooltip">
+                      <button class="info-button"></button>
+                      <div class="tooltip-popup tooltip-popup_m">
+                        <span>
+                          <h3 class="tooltip-popup__title">Заголовок</h3>
+                          Чисто текстовый тултип размера M и блабла бла блабла блабла бла и блабла бла блабла блабла бла блабла блаблаблаб
+                          блабла
+                          бла. блаблаблаб
+                          Принять
+                          Закрыть
+                        </span>
+                      </div>
+                    </div>
                     <span class="transfers-form__filters-title">Exchanges:</span>
                   </div>
                   <div class="transfers-form__filters-container transfers-form__filters-container_wrap">

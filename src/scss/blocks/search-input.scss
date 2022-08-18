@@ -10,15 +10,20 @@
 	font-size: .94vw;
 	outline: none;
 	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.02);
+	transition: all .1s;
 	padding: 0 1.25vw 0 2.45vw;	
 
 	&_outlined {
 		background-size: .98vw;
 		border-radius: .78vw;
-		border: var(--primary-blue) 1px solid;
+		border: #E2E7F3 1px solid;
 		height: 2.6vw;		
-		font-size: .83vw;
+		font-size: .83vw;		
 		box-shadow: none;
+
+		&:focus {
+			border-color: var(--font-dark);
+		}
 	}
 	
 	@media (max-width: 768px) {

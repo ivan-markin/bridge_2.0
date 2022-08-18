@@ -5,10 +5,26 @@
 		margin-bottom: 1.67vw;
 	}
 
-	&__tokens-list {
-		height: 350px;
-		max-height: 18.2vh;
+	&__tokens-list {		
+		height: 40vh;
+		width: calc(100% + 1.15vw);
 		overflow-y: scroll;
+		padding-right: 1.15vw;
+
+		&::-webkit-scrollbar {
+			width: 4px;			
+		}
+	
+		&::-webkit-scrollbar-track {
+			background-color: rgba(0, 113, 255, 0.15);
+			width: 4px;
+			margin-bottom: 2.08vw;
+		}
+	
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--primary-blue);
+			border-radius: 2px;
+		}
 	}
 
 	&__tokens-list-empty {
@@ -36,11 +52,43 @@
 		}
 	}
 
+	&__list-title {
+		font-size: .73vw;
+		font-weight: 700;
+		color: #4C76AA;
+	}
+
 	&__select {
 		margin-bottom: 1.67vw;
+
+		.select__dropdown {
+			max-height: 300px;
+			overflow-y: scroll;
+		
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+		
+			&::-webkit-scrollbar-track {
+				background-color: rgba(0, 113, 255, 0.15);
+				width: 4px;
+				border-radius: 2px;
+				margin-bottom: .98vw;
+			}
+		
+			&::-webkit-scrollbar-thumb {
+				background-color: var(--primary-blue);
+				border-radius: 2px;
+			}
+		}
 	}	
+
+	&__owned-tokens {
+		margin-bottom: 1.46vw;
+	}
 	
 	.popup__container {
-		width: 34.64vw;
+		width: 34.64vw;		
+		padding-bottom: 0;
 	}	
 }

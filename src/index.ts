@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectDateInput = document.querySelector('.select-date');
     const popupBackBtn = document.querySelector('.popup-bottom__back-btn');
     const popupBottomBg = document.querySelector('.popup-bottom__bg');
-    const selectNetworkBtn = document.querySelector('.choose-token-popup__button');    
+    const selectButtons = document.querySelectorAll('.select__button');    
     const advancedSettingsButton = document.getElementById('advancedSettingsBtn');    
     const searchButton = document.querySelector('.search-button');
     const popupCloseButtons = document.querySelectorAll('.popup__close');
@@ -100,10 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
     //     event.target.querySelector('.tooltip-popup').classList.add('active');
     // }    
 
-    if (selectNetworkBtn) {
-        selectNetworkBtn.addEventListener('click', () => {
-            selectNetworkBtn.parentElement?.classList.toggle('active');
-        })
+    if (selectButtons) {
+        selectButtons.forEach(el => {
+            el.addEventListener('click', () => {
+                el.parentElement?.classList.toggle('active');
+            })
+        })        
     }
     
     function routeLogosContainerHandler() {        

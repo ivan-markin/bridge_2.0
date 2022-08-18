@@ -2,10 +2,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	cursor: pointer;
-	border-bottom: 1px solid #F4F6FB;
+	cursor: pointer;	
 	padding-bottom: .625vw;
 	margin-bottom: .625vw;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid #F4F6FB;
+	}
 
 	&__left {
 		display: flex;
@@ -19,18 +22,17 @@
 	}
 
 	&__logo {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 2.5vw;
-		height: 2.5vw;
-		background: #F4F6FB;
-		border-radius: .83vw;
-		margin-right: .625vw;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+		// width: 2.5vw;
+		// height: 2.5vw;
+		// background: #F4F6FB;
+		// border-radius: .83vw;
+		margin-right: .68vw;
 
 		img {
-			width: 1.35vw;
-			height: 1.35vw;
+			width: 1.35vw;			
 		}
 	}
 
