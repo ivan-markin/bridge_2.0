@@ -10,15 +10,22 @@
 	&__button {
 		display: flex;
 		align-items: center;
-		height: 1.67vw;
+		height: 32px;
 		color: rgba(0, 57, 92, 0.8);
 		border: 1px solid #E2E6EE;
-		border-radius: .2vw;
-		font-size: .83vw;		
+		border-radius: 4px;
+		font-size: 16px;		
 		transition: all .2s;
 		cursor: pointer;
 		user-select: none;
-		padding: 0 .625vw;
+		padding: 0 12px;
+
+		@media (min-width: 1920px) {
+			height: 1.67vw;			
+			border-radius: .2vw;
+			font-size: .83vw;		
+			padding: 0 .625vw;
+		}
 	}
 
 	&__input:checked+span {
@@ -27,11 +34,17 @@
 
 		&::before {
 			content: '';
-			width: .83vw;
-			height: .83vw;
+			width: 16px;
+			height: 16px;
 			background: url('../../images/filter-check-icon.svg') no-repeat center;
 			background-size: contain;
-			margin-right: .3125vw;
+			margin-right: 6px;
+
+			@media (min-width: 1920px) {
+				width: .83vw;
+				height: .83vw;			
+				margin-right: .3125vw;
+			}
 		}
 	}
 }

@@ -10,13 +10,19 @@
 
 	&__block {
 		display: flex;
-		width: 2.29vw;
-		height: 1.25vw;
-		border-radius: .625vw;		
+		width: 44px;
+		height: 24px;
+		border-radius: 12px;		
 		border: #7A9DB1 1px solid;
 		position: relative;
 		cursor: pointer;
 		padding: 2px;
+
+		@media (min-width: 1920px) {
+			width: 2.29vw;
+			height: 1.25vw;
+			border-radius: .625vw;
+		}
 
 		&::after {
 			content: '';
@@ -24,11 +30,16 @@
 			position: absolute;
 			left: 1px;
 			top: 1px;
-			width: calc(1.25vw - 4px);
-			height: calc(1.25vw - 4px);
+			width: 20px;
+			height: 20px;
 			border-radius: 50%;			
 			background-color: #7A9DB1;
 			transition: all .2s;
+
+			@media (min-width: 1920px) {
+				width: calc(1.25vw - 4px);
+				height: calc(1.25vw - 4px);
+			}
 		}
 	}
 

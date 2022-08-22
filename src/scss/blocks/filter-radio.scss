@@ -9,16 +9,24 @@
 	}
 
 	&__text-input {
-		height: 2.08vw;
-		width: 4.06vw;
-		border-radius: .52vw;
+		height: 40px;
+		width: 78px;
+		border-radius: 10px;
 		border: #F4F6FB 1px solid;
-		font-size: .83vw;
+		font-size: 16px;
 		font-weight: 600;
 		background-color: #F4F6FB;
 		color: var(--font-dark);	
 		outline: none;	
-		padding: .625vw;
+		padding: 12px;
+
+		@media (min-width: 1920px) {
+			height: 2.08vw;
+			width: 4.06vw;
+			border-radius: .52vw;			
+			font-size: .83vw;			
+			padding: .625vw;
+		}
 
 		&::placeholder {
 			color: #989EB1;
@@ -32,10 +40,14 @@
 
 	&__button {		
 		color: #969EB0;
-		font-size: .83vw;
+		font-size: 16px;
 		font-weight: 600;
 		transition: all .2s;
-		cursor: pointer;		
+		cursor: pointer;	
+		
+		@media (min-width: 1920px) {
+			font-size: .83vw;
+		}
 	}
 
 	&__input:checked + span {		

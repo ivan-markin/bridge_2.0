@@ -3,8 +3,12 @@
 	height: 3.85vw;
 	background-color: #142438;
 	color: #D9DBE1;
-	font-size: .73vw;
+	font-size: 14px;
 	padding: 0 3.8vw;
+
+	@media (min-width: 1920px) {
+		font-size: .73vw;		
+	}
 	
 	&__container {
 		display: flex;

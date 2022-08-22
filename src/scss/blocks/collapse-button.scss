@@ -1,20 +1,30 @@
 .collapse-button {
 	display: flex;
 	align-items: center;
-	font-size: .73vw;
+	font-size: 14px;
 	font-weight: 800;
 	border: none;
 	background: none;
 	cursor: pointer;
 	padding: 0;
 
+	@media (min-width: 1920px) {
+		font-size: .73vw;
+	}
+
 	&::after {
 		content: '';
-		width: 1.04vw;
-		height: 1.04vw;
+		width: 20px;
+		height: 20px;
 		background: url('../../images/arrow-square-down.svg') no-repeat center;
 		background-size: contain;
-		margin-left: .3125vw;
+		margin-left: 6px;
+
+		@media (min-width: 1920px) {
+			width: 1.04vw;
+			height: 1.04vw;
+			margin-left: .3125vw;
+		}
 	}
 
 	&.active {

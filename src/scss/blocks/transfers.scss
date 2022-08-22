@@ -1,10 +1,15 @@
 .transfers {
 	position: relative;
 	top: -20px;
-	width: 65vw;
-	border-radius: 2.08vw;
+	width: 100%;
+	border-radius: 40px;
 	background-color: #fff;
 	padding: 1.67vw;	
+
+	@media (min-width: 1920px) {		
+		border-radius: 2.08vw;		
+		padding: 1.67vw;
+	}
 
 	&__title {
 		margin-bottom: .625vw;
@@ -50,26 +55,44 @@
 	&__supported {
 		display: flex;
 		align-items: center;
-		margin-bottom: 1.35vw;
+		margin-bottom: 26px;
+
+		@media (min-width: 1920px) {
+			margin-bottom: 1.35vw;
+		}
 	}
 
 	&__supported-title {
-		font-size: .73vw;
+		font-size: 14px;
 		font-weight: 500;
-		margin-right: .26vw;
+		margin-right: 5px;
+
+		@media (min-width: 1920px) {
+			font-size: .73vw;
+			margin-right: .26vw;
+		}
 	}
 	
 	&__supported-item-title {
-		font-size: .73vw;
+		font-size: 14px;
 		font-weight: 500;
 		opacity: .45;
-		margin-right: .26vw;
+		margin-right: 5px;
+
+		@media (min-width: 1920px) {
+			font-size: .73vw;
+			margin-right: .26vw;
+		}
 	}
 
 	&__supported-list {
 		display: flex;
 		align-items: center;
-		gap: .83vw;
+		gap: 16px;
+
+		@media (min-width: 1920px) {
+			gap: .83vw;
+		}
 	}
 
 	&__supported-item {
@@ -78,13 +101,21 @@
 	}
 
 	&__supported-logos {
-		margin-right: .16vw;
+		margin-right: 3px;
+
+		@media (min-width: 1920px) {
+			margin-right: .16vw;
+		}
 	}
 
 	&__supported-logos-more {
-		font-size: .625vw;
+		font-size: 12px;
 		font-weight: 700;
 		color: var(--primary-blue);
 		text-decoration: none;
+
+		@media (min-width: 1920px) {
+			font-size: .625vw;
+		}
 	}
 }
