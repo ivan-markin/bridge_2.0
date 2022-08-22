@@ -20,7 +20,7 @@
 		user-select: none;
 		padding: 0 12px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			height: 1.67vw;			
 			border-radius: .2vw;
 			font-size: .83vw;		
@@ -40,7 +40,7 @@
 			background-size: contain;
 			margin-right: 6px;
 
-			@media (min-width: 1920px) {
+			@media (max-width: 1280px), (min-width: 1920px) {
 				width: .83vw;
 				height: .83vw;			
 				margin-right: .3125vw;

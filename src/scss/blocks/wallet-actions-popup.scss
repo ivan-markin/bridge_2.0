@@ -13,7 +13,7 @@
 		width: 76px;
 		margin-bottom: 8px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			width: 4vw;
 			margin-bottom: .42vw;
 		}
@@ -23,7 +23,7 @@
 		font-size: 32px;
 		margin-bottom: 4px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: 1.67vw;
 			margin-bottom: .2vw;
 		}
@@ -34,7 +34,7 @@
 		align-items: center;
 		margin-bottom: 8px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			margin-bottom: .42vw;
 		}
 		
@@ -44,7 +44,7 @@
 			color: var(--primary-blue);
 			margin-right: 10px;
 
-			@media (min-width: 1920px) {
+			@media (max-width: 1280px), (min-width: 1920px) {
 				font-size: .83vw;				
 				margin-right: .625vw;
 			}
@@ -81,8 +81,9 @@
 		width: 200px;
 		height: 52px;
 		
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			width: 10.42vw;			
+			height: 2.7vw;
 		}
 		
 		.select__dropdown {			
@@ -116,10 +117,11 @@
 		color: var(--primary-blue);
 		font-size: 16px;
 		font-weight: 500;
-		padding: 0 8px;
+		white-space: nowrap;
+		padding: 0 8px;		
 		margin-bottom: 48px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			border-radius: .625vw;
 			height: 1.875vw;			
 			font-size: .83vw;		

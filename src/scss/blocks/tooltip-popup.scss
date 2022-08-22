@@ -14,7 +14,7 @@
 	transition: all .2s;
 	padding: 8px;	
 
-	@media (min-width: 1920px) {
+	@media (max-width: 1280px), (min-width: 1920px) {
 		font-size: .625vw;
 		transform: translateX(calc(-50% - .2vw)) translateY(calc(-100% - .42vw));
 		padding: .42vw;
@@ -31,7 +31,7 @@
 		bottom: -6px;
 		left: calc(50% - 6px);	
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			width: .625vw;
 			height: .3125vw;			
 			bottom: -.3125vw;
@@ -56,7 +56,7 @@
 		font-weight: 700;
 		margin: 0 0 8px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .625vw;			
 			margin: 0 0 .42vw;
 		}

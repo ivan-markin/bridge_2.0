@@ -21,9 +21,14 @@
 
 	&__title {
 		font-weight: 800;
-		font-size: 1.67vw;
+		font-size: 32px;
 		width: fit-content;
-		margin: 0 auto 1.56vw auto;
+		margin: 0 auto 30px auto;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: 1.67vw;			
+			margin: 0 auto 1.56vw auto;
+		}
 	}
 	
 	&__container {
@@ -32,26 +37,43 @@
 		top: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		background-color: white;
-		border-radius: 1.25vw;
-		padding: 2.08vw 2.6vw;
+		border-radius: 24px;
+		padding: 40px 50px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			border-radius: 1.25vw;
+			padding: 2.08vw 2.6vw;
+		}
 	}
 
 	&__input-label {
 		display: block;
-		font-size: .73vw;
+		font-size: 14px;
 		font-weight: 700;
-		margin-bottom: 1.04vw;
+		margin-bottom: 20px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: .73vw;			
+			margin-bottom: 1.04vw;
+		}
 	}
 
 	&__close {
 		display: block;
-		width: .89vw;
-		height: .89vw;
+		width: 17px;
+		height: 17px;
 		background: url('../../images/popup-close-button.svg') no-repeat center;
 		background-size: contain;
 		position: absolute;
-		right: 1.2vw;
-		top: 1.67vw;
+		right: 23px;
+		top: 32px;
 		cursor: pointer;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			width: .89vw;
+			height: .89vw;	
+			right: 1.2vw;
+			top: 1.67vw;
+		}
 	}
 }

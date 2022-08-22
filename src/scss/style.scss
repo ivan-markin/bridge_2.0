@@ -126,14 +126,14 @@ fieldset {
 
 .wrapper {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1280px;  
   padding: 0 40px;
   margin: 0 auto;
 
-  @media (min-width: 1920px) {
+  @media (max-width: 1280px), (min-width: 1920px) {
     max-width: 65vw;
     padding: 0;
-  }
+  }  
 }
 
 .swiper-navigation-block {

@@ -23,21 +23,16 @@
     height: 3.75vw;
     border-radius: .83vw;
     background-color: #142438;
-    font-size: 1.04vw;
+    font-size: 20px;
     font-weight: 800;
     color: white;    
     padding: 0 2.34vw;
 
-    @media (min-width: 1921px) {
-			font-size: 24px;
+    @media (max-width: 1280px), (min-width: 1920px) {
+      font-size: 1.04vw;
 			height: 80px;
       padding: 0 45px;
-		}
-
-    @media (max-width: 768px) {			
-			font-size: 18px;
-      height: 50px;      
-		}
+		} 
 
     &:hover {
       background-color: #0A3468;
@@ -45,12 +40,19 @@
   }
   
   &_middle {
-    height: 2.08vw;    
-    font-size: .9375vw;
+    height: 40px;    
+    font-size: 18px;
     font-weight: 700;
     background-color: #142438;
-    border-radius: .42vw;
-    padding: 0 1.46vw;
+    border-radius: 8px;
+    padding: 0 28px;
+
+    @media (max-width: 1280px), (min-width: 1920px) {
+      height: 2.08vw;
+      font-size: .9375vw;     
+      border-radius: .42vw;
+      padding: 0 1.46vw;
+    }
 
     &:hover {
       background-color: #0A3468;
@@ -72,7 +74,7 @@
     font-size: 15px;
     font-weight: 600;
 
-    @media (min-width: 1920px) {
+    @media (max-width: 1280px), (min-width: 1920px) {
       height: 2.7vw;      
       border-radius: .9375vw;   
       font-size: .78vw;

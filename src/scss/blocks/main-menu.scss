@@ -13,7 +13,7 @@
     font-weight: 600;
     transition: all .2s;       
 
-    @media (min-width: 1920px) {
+    @media (max-width: 1280px), (min-width: 1920px) {
       font-size: 1.04vw;
     }
 
@@ -34,11 +34,16 @@
       &::after {
         content: '';
         width: 100%;
-        height: .16vw;
+        height: 3px;
         background-color: #fff;
         position: absolute;
         left: 0;
-        bottom: -2vw;
+        bottom: -32px;
+
+        @media (max-width: 1280px), (min-width: 1920px) {
+          height: .16vw;         
+          bottom: -1.75vw;
+        }
       }
     }
 
@@ -91,7 +96,7 @@
         top: -15px;
         padding: 0 3px;
 
-        @media (min-width: 1920px) {
+        @media (max-width: 1280px), (min-width: 1920px) {
           height: .83vw;
           font-size: .47vw;          
           border-radius: .16vw;          
@@ -119,7 +124,7 @@
         top: -15px;
         padding: 0 3px;
 
-        @media (min-width: 1920px) {
+        @media (max-width: 1280px), (min-width: 1920px) {
           height: .83vw;
           font-size: .47vw;
           border-radius: .16vw;

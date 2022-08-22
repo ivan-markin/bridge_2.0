@@ -6,7 +6,7 @@
 	cursor: pointer;
 	margin-bottom: 15px;	
 
-	@media (min-width: 1920px) {
+	@media (max-width: 1280px), (min-width: 1920px) {
 		margin-bottom: .78vw;
 	}
 
@@ -23,7 +23,7 @@
 			right: .7vw;
 			top: 27px;
 
-			@media (min-width: 1920px) {
+			@media (max-width: 1280px), (min-width: 1920px) {
 				width: .52vw;
 				height: .3125vw;
 				right: 13px;
@@ -47,7 +47,7 @@
 		position: relative;
 		padding: 8px 20px;		
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			padding: .42vw 1.77vw .42vw 1.04vw;
 		}
 	}
@@ -55,11 +55,11 @@
 	&_popup &__container {
 		background-color: #0071FF26;		
 		border-radius: .83vw;
-		padding: .42vw 2.4vw .42vw .625vw;
+		padding: 8px 46px 8px 12px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			border-radius: .83vw;
-			padding: 8px 46px 8px 12px;
+			padding: .42vw 2.4vw .42vw .625vw;			
 		}
 	}
 	
@@ -108,7 +108,7 @@
 		border-radius: 8px;
 		padding: 8px 16px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			gap: .73vw;
 			border-radius: .42vw;
 			padding: .42vw .83vw;
@@ -126,7 +126,7 @@
 		color: #000;
 		font-size: 14px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			gap: .2vw;
 			font-size: .73vw;
 		}
@@ -135,7 +135,7 @@
 			width: 24px;
 			margin-right: 4px;		
 			
-			@media (min-width: 1920px) {
+			@media (max-width: 1280px), (min-width: 1920px) {
 				width: 1.25vw;
 				margin-right: .2vw;
 			}
@@ -146,7 +146,7 @@
 		font-size: 14px;
 		color: #000;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .73vw;
 		}
 	}
@@ -160,14 +160,10 @@
 		font-weight: 800;	
 		margin-right: 6px;	
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .94vw;
 			margin-right: .52vw;
-		}
-
-		@media (max-width: 1440px) {
-			font-size: 16px;
-		}
+		}		
 	}
 
 	&_popup &__title {		
@@ -182,7 +178,7 @@
 		color: var(--primary-blue);
 		margin-left: auto;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .94vw;
 		}
 	
@@ -196,7 +192,7 @@
 			background-size: contain;
 			margin-left: 15px;
 
-			@media (min-width: 1920px) {
+			@media (max-width: 1280px), (min-width: 1920px) {
 				width: .3125vw;
 				height: .52vw;
 				margin-left: .78vw;
@@ -212,22 +208,35 @@
 
 	&__subtitle {
 		color: #949BAF;
-		font-size: .83vw;
+		font-size: 16px;
 		font-weight: 400;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: .83vw;
+		}
 	}
 
 	&__badge {
 		display: flex;
 		align-items: center;
-		height: .83vw;
-		border-radius: .26vw;
-		font-size: .52vw;
+		height: 16px;
+		border-radius: 5px;
+		font-size: 10px;
 		font-weight: 700;
 		text-transform: uppercase;
 		position: absolute;
-		left: 2.24vw;
-		top: -.41vw;
-		padding: 0 .3125vw;
+		left: 33px;
+		top: -8px;
+		padding: 0 6px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			height: .83vw;
+			border-radius: .26vw;
+			font-size: .52vw;			
+			left: 1.7vw;
+			top: -.41vw;
+			padding: 0 .3125vw;
+		}
 
 		&.cheapest {
 			background-color: #CCFF00;
@@ -241,13 +250,21 @@
 	&__point {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: .94vw;
+		margin-bottom: 18px;
+		
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin-bottom: .94vw;
+		}
 	}
 
 	&__point-head {
 		display: flex;
 		align-items: center;
-		margin-bottom: .94vw;
+		margin-bottom: 18px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin-bottom: .94vw;
+		}
 	}
 
 	&__point-description {
@@ -256,31 +273,53 @@
 	}
 
 	&__point-title {
-		font-size: .83;
+		font-size: 16px;
 		margin: 0 0 .1vw;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: .83vw;
+		}
 	}
 
 	&__point-logo {
 		flex: none;
-		width: 2.1875vw;
-		margin-right: .47vw;
+		width: 42px;
+		margin-right: 9px;
+
+		@media (max-width: 1280px),(min-width: 1920px) {
+			width: 2.1875vw;
+			margin-right: .47vw;
+		}
 	}	
 	
 	&__point-parameters {
 		display: flex;
 		align-items: center;
-		gap: .47vw;
+		gap: 9px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			gap: .47vw;
+		}
 	}
 
 	&__point-parameter {
 		display: flex;
 		align-items: center;
-		gap: .2vw;
+		gap: 4px;
 		white-space: nowrap;
-		font-size: .73vw;
+		font-size: 14px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			gap: .2vw;			
+			font-size: .73vw;
+		}
 
 		img {
-			height: .625vw;
+			height: 12px;
+
+			@media (max-width: 1280px), (min-width: 1920px) {
+				height: .625vw;
+			}
 		}
 	}
 
@@ -289,29 +328,46 @@
 		flex-direction: column;
 		border-left: rgba(148, 155, 175, 0.45) 1px solid;		
 		position: relative;
-		padding-left: 1.15vw;
-		margin-left: 1vw;
+		padding-left: 22px;
+		margin-left: 19px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			padding-left: 1.15vw;
+			margin-left: 1vw;
+		}
 
 		&::before {
 			content: '';
-			width: .68vw;
-			height: 1.5vw;
+			width: 13px;
+			height: 28px;
 			background: url('../../images/border-point_top.svg') no-repeat center;
 			background-size: contain;
 			position: absolute;
 			top: 0;
-			left: -.37vw;
+			left: -7px;
+
+			@media (max-width: 1280px), (min-width: 1920px) {
+				width: .68vw;
+				height: 1.5vw;
+				left: -.37vw;
+			}
 		}
 
 		&::after {
 			content: '';
-			width: .68vw;
-			height: 1.5625vw;
+			width: 13px;
+			height: 30px;
 			background: url('../../images/border-point_bottom.svg') no-repeat center;
 			background-size: contain;
 			position: absolute;
 			bottom: 0;
-			left: -.37vw;
+			left: -7px;
+
+			@media (max-width: 1280px), (min-width: 1920px) {
+				width: .68vw;
+				height: 1.5625vw;				
+				left: -.37vw;
+			}
 		}
 	}
 
@@ -319,39 +375,66 @@
 	&__point-content-end {
 		display: flex;
 		align-items: center;
-		gap: .52vw;
+		gap: 10px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			gap: .52vw;
+		}
 	}
 
 	&__point-content-start {
-		margin-bottom: .89vw;
+		margin-bottom: 17px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin-bottom: .89vw;
+		}
 	}
 
 	&__point-content-end {
-		margin-top: .89vw;
+		margin-top: 17px;
+		
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin-top: .89vw;
+		}
 	}
 
 	&__point-content-logo {
 		position: relative;
-		width: 1.67vw;
-		height: 1.67vw;
+		width: 32px;
+		height: 32px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			width: 1.67vw;
+			height: 1.67vw;
+		}
 	}
 
 	&__point-content-token {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 1.67vw;
-		height: 1.67vw;
+		width: 32px;
+		height: 32px;
+	
+		@media (max-width: 1280px), (min-width: 1920px) {
+			width: 1.67vw;
+			height: 1.67vw;
+		}
 	}
 
 	&__point-content-network {
 		position: absolute;
 		top: -3px;
 		right: -4px;
-		width: .73vw;
-		height: .73vw;
+		width: 14px;
+		height: 14px;
 		border-radius: 50%;
 		border: white 1px solid;
+		
+		@media (max-width: 1280px), (min-width: 1920px) {
+			width: .73vw;
+			height: .73vw;
+		}
 	}
 
 	&__point-content-title {
@@ -360,28 +443,48 @@
 	}
 
 	&__point-content-value {		
-		font-size: .83vw;
+		font-size: 16px;
 		margin: 0 0 .1vw;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: .83vw;
+		}
 	}
 	
 	&__point-content-token-name {
 		color: #949BAF;
-		font-size: .73vw;
+		font-size: 14px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: .73vw;
+		}
 	}
 
 	&__point-content-middle {
 		display: flex;
 		align-items: center;
-		gap: .26vw;
+		gap: 5px;
 		background-color: #EFF1F4;
-		height: 2.1875vw;
+		height: 42px;
 		width: fit-content;
-		font-size: .73vw;
-		border-radius: .42vw;
-		padding: 0 .625vw;
+		font-size: 14px;
+		border-radius: 8px;
+		padding: 0 12px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			gap: .26vw;			
+			height: 2.1875vw;			
+			font-size: .73vw;
+			border-radius: .42vw;
+			padding: 0 .625vw;
+		}
 
 		img {
-			height: .9375vw;
+			height: 18px;
+
+			@media (max-width: 1280px), (min-width: 1920px) {
+				height: .9375vw;
+			}
 		}
 	}
 
@@ -390,11 +493,18 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: .36vw;
-		height: 7.7vw;
+		gap: 7px;
+		height: 148px;
 		border: #E0E5EB 1px solid;
-		border-radius: .78vw;
-		font-size: .83vw;
+		border-radius: 15px;
+		font-size: 16px;
 		color: var(--primary-blue);
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			gap: .36vw;
+			height: 7.7vw;			
+			border-radius: .78vw;
+			font-size: .83vw;
+		}
 	}
 }

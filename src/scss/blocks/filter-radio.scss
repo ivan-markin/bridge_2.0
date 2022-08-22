@@ -20,7 +20,7 @@
 		outline: none;	
 		padding: 12px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			height: 2.08vw;
 			width: 4.06vw;
 			border-radius: .52vw;			
@@ -45,7 +45,7 @@
 		transition: all .2s;
 		cursor: pointer;	
 		
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .83vw;
 		}
 	}

@@ -6,7 +6,7 @@
 	background-color: #fff;
 	padding: 1.67vw;	
 
-	@media (min-width: 1920px) {		
+	@media (max-width: 1280px), (min-width: 1920px) {		
 		border-radius: 2.08vw;		
 		padding: 1.67vw;
 	}
@@ -57,7 +57,7 @@
 		align-items: center;
 		margin-bottom: 26px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			margin-bottom: 1.35vw;
 		}
 	}
@@ -67,7 +67,7 @@
 		font-weight: 500;
 		margin-right: 5px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .73vw;
 			margin-right: .26vw;
 		}
@@ -79,7 +79,7 @@
 		opacity: .45;
 		margin-right: 5px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .73vw;
 			margin-right: .26vw;
 		}
@@ -90,7 +90,7 @@
 		align-items: center;
 		gap: 16px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			gap: .83vw;
 		}
 	}
@@ -103,7 +103,7 @@
 	&__supported-logos {
 		margin-right: 3px;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			margin-right: .16vw;
 		}
 	}
@@ -114,7 +114,7 @@
 		color: var(--primary-blue);
 		text-decoration: none;
 
-		@media (min-width: 1920px) {
+		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .625vw;
 		}
 	}
