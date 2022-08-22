@@ -14,14 +14,21 @@
 		
 		&::after {
 			content: '';
-			width: .52vw;
-			height: .3125vw;
+			width: 10px;
+			height: 6px;
 			background: url('../../images/dropdown-arrow_blue.svg') no-repeat center;
 			background-size: contain;
 			transform: rotate(-90deg);
 			position: absolute;
 			right: .7vw;
-			top: 1.4vw;
+			top: 27px;
+
+			@media (min-width: 1920px) {
+				width: .52vw;
+				height: .3125vw;
+				right: 13px;
+				top: 1.4vw;
+			}
 		}
 	
 		&.active {
@@ -46,8 +53,14 @@
 	}
 
 	&_popup &__container {
-		background-color: #0071FF26;
+		background-color: #0071FF26;		
 		border-radius: .83vw;
+		padding: .42vw 2.4vw .42vw .625vw;
+
+		@media (min-width: 1920px) {
+			border-radius: .83vw;
+			padding: 8px 46px 8px 12px;
+		}
 	}
 	
 	&.active &__container {
@@ -150,6 +163,10 @@
 		@media (min-width: 1920px) {
 			font-size: .94vw;
 			margin-right: .52vw;
+		}
+
+		@media (max-width: 1440px) {
+			font-size: 16px;
 		}
 	}
 

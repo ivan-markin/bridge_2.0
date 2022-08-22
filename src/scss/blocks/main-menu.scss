@@ -9,12 +9,12 @@
   &__item {
     position: relative;
     list-style: none;
-    font-size: 1.04vw;
+    font-size: 20px;
     font-weight: 600;
     transition: all .2s;       
 
-    @media (min-width: 1921px) {
-      font-size: 20px;
+    @media (min-width: 1920px) {
+      font-size: 1.04vw;
     }
 
     @media (max-width: 768px) {
@@ -80,16 +80,24 @@
         content: 'Coming soon';
         display: flex;
         align-items: center;        
-        height: .83vw;
-        font-size: .47vw;
+        height: 16px;
+        font-size: 9px;
         color: white;
         background-color: #0E00FF;
-        border-radius: .16vw;
+        border-radius: 3px;
         font-weight: 700;
         position: absolute;
         right: 0;
-        top: -.8vw;
-        padding: 0 .16vw;
+        top: -15px;
+        padding: 0 3px;
+
+        @media (min-width: 1920px) {
+          height: .83vw;
+          font-size: .47vw;          
+          border-radius: .16vw;          
+          top: -.8vw;
+          padding: 0 .16vw;
+        }
       }
     }
 
@@ -100,16 +108,24 @@
         content: 'New';
         display: flex;
         align-items: center;
-        height: .83vw;
-        font-size: .47vw;
+        height: 16px;
+        font-size: 9px;
         color: white;
         background-color: #0E00FF;
-        border-radius: .16vw;
+        border-radius: 3px;
         font-weight: 700;
         position: absolute;
         right: 0;
-        top: -.8vw;
-        padding: 0 .16vw;
+        top: -15px;
+        padding: 0 3px;
+
+        @media (min-width: 1920px) {
+          height: .83vw;
+          font-size: .47vw;
+          border-radius: .16vw;
+          top: -.8vw;
+          padding: 0 .16vw;
+        }
       }
     }
 

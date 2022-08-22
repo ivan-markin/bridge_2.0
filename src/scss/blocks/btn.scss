@@ -64,13 +64,19 @@
   }
   
   &_outlined-red {
-    height: 2.7vw;
+    height: 52px;
     border: #FF0032 1px solid;
-    border-radius: .9375vw;
+    border-radius: 18px;
     background: none;
     color: #FF0032;
-    font-size: .78vw;
+    font-size: 15px;
     font-weight: 600;
+
+    @media (min-width: 1920px) {
+      height: 2.7vw;      
+      border-radius: .9375vw;   
+      font-size: .78vw;
+    }
 
     &:hover {
       background: none;
