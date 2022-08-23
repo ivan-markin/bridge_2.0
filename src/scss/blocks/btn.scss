@@ -34,6 +34,17 @@
       padding: 0 45px;
 		} 
 
+    &:disabled {
+      background-color: #EDF2F4;
+      color: #AFBBC2;
+
+      &:hover {
+        background-color: #EDF2F4;
+        color: #AFBBC2;
+        cursor: auto;
+      }
+    }
+
     &:hover {
       background-color: #0A3468;
     }    

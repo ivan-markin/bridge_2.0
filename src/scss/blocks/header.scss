@@ -1,8 +1,7 @@
 .header {  
   flex: none;
   background-color: var(--primary-blue);
-  position: relative;
-  overflow-x: scroll;
+  position: relative;  
   padding: 0 73px;
 
   @media (max-width: 1280px), (min-width: 1920px) {
