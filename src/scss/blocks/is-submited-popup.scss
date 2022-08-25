@@ -1,0 +1,56 @@
+.is-submited-popup {
+	
+	.popup__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 96px;
+		padding-bottom: 160px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			padding-top: 5vw;
+			padding-bottom: 8.33vw;
+		}
+	}
+
+	.popup__title {
+		margin: 0 0 4px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin: 0 0 .2vw;
+		}
+	}
+
+	&__success-icon {
+		width: 48px;
+		height: 48px;
+		margin-bottom: 8px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			width: 2.5vw;
+			height: 2.5vw;
+			margin-bottom: .42vw;
+		}
+	}
+	
+	&__transaction-path {
+		width: 45%;
+		min-width: 200px;	
+		
+		@media (max-width: 1280px), (min-width: 1920px) {
+			min-width: 10.4vw;
+		}
+	}
+
+	&__subtitle {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--primary-blue);
+		margin-bottom: 30px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			font-size: .78vw;			
+			margin-bottom: 1.5625;
+		}
+	}
+}
