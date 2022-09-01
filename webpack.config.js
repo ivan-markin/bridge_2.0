@@ -116,6 +116,8 @@ module.exports = {
     htmlWebpackPreconfigured("rankings"),
     htmlWebpackPreconfigured("transfers"),
     htmlWebpackPreconfigured("transfers_old"),
+    htmlWebpackPreconfigured("my-transfers-active"),
+    htmlWebpackPreconfigured("my-transfers-historical"),
     new MiniCssExtractPlugin({
       filename: "styles.css",
     }),
