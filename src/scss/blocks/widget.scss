@@ -123,7 +123,7 @@
 				margin: 0 0 11px 0;
 			}
 
-			.tooltip-btn {
+			.tooltip {
 				margin-left: .42vw;
 
 				@media (max-width: 768px) {					
@@ -155,11 +155,11 @@
 			margin-bottom: 1.04vw;
 		}
 
-		&__title {			
+		&__title {						
 			line-height: 1.25;
 			margin: 0 .94vw 0 0;
 
-			.tooltip-btn {
+			.tooltip {
 				display: inline-flex;
 				flex: none;
 				font-size: .73vw;
