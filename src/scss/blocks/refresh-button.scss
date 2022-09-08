@@ -1,0 +1,14 @@
+.refresh-button {
+	width: 16px;
+	height: 16px;
+	border: none;
+	background: url('../../images/refresh-icon.svg') no-repeat center;
+	background-size: contain;
+	cursor: pointer;
+	outline: none;
+
+	@media (max-width: 1280px), (min-width: 1920px) {
+		width: .83vw;
+		height: .83vw;
+	}
+}

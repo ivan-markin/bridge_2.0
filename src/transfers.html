@@ -1071,32 +1071,61 @@
   <!--  -->
 
   <!-- Transfer -->
-  <div class="transfer-popup popup popup_centered active" id="transferPopup">
+  <div class="transfer-popup popup popup_centered" id="transferPopup">
     <div class="popup__container">
       <a class="popup__close" href="#"></a>      
       <h2 class="popup__title">
         Transfer
       </h2>      
-      <div class="is-submited-popup__transaction-path transaction-path">
+      <div class="transfer-popup__transaction-path transaction-path">
         <div class="transaction-path__item transaction-path__item_left">
           <div class="transaction-path__item-container">
             <div class="transaction-path__item-logo">
-              <img class="transaction-path__item-logo-main" src="./images/tokens-logos/token.png" alt="">
-              <img class="transaction-path__item-logo-network" src="./images/tokens-logos/network.png" alt="">
+              <img class="transaction-path__item-logo-main" src="./images/tokens-logos/token.png" alt="">              
             </div>
             <h3 class="transaction-path__item-title">-5.000000 USDT</h3>
-            <span class="transaction-path__item-subtitle">Ethereum Network</span>
+            <span class="transfer-popup__item-subtitle transaction-path__item-subtitle">
+              <img src="./images/tokens-logos/network.png" alt="">
+              Ethereum Network
+            </span>
           </div>
         </div>
         <div class="transaction-path__item transaction-path__item_right">
           <div class="transaction-path__item-container">
             <div class="transaction-path__item-logo">
-              <img class="transaction-path__item-logo-main" src="./images/tokens-logos/token.png" alt="">
-              <img class="transaction-path__item-logo-network" src="./images/tokens-logos/network.png" alt="">
+              <img class="transaction-path__item-logo-main" src="./images/tokens-logos/token.png" alt="">              
             </div>
             <h3 class="transaction-path__item-title">+0.257202 AVAX</h3>
-            <span class="transaction-path__item-subtitle">Avalanche Network</span>
+            <span class="transfer-popup__item-subtitle transaction-path__item-subtitle">
+              <img src="./images/tokens-logos/network.png" alt="">
+              Avalanche Network
+            </span>
           </div>
+        </div>        
+      </div>
+      <div class="transfer-popup__params">
+        <div class="transfer-popup__params-item">
+          <span class="transfer-popup__params-name">Bridge Rate</span>
+          <div  class="transfer-popup__rate-value">
+            <span>1 USDT on</span>
+            <img src="./images/tokens-logos/network.png" alt="">
+            <span>≈ 0.051493 AVAX on</span>
+            <span>AVAX on</span>
+            <img src="./images/tokens-logos/network.png" alt="">
+            <button class="transfer-popup__refresh-button refresh-button"></button>
+          </div>
+        </div>
+        <div class="transfer-popup__params-item">
+          <span class="transfer-popup__params-name">Fee</span>
+          <span class="transfer-popup__params-value">0.048561 AVAX</span>
+        </div>
+        <div class="transfer-popup__params-item">
+          <span class="transfer-popup__params-name">Slippage Tolerance</span>
+          <span class="transfer-popup__params-value">0.30%</span>
+        </div>
+        <div class="transfer-popup__params-item">
+          <span class="transfer-popup__params-name">Estimated Time of Transfer</span>
+          <span class="transfer-popup__params-value">5-20 minutes</span>
         </div>
       </div>
     </div>
