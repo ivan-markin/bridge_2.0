@@ -2,90 +2,89 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 13px;
-	background: url('../../images/grey-border-piece.svg') repeat-x left center;
+	height: 16px;
+	background: url('../../images/blue-border-piece.svg') repeat-x left center;
 	position: relative;
 
 	@media (max-width: 1280px), (min-width: 1920px) {
-		height: .68vw;
+		height: .83vw;
 	}
 
 	&::before {
 		content: '';
-		width: 13px;
-		height: 13px;
+		width: 26px;
+		height: 16px;
 		background-color: white;
 		position: absolute;
 		left: 0;
 		top: 0;
 
 		@media (max-width: 1280px), (min-width: 1920px) {
-			height: .68vw;
-			width: .68vw;
+			height: .83vw;
+			width: .83vw;
 		}
 	}
 
 	&::after {
 		content: '';
-		width: 13px;
-		height: 13px;
+		width: 26px;
+		height: 16px;
 		background-color: white;
 		position: absolute;
 		right: 0;
 		top: 0;
 
 		@media (max-width: 1280px), (min-width: 1920px) {
-			height: .68vw;
-			width: .68vw;
+			height: .83vw;
+			width: .83vw;
 		}
 }
 
 	&__item {		
 		flex: none;
-		width: 13px;
-		height: 13px;
+		width: 16px;
+		height: 16px;
 		position: relative;		
 
 		@media (max-width: 1280px), (min-width: 1920px) {
-			width: .68vw;
-			height: .68vw;
+			width: .83vw;
+			height: .83vw;
 		}
 
 		&::before {
-			content: '';
+			content: '';			
 			position: absolute;
 			top: 0;
-			height: 13px;			
-
+			height: 16px;			
+			width: 16px;
+			
 			@media (max-width: 1280px), (min-width: 1920px) {				
-				height: .68vw;
+				height: .83vw;
+				width: .83vw;
 			}
 		}
 
 		&_left {
 			&::before {
-				left: 0;
-				width: 19px;
+				left: 0;				
 				background: url('../../images/success-popup-left-el.svg') no-repeat left center;
 				background-size: contain;
 				z-index: 10;
-
-				@media (max-width: 1280px), (min-width: 1920px) {
-					width: 1.1vw;					
-				}
 			}
 		}
 
 		&_right {
 			&::before {
-				right: 0;
-				width: 22px;
+				right: 0;				
+				width: 32px;
+				height: 16px;				
 				background: url('../../images/success-popup-right-el.svg') no-repeat right center;
 				background-size: contain;
 				z-index: 10;
 
 				@media (max-width: 1280px), (min-width: 1920px) {
-					width: 1.146vw;
+					height: .83vw;
+					width: 1.671vw;
 				}
 			}
 		}
@@ -109,13 +108,13 @@
 
 	&__item-logo {
 		position: relative;
-		width: 26px;
-		height: 26px;
+		width: 37px;
+		height: 37px;
 		margin-bottom: 8px;
 
 		@media (max-width: 1280px), (min-width: 1920px) {
-			width: 1.35vw;
-			height: 1.35vw;
+			width: 1.93vw;
+			height: 1.93vw;
 			margin-bottom: .42vw;
 		}
 	}
@@ -143,10 +142,10 @@
 	}
 
 	&__item-logo-main {
-		width: 26px;	
+		width: 37px;	
 		
 		@media (max-width: 1280px), (min-width: 1920px) {
-			width: 1.35vw;
+			width: 1.93vw;
 		}
 	}
 

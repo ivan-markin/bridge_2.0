@@ -83,6 +83,12 @@
 @import './blocks/page-block.scss';
 @import './blocks/block-tabs.scss';
 @import './blocks/transfers-table.scss';
+@import './blocks/transfer-approve-popup.scss';
+@import './blocks/allowance-popup.scss';
+@import './blocks/refused-popup.scss';
+@import './blocks/rejected-popup.scss';
+@import './blocks/transfer-submitted-popup.scss';
+@import './blocks/external-link.scss';
 
 *,
 *::before,

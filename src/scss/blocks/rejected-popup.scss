@@ -1,0 +1,10 @@
+.rejected-popup {
+	
+	.popup__text {
+		margin: 18px 0 58px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin: .9375vw 0 3.02vw;
+		}
+	}
+}

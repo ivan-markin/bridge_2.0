@@ -1,0 +1,30 @@
+.transfer-submitted-popup {
+
+	.popup__image {
+		margin-bottom: 16px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin-bottom: .83vw;
+		}
+	}
+
+	.popup__title {
+		margin: 0;
+	}
+
+	.popup__text {
+		margin: 24px 0 13px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin: 1.25vw 0 .68vw;
+		}
+	}
+
+	.external-link {
+		margin-bottom: 27px;
+
+		@media (max-width: 1280px), (min-width: 1920px) {
+			margin-bottom: 1.4vw;
+		}
+	}
+}
