@@ -145,9 +145,13 @@ fieldset {
   margin: 0 auto;
 
   @media (max-width: 1280px), (min-width: 1920px) {
-    max-width: 65vw;
+    max-width: none;
     padding: 0;
   }  
+
+  @media (min-width: 1920px) {
+    max-width: 1920px;    
+  } 
 }
 
 .swiper-navigation-block {

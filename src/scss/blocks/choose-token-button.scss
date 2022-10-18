@@ -94,6 +94,10 @@
 		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .73vw;
 		}
+
+		@media (min-width: 1920px) {
+			font-size: 1vw;
+		}
 	}
 
 	&__network {
@@ -102,6 +106,10 @@
 
 		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .625vw;
+		}
+
+		@media (min-width: 1920px) {
+			font-size: .8vw;
 		}
 	}
 }

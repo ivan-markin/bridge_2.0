@@ -21,6 +21,10 @@
       max-width: 65vw;
       padding: 0;
     }
+
+    @media (min-width: 1920px) {
+      max-width: 1920px;      
+    }
   }
 
   &_inner {

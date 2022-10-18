@@ -60,6 +60,10 @@
 		@media (max-width: 1280px), (min-width: 1920px) {
 			margin-bottom: 1.35vw;
 		}
+
+		@media (min-width: 1920px) {
+			margin-bottom: 1.8vw;
+		}
 	}
 
 	&__supported-title {
@@ -70,6 +74,11 @@
 		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .73vw;
 			margin-right: .26vw;
+		}
+
+		@media (min-width: 1920px) {
+			font-size: 1vw;
+			margin-right: .4vw;
 		}
 	}
 	
@@ -82,6 +91,11 @@
 		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .73vw;
 			margin-right: .26vw;
+		}
+
+		@media (min-width: 1920px) {
+			font-size: 1vw;
+			margin-right: .4vw;
 		}
 	}
 
@@ -116,6 +130,10 @@
 
 		@media (max-width: 1280px), (min-width: 1920px) {
 			font-size: .625vw;
+		}
+
+		@media (min-width: 1920px) {
+			font-size: .8vw;
 		}
 	}
 }

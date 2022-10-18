@@ -13,6 +13,10 @@
 			gap: .83vw;
 			margin-bottom: 1.04vw;
 		}
+
+		@media (min-width: 1921px) {			
+			margin-bottom: 1.3vw;
+		}
 	}
 
 	&__main-inputs {
@@ -40,6 +44,10 @@
 		@media (max-width: 1280px), (min-width: 1920px) {
 			width: 20.83vw;
 			padding: .52vw 1.3vw;
+		}
+
+		@media (min-width: 1920px) {
+			gap: 10px;
 		}
 
 		&_from {			
@@ -110,7 +118,7 @@
 	&__main-input-block {
 		display: inline-grid;
 		vertical-align: top;
-		align-items: center;
+		align-items: baseline;
 		position: relative;
 		max-width: 10.42vw;		
 
@@ -141,6 +149,10 @@
 			
 			@media (max-width: 1280px), (min-width: 1920px) {
 				font-size: 1.25vw;
+			}
+
+			@media (min-width: 1920px) {
+				font-size: 2.2vw;
 			}
 
 			&::placeholder {
@@ -176,6 +188,10 @@
 		flex: none;
 		font-size: .73vw;
 		color: #989EB1;
+
+		@media (min-width: 1920px) {
+			font-size: 1vw;
+		}
 	}
 
 	&__submit {
@@ -190,6 +206,10 @@
 			font-size: 1.04vw;
 			height: 4.625vw;
 			max-width: none;			
+		}
+
+		@media (min-width: 1920px) {						
+			height: 5.1vw;			
 		}
 	}
 
